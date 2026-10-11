@@ -60,7 +60,7 @@ const sinkText = { required: 'Required', helpful: 'Helpful', none: 'Not needed' 
     <p class="lede">{d.summary}</p>
 
     <div class="actions no-print">
-      <button type="button" onclick="window.print()">Print this lesson</button>
+      <button type="button" data-print>Print this lesson</button>
     </div>
 
     <dl class="facts">
@@ -143,4 +143,7 @@ const sinkText = { required: 'Required', helpful: 'Helpful', none: 'Not needed' 
       </div>
     )}
   </article>
+  <script>
+    document.querySelectorAll('[data-print]').forEach((b) => b.addEventListener('click', () => window.print()));
+  </script>
 </Base>
