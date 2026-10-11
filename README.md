@@ -34,6 +34,15 @@ This repository is the shared working source for development. The project is int
 - GitHub for source control
 - Cloudflare Access for the private moderation/admin area
 
+## Prototype status
+
+The prototype is a static Astro site. Lessons are Markdown files in `src/content/lessons/`, and the lesson finder runs in the browser. All current lessons are demo content for testing. Nothing is connected to teachprintmaking.com.
+
+- `npm install` once, then `npm run dev` to run it locally.
+- `npm test` builds the site and runs the search tests against the real lesson files.
+- [docs/adding-a-lesson.md](docs/adding-a-lesson.md) explains the lesson file format.
+- [docs/decisions.md](docs/decisions.md) records choices made during the build.
+
 ## Project documents
 
 - [PROJECT_SPEC.md](PROJECT_SPEC.md) — functional requirements and editorial workflow

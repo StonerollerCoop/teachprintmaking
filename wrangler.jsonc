@@ -1,0 +1,10 @@
+{
+  // Test copy only. This serves the built static files from ./dist.
+  // No custom domain is attached; teachprintmaking.com is untouched.
+  "name": "teachprintmaking",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

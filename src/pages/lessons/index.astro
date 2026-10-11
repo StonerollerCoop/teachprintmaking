@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import { allLessons, variationsOf, lessonUrl } from '../../lib/lessons';
+import { families, techniques } from '../../data/vocab';
+
+const entries = await allLessons();
+const parents = entries.filter((e) => !e.data.parent);
+const familyIds = Object.keys(families) as (keyof typeof families)[];
+const groups = familyIds
+  .map((f) => ({ id: f, label: families[f], lessons: parents.filter((e) => techniques[e.data.technique].family === f) }))
+  .filter((g) => g.lessons.length > 0);
+---
+
+<Base title="All lessons">
+  <h1>All lessons</h1>
+  <p class="lede">{parents.length} lessons and {entries.length - parents.length} variations, grouped by printmaking family.</p>
+  {groups.map((g) => (
+    <section class="family">
+      <h2>{g.label}</h2>
+      {g.lessons.map((e) => {
+        const vars = variationsOf(entries, e.id);
+        return (
+          <div class="card">
+            <h3>
+              <a href={lessonUrl(e.id)}>{e.data.title}</a>
+              {e.data.demo && <> <span class="demo-flag">Demo</span></>}
+            </h3>
+            <p class="meta">{techniques[e.data.technique].label}</p>
+            <p>{e.data.summary}</p>
+            {vars.length > 0 && (
+              <ul class="variation-list">
+                {vars.map((v) => <li>Variation: <a href={lessonUrl(v.id)}>{v.data.title}</a></li>)}
+              </ul>
+            )}
+          </div>
+        );
+      })}
+    </section>
+  ))}
+</Base>

@@ -1,0 +1,190 @@
+---
+import Base from '../layouts/Base.astro';
+import { allLessons, toMeta } from '../lib/lessons';
+import { materials, tools, surfaces, experienceLevels, ageBands, tableSpace, messLevels } from '../data/vocab';
+
+const entries = await allLessons();
+const metas = entries.map(toMeta);
+
+const askedMaterials = (Object.keys(materials) as (keyof typeof materials)[]).filter((m) => !materials[m].assumed);
+const assumedMaterials = (Object.keys(materials) as (keyof typeof materials)[]).filter((m) => materials[m].assumed);
+---
+
+<Base>
+  <h1>Find a printmaking lesson that fits your classroom</h1>
+  <p class="lede">
+    Tell us what you're working with. Anything you leave blank won't be used to filter. Lessons that fit come first, then
+    lessons that can work with a specific, approved change.
+  </p>
+
+  <div class="finder">
+    <form id="finder" autocomplete="off">
+      <fieldset>
+        <legend>Your class</legend>
+        <div class="row">
+          <label>Students <input type="number" name="students" min="1" max="200" inputmode="numeric" /></label>
+          <label>Ages
+            <select name="ages">
+              <option value="">Any</option>
+              {Object.entries(ageBands).map(([id, b]) => <option value={id}>{b.label}</option>)}
+            </select>
+          </label>
+        </div>
+        <label>Experience
+          <select name="experience">
+            <option value="">Any</option>
+            {Object.entries(experienceLevels).map(([id, l]) => <option value={id}>{l}</option>)}
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Time</legend>
+        <div class="row">
+          <label>Minutes per session <input type="number" name="minutes" min="10" max="600" step="5" inputmode="numeric" /></label>
+          <label>Sessions <input type="number" name="sessions" min="1" max="30" inputmode="numeric" /></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="checks">
+        <legend>Materials you have</legend>
+        <p class="hint">We assume you have {assumedMaterials.map((m) => materials[m].label.toLowerCase()).join(', ')}.</p>
+        {askedMaterials.map((m) => (
+          <label><input type="checkbox" name="materials" value={m} /> {materials[m].label}</label>
+        ))}
+      </fieldset>
+
+      <fieldset class="checks">
+        <legend>Tools you have</legend>
+        {Object.entries(tools).map(([id, t]) => (
+          <label><input type="checkbox" name="tools" value={id} /> {t.label}</label>
+        ))}
+        <p class="hint" style="margin-top:10px">Separate from what you own:</p>
+        <label><input type="checkbox" name="noSharp" value="1" /> No sharp tools with this group</label>
+      </fieldset>
+
+      <fieldset class="checks">
+        <legend>You can print on</legend>
+        {Object.entries(surfaces).map(([id, l]) => (
+          <label><input type="checkbox" name="surfaces" value={id} /> {l}</label>
+        ))}
+      </fieldset>
+
+      <fieldset>
+        <legend>Your space</legend>
+        <label>Sink in the room
+          <select name="sink"><option value="">Doesn't matter</option><option value="yes">Yes</option><option value="no">No</option></select>
+        </label>
+        <label>Table space
+          <select name="tableSpace">
+            <option value="">Any</option>
+            {Object.entries(tableSpace).map(([id, l]) => <option value={id}>{l}</option>)}
+          </select>
+        </label>
+        <label>Most mess you can handle
+          <select name="maxMess">
+            <option value="">Any</option>
+            {Object.entries(messLevels).map(([id, l]) => <option value={id}>{l}</option>)}
+          </select>
+        </label>
+        <label>Good ventilation
+          <select name="ventilation"><option value="">Doesn't matter</option><option value="yes">Yes</option><option value="no">No</option></select>
+        </label>
+      </fieldset>
+
+      <button type="reset" class="secondary">Clear everything</button>
+    </form>
+
+    <div class="results" id="results" aria-live="polite">
+      <noscript><p>The lesson finder needs JavaScript. You can still <a href="/lessons/">browse all lessons</a>.</p></noscript>
+    </div>
+  </div>
+
+  <script type="application/json" id="lesson-data" set:html={JSON.stringify(metas)} />
+
+  <script>
+    import { search, type Constraints, type LessonMeta, type MatchResult } from '../lib/match';
+    import { describeTrigger } from '../lib/describe';
+    import { ageBands, techniques, type MaterialId, type ToolId, type SurfaceId, type ExperienceId, type TableSpaceId, type MessId } from '../data/vocab';
+
+    const lessons: LessonMeta[] = JSON.parse(document.getElementById('lesson-data')!.textContent || '[]');
+    const titles = new Map(lessons.map((l) => [l.slug, l.title]));
+    const form = document.getElementById('finder') as HTMLFormElement;
+    const out = document.getElementById('results')!;
+
+    const esc = (s: string) =>
+      s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+    const url = (slug: string) => `/lessons/${slug}/`;
+
+    function readForm(): Constraints {
+      const f = new FormData(form);
+      const num = (k: string) => {
+        const v = String(f.get(k) ?? '').trim();
+        const n = Number(v);
+        return v && Number.isFinite(n) && n > 0 ? Math.round(n) : undefined;
+      };
+      const str = (k: string) => String(f.get(k) ?? '') || undefined;
+      const yesNo = (k: string) => (f.get(k) === 'yes' ? true : f.get(k) === 'no' ? false : undefined);
+      const band = str('ages') as keyof typeof ageBands | undefined;
+      return {
+        students: num('students'),
+        ages: band ? { min: ageBands[band].min, max: ageBands[band].max } : undefined,
+        experience: str('experience') as ExperienceId | undefined,
+        minutesPerSession: num('minutes'),
+        sessions: num('sessions'),
+        materials: f.getAll('materials') as MaterialId[],
+        tools: f.getAll('tools') as ToolId[],
+        noSharpTools: f.get('noSharp') === '1',
+        surfaces: f.getAll('surfaces') as SurfaceId[],
+        sink: yesNo('sink'),
+        tableSpace: str('tableSpace') as TableSpaceId | undefined,
+        maxMess: str('maxMess') as MessId | undefined,
+        ventilation: yesNo('ventilation'),
+      };
+    }
+
+    function head(r: MatchResult) {
+      const l = r.lesson;
+      const demo = l.demo ? ' <span class="demo-flag">Demo</span>' : '';
+      const parent = l.parent && titles.has(l.parent)
+        ? `<p class="meta">Variation of <a href="${url(l.parent)}">${esc(titles.get(l.parent)!)}</a></p>` : '';
+      const tech = techniques[l.technique as keyof typeof techniques]?.label ?? l.technique;
+      return `<h3><a href="${url(l.slug)}">${esc(l.title)}</a>${demo}</h3>
+        <p class="meta">${esc(tech)} · ages ${l.ages.min}${l.ages.max >= 99 ? '+' : `–${l.ages.max}`} · ${l.time.sessions} × ${l.time.minutesPerSession} min</p>
+        ${parent}<p>${esc(l.summary)}</p>`;
+    }
+
+    function card(r: MatchResult) {
+      let extra = '';
+      if (r.fit === 'adaptable') {
+        extra = '<ul>' + r.adaptations.map((a) => {
+          const v = a.variation && titles.has(a.variation)
+            ? ` <a href="${url(a.variation)}">See ${esc(titles.get(a.variation)!)}.</a>` : '';
+          return `<li><strong>${esc(describeTrigger(a.trigger))}:</strong> ${esc(a.change)}${v}</li>`;
+        }).join('') + '</ul>';
+      } else if (r.fit === 'none') {
+        extra = '<ul>' + r.gaps.filter((g) => !g.covered).map((g) => `<li>${esc(g.reason)}</li>`).join('') + '</ul>';
+      }
+      return `<div class="card">${head(r)}${extra}</div>`;
+    }
+
+    function render() {
+      const res = search(lessons, readForm());
+      const section = (cls: string, title: string, note: string, items: MatchResult[]) =>
+        `<section><h2 class="${cls}">${title} <span class="count">${items.length}</span></h2>
+         ${items.length ? `<p class="muted">${note}</p>` + items.map(card).join('') : '<p class="muted">None yet.</p>'}</section>`;
+      out.innerHTML =
+        section('tag-strong', 'Fits your classroom', 'These lessons work with everything you told us.', res.strong) +
+        section('tag-adapt', 'Works with a change', 'Each of these needs the approved change listed under it.', res.adaptable) +
+        (res.none.length
+          ? `<section class="no-print"><details><summary>Doesn't fit (${res.none.length})</summary>${res.none.map(card).join('')}</details></section>`
+          : '');
+    }
+
+    form.addEventListener('input', render);
+    form.addEventListener('change', render);
+    form.addEventListener('reset', () => setTimeout(render, 0));
+    form.addEventListener('submit', (e) => e.preventDefault());
+    render();
+  </script>
+</Base>

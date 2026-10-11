@@ -1,0 +1,146 @@
+---
+import Base from '../../layouts/Base.astro';
+import { render } from 'astro:content';
+import { allLessons, variationsOf, lessonUrl, type LessonEntry } from '../../lib/lessons';
+import { describeTrigger } from '../../lib/describe';
+import {
+  techniques,
+  families,
+  materials,
+  tools,
+  surfaces,
+  experienceLevels,
+  tableSpace,
+  messLevels,
+} from '../../data/vocab';
+
+export async function getStaticPaths() {
+  const entries = await allLessons();
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry, entries } }));
+}
+
+interface Props {
+  entry: LessonEntry;
+  entries: LessonEntry[];
+}
+const { entry, entries } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+
+const byId = new Map(entries.map((e) => [e.id, e]));
+const parent = d.parent ? byId.get(d.parent) : undefined;
+const variations = variationsOf(entries, entry.id);
+const technique = techniques[d.technique];
+
+const pressNeed = d.tools.required.includes('press')
+  ? 'Required'
+  : d.tools.optional.includes('press')
+    ? 'Optional'
+    : 'Not needed';
+const timeText =
+  d.time.sessions === 1
+    ? `One ${d.time.minutesPerSession}-minute session`
+    : `${d.time.sessions} sessions of ${d.time.minutesPerSession} minutes${d.time.dryingOvernight ? ', with drying time between' : ''}`;
+const ageText = d.ages.max >= 99 ? `${d.ages.min} and up` : `${d.ages.min} to ${d.ages.max}`;
+const sinkText = { required: 'Required', helpful: 'Helpful', none: 'Not needed' }[d.space.sink];
+---
+
+<Base title={d.title} description={d.summary}>
+  <article class="lesson">
+    <p class="muted">
+      {families[technique.family]} · {technique.label}
+      {d.demo && <> · <span class="demo-flag">Demo</span></>}
+    </p>
+    <h1>{d.title}</h1>
+    {parent && (
+      <p class="callout">
+        This is a variation of <a href={lessonUrl(parent.id)}>{parent.data.title}</a>.
+      </p>
+    )}
+    <p class="lede">{d.summary}</p>
+
+    <div class="actions no-print">
+      <button type="button" onclick="window.print()">Print this lesson</button>
+    </div>
+
+    <dl class="facts">
+      <dt>Ages</dt><dd>{ageText}</dd>
+      <dt>Experience</dt><dd>{d.experience.map((e) => experienceLevels[e]).join(', ')}</dd>
+      <dt>Class size</dt><dd>{d.students.min === 1 ? `Up to ${d.students.max}` : `${d.students.min} to ${d.students.max}`} students</dd>
+      <dt>Time</dt><dd>{timeText}</dd>
+      <dt>Press</dt><dd>{pressNeed}</dd>
+      <dt>Prints on</dt><dd>{d.surfaces.map((s) => surfaces[s]).join(', ')}</dd>
+      <dt>Sink</dt><dd>{sinkText}</dd>
+      <dt>Table space</dt><dd>{tableSpace[d.space.tableSpace].split(' (')[0]}</dd>
+      <dt>Mess</dt><dd>{messLevels[d.space.mess]}</dd>
+      {d.space.ventilation && <><dt>Ventilation</dt><dd>Required</dd></>}
+    </dl>
+
+    {d.objectives.length > 0 && (
+      <>
+        <h2>Learning objectives</h2>
+        <ul>{d.objectives.map((o) => <li>{o}</li>)}</ul>
+      </>
+    )}
+
+    <h2>Materials</h2>
+    <ul>
+      {d.materials.required.map((m) => <li>{materials[m].label}</li>)}
+      {d.materials.optional.map((m) => <li>{materials[m].label} <span class="muted">(optional)</span></li>)}
+    </ul>
+
+    <h2>Tools</h2>
+    <ul>
+      {d.tools.required.map((t) => <li>{tools[t].label}</li>)}
+      {d.tools.optional.map((t) => <li>{tools[t].label} <span class="muted">(optional)</span></li>)}
+    </ul>
+
+    {d.safety.length > 0 && (
+      <>
+        <h2>Safety</h2>
+        <ul>{d.safety.map((s) => <li>{s}</li>)}</ul>
+      </>
+    )}
+
+    <div class="lesson-body"><Content /></div>
+
+    {d.adaptations.filter((a) => a.approved).length > 0 && (
+      <>
+        <h2>Approved adaptations</h2>
+        <ul>
+          {d.adaptations.filter((a) => a.approved).map((a) => {
+            const v = a.variation ? byId.get(a.variation) : undefined;
+            return (
+              <li>
+                <strong>{describeTrigger(a.trigger)}:</strong> {a.change}
+                {v && <> See <a href={lessonUrl(v.id)}>{v.data.title}</a>.</>}
+              </li>
+            );
+          })}
+        </ul>
+      </>
+    )}
+
+    {variations.length > 0 && (
+      <div class="no-print">
+        <h2>Variations</h2>
+        <ul>
+          {variations.map((v) => (
+            <li><a href={lessonUrl(v.id)}>{v.data.title}</a>. {v.data.summary}</li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {d.credits.length > 0 && (
+      <div class="credits">
+        {d.credits.map((c) => (
+          <p>{c.name}{c.organization && <>, {c.organization}</>}. {c.role}</p>
+        ))}
+        {parent && parent.data.credits.length > 0 && (
+          <p>Original lesson: {parent.data.credits.map((c) => c.name).join(', ')}</p>
+        )}
+      </div>
+    )}
+  </article>
+</Base>
