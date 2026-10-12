@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const parts = (await getCollection('parts')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base title="The parts of a print" description="Substrate, plate or stencil, ink, edition, and press: the parts every print shares.">
+  <h1>The parts of a print</h1>
+  <p class="lede">
+    Every print, from a hand on a cave wall to a lithograph poster, is made from the same few parts. Knowing them helps
+    students understand any printmaking process, and swap one part for another when the classroom doesn't have it.
+  </p>
+  <ol class="parts-list">
+    {parts.map((p) => (
+      <li>
+        <a href={`/parts/${p.id}/`}>
+          <span class="parts-num">{p.data.order}</span>
+          <span class="parts-name">{p.data.title}</span>
+          <span class="parts-tag">{p.data.tagline}</span>
+        </a>
+      </li>
+    ))}
+  </ol>
+</Base>

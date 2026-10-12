@@ -1,0 +1,119 @@
+---
+/**
+ * The classroom form, shared by the home page (which sends you to the Find
+ * page) and the Find page (which updates results as you change it).
+ */
+import { materials, tools, surfaces, experienceLevels, ageBands, tableSpace, messLevels } from '../data/vocab';
+
+interface Props {
+  variant: 'home' | 'find';
+}
+const { variant } = Astro.props;
+const asked = (Object.keys(materials) as (keyof typeof materials)[]).filter((m) => !materials[m].assumed);
+const assumed = (Object.keys(materials) as (keyof typeof materials)[]).filter((m) => materials[m].assumed);
+---
+
+<form id="finder" class={`finder-form ${variant}`} action="/find/" method="get" autocomplete="off">
+  <div class="ff-basics">
+    <fieldset>
+      <legend>Your class</legend>
+      <label for="ff-students">How many students
+        <input id="ff-students" type="number" name="students" min="1" max="200" inputmode="numeric" placeholder="e.g. 24" />
+      </label>
+      <label for="ff-ages">Ages
+        <select id="ff-ages" name="ages">
+          <option value="">Any age</option>
+          {Object.entries(ageBands).map(([id, b]) => <option value={id}>{b.label}</option>)}
+        </select>
+      </label>
+      <label for="ff-exp">Experience
+        <select id="ff-exp" name="experience">
+          <option value="">Any experience</option>
+          {Object.entries(experienceLevels).map(([id, l]) => <option value={id}>{l}</option>)}
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your time</legend>
+      <label for="ff-minutes">Minutes per session
+        <input id="ff-minutes" type="number" name="minutes" min="10" max="600" step="5" inputmode="numeric" placeholder="e.g. 45" />
+      </label>
+      <label for="ff-sessions">Number of sessions
+        <input id="ff-sessions" type="number" name="sessions" min="1" max="30" inputmode="numeric" placeholder="e.g. 2" />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your room</legend>
+      <label for="ff-sink">A sink in the room
+        <select id="ff-sink" name="sink"><option value="">Doesn't matter</option><option value="yes">Yes</option><option value="no">No</option></select>
+      </label>
+      <label for="ff-table">Table space
+        <select id="ff-table" name="tableSpace">
+          <option value="">Any</option>
+          {Object.entries(tableSpace).map(([id, l]) => <option value={id}>{l}</option>)}
+        </select>
+      </label>
+      <label for="ff-mess">Most mess you can handle
+        <select id="ff-mess" name="maxMess">
+          <option value="">Any</option>
+          {Object.entries(messLevels).map(([id, l]) => <option value={id}>{l}</option>)}
+        </select>
+      </label>
+      <label for="ff-vent">Good ventilation
+        <select id="ff-vent" name="ventilation"><option value="">Doesn't matter</option><option value="yes">Yes</option><option value="no">No</option></select>
+      </label>
+    </fieldset>
+  </div>
+
+  <details class="ff-more">
+    <summary>What you have to print with <span class="muted">(optional)</span></summary>
+    <div class="ff-more-body">
+      <fieldset class="ff-checks">
+        <legend>Materials</legend>
+        <p class="hint">We assume every room has {assumed.map((m) => materials[m].label.toLowerCase()).join(', ')}.</p>
+        <div class="ff-cols">
+          {asked.map((m) => (
+            <label><input type="checkbox" name="materials" value={m} /> {materials[m].label}</label>
+          ))}
+        </div>
+      </fieldset>
+      <fieldset class="ff-checks">
+        <legend>Tools</legend>
+        <div class="ff-cols">
+          {Object.entries(tools).map(([id, t]) => (
+            <label><input type="checkbox" name="tools" value={id} /> {t.label}</label>
+          ))}
+        </div>
+        <label class="ff-nosharp"><input type="checkbox" name="noSharp" value="1" /> No sharp tools with this group, whatever we own</label>
+      </fieldset>
+      <fieldset class="ff-checks">
+        <legend>You can print on</legend>
+        <div class="ff-cols">
+          {Object.entries(surfaces).map(([id, l]) => (
+            <label><input type="checkbox" name="surfaces" value={id} /> {l}</label>
+          ))}
+        </div>
+      </fieldset>
+    </div>
+  </details>
+
+  <div class="ff-actions">
+    {variant === 'home' ? <button type="submit">Find lessons</button> : <button type="reset" class="secondary">Clear everything</button>}
+    <span class="hint">Leave anything blank and it won't be used to narrow the list.</span>
+  </div>
+</form>
+
+<script>
+  // Remember the form so the Find page can pick it up even where the address
+  // bar can't carry it. Browser storage can be unavailable; the URL still works.
+  const form = document.getElementById('finder') as HTMLFormElement | null;
+  if (form && form.classList.contains('home')) {
+    form.addEventListener('submit', () => {
+      try {
+        sessionStorage.setItem('tp-finder', new URLSearchParams(new FormData(form) as unknown as Record<string, string>).toString());
+      } catch {}
+    });
+  }
+</script>

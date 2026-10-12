@@ -69,3 +69,9 @@ Open question: the current vocabulary has separate families for monotype, collag
 - The site now uses exactly four families: relief, intaglio, planographic, and stencil. Monotype and monoprint sit under planographic because they print from a flat surface. Collagraph is filed by how it is inked; the current demo is relief-inked. This was a default chosen to match Libby's sketch and can be revisited.
 - The home page follows Libby's sketch of October 12: the title and a short introduction, a row of the four types, a "Why?" row of six reasons, then "Plan a lesson here" with the lesson finder.
 - The six "Why?" reasons are drafted from Libby's own notes and are hers to rewrite.
+
+## 2026-10-12: Welcome first, results on their own page, and the parts of a print
+
+- The home page is a welcome. It keeps the lesson form, but results appear on a separate Find page (/find/), which reads the form from the address bar or from what the home page saved.
+- Five pages explain the parts every print shares: substrate, plate or stencil, ink or paint, edition, and press or means of transfer. They link to lessons and timeline entries and are written as Markdown files in src/content/parts so they can be edited like lessons.
+- Pacific barkcloth traditions are in the timeline: Fijian leaf stencils on masi, Tongan ngatu rubbed over kupesi, and Tahitian bamboo stamps.

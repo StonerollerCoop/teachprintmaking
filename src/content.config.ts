@@ -101,4 +101,17 @@ const lessons = defineCollection({
     }),
 });
 
-export const collections = { lessons };
+const parts = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/parts' }),
+  schema: z.object({
+    title: z.string(),
+    order: z.number().int(),
+    tagline: z.string(),
+    /** Timeline entry ids that illustrate this part. */
+    timeline: z.array(z.string()).default([]),
+    /** Lesson slugs that explore this part. */
+    lessons: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { lessons, parts };

@@ -1,6 +1,6 @@
 /**
  * Search tests run against the real demo lessons, exactly as the built site
- * sees them (read from the JSON embedded in dist/index.html). Run with
+ * sees them (read from the JSON embedded in dist/find/index.html). Run with
  * `npm test`, which builds first.
  */
 import { readFileSync, existsSync } from 'node:fs';
@@ -8,7 +8,7 @@ import { describe, it, expect } from 'vitest';
 import { search, type Constraints, type LessonMeta } from '../src/lib/match';
 import { ageBands } from '../src/data/vocab';
 
-const html = existsSync('dist/index.html') ? readFileSync('dist/index.html', 'utf8') : '';
+const html = existsSync('dist/find/index.html') ? readFileSync('dist/find/index.html', 'utf8') : '';
 const json = html.match(/<script type="application\/json" id="lesson-data">([\s\S]*?)<\/script>/)?.[1];
 if (!json) throw new Error('Build the site first (npm test does this for you).');
 const lessons: LessonMeta[] = JSON.parse(json);

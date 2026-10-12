@@ -1,0 +1,134 @@
+---
+import Base from '../layouts/Base.astro';
+import FinderForm from '../components/FinderForm.astro';
+import { allLessons, toMeta } from '../lib/lessons';
+
+const metas = (await allLessons()).map(toMeta);
+---
+
+<Base title="Find a lesson" description="Printmaking lessons matched to your class and your room.">
+  <h1>Lessons for your classroom</h1>
+  <p class="lede">
+    Change anything on the left and the list updates. Lessons that fit come first, then lessons that work with a
+    specific, tested change.
+  </p>
+
+  <div class="finder">
+    <FinderForm variant="find" />
+    <div class="results" id="results" aria-live="polite">
+      <noscript><p>The lesson finder needs JavaScript. You can still <a href="/lessons/">browse all lessons</a>.</p></noscript>
+    </div>
+  </div>
+
+  <script type="application/json" id="lesson-data" set:html={JSON.stringify(metas)} />
+
+  <script>
+    import { search, type Constraints, type LessonMeta, type MatchResult } from '../lib/match';
+    import { describeTrigger } from '../lib/describe';
+    import { ageBands, techniques, type MaterialId, type ToolId, type SurfaceId, type ExperienceId, type TableSpaceId, type MessId } from '../data/vocab';
+
+    const lessons: LessonMeta[] = JSON.parse(document.getElementById('lesson-data')!.textContent || '[]');
+    const titles = new Map(lessons.map((l) => [l.slug, l.title]));
+    const form = document.getElementById('finder') as HTMLFormElement;
+    const out = document.getElementById('results')!;
+
+    const esc = (s: string) =>
+      s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+    const url = (slug: string) => `/lessons/${slug}/`;
+
+    function readForm(): Constraints {
+      const f = new FormData(form);
+      const num = (k: string) => {
+        const v = String(f.get(k) ?? '').trim();
+        const n = Number(v);
+        return v && Number.isFinite(n) && n > 0 ? Math.round(n) : undefined;
+      };
+      const str = (k: string) => String(f.get(k) ?? '') || undefined;
+      const yesNo = (k: string) => (f.get(k) === 'yes' ? true : f.get(k) === 'no' ? false : undefined);
+      const band = str('ages') as keyof typeof ageBands | undefined;
+      return {
+        students: num('students'),
+        ages: band ? { min: ageBands[band].min, max: ageBands[band].max } : undefined,
+        experience: str('experience') as ExperienceId | undefined,
+        minutesPerSession: num('minutes'),
+        sessions: num('sessions'),
+        materials: f.getAll('materials') as MaterialId[],
+        tools: f.getAll('tools') as ToolId[],
+        noSharpTools: f.get('noSharp') === '1',
+        surfaces: f.getAll('surfaces') as SurfaceId[],
+        sink: yesNo('sink'),
+        tableSpace: str('tableSpace') as TableSpaceId | undefined,
+        maxMess: str('maxMess') as MessId | undefined,
+        ventilation: yesNo('ventilation'),
+      };
+    }
+
+    function head(r: MatchResult) {
+      const l = r.lesson;
+      const demo = l.demo ? ' <span class="demo-flag">Demo</span>' : '';
+      const parent = l.parent && titles.has(l.parent)
+        ? `<p class="meta">Variation of <a href="${url(l.parent)}">${esc(titles.get(l.parent)!)}</a></p>` : '';
+      const tech = techniques[l.technique as keyof typeof techniques]?.label ?? l.technique;
+      return `<h3><a href="${url(l.slug)}">${esc(l.title)}</a>${demo}</h3>
+        <p class="meta">${esc(tech)} · ages ${l.ages.min}${l.ages.max >= 99 ? '+' : `–${l.ages.max}`} · ${l.time.sessions} × ${l.time.minutesPerSession} min</p>
+        ${parent}<p>${esc(l.summary)}</p>`;
+    }
+
+    function card(r: MatchResult) {
+      let extra = '';
+      if (r.fit === 'adaptable') {
+        extra = '<ul>' + r.adaptations.map((a) => {
+          const v = a.variation && titles.has(a.variation)
+            ? ` <a href="${url(a.variation)}">See ${esc(titles.get(a.variation)!)}.</a>` : '';
+          return `<li><strong>${esc(describeTrigger(a.trigger))}:</strong> ${esc(a.change)}${v}</li>`;
+        }).join('') + '</ul>';
+      } else if (r.fit === 'none') {
+        extra = '<ul>' + r.gaps.filter((g) => !g.covered).map((g) => `<li>${esc(g.reason)}</li>`).join('') + '</ul>';
+      }
+      return `<div class="card">${head(r)}${extra}</div>`;
+    }
+
+    function render() {
+      const res = search(lessons, readForm());
+      const section = (cls: string, title: string, note: string, items: MatchResult[]) =>
+        `<section><h2 class="${cls}">${title} <span class="count">${items.length}</span></h2>
+         ${items.length ? `<p class="muted">${note}</p>` + items.map(card).join('') : '<p class="muted">None yet.</p>'}</section>`;
+      out.innerHTML =
+        section('tag-strong', 'Fits your classroom', 'These lessons work with everything you told us.', res.strong) +
+        section('tag-adapt', 'Works with a change', 'Each of these needs the approved change listed under it.', res.adaptable) +
+        (res.none.length
+          ? `<section class="no-print"><details><summary>Doesn't fit (${res.none.length})</summary>${res.none.map(card).join('')}</details></section>`
+          : '');
+    }
+
+    // Fill the form from the address bar, or from what the home page saved.
+    function restore() {
+      let q = location.search.slice(1);
+      if (!q) { try { q = sessionStorage.getItem('tp-finder') ?? ''; } catch {} }
+      if (!q) return;
+      const params = new URLSearchParams(q);
+      for (const el of Array.from(form.elements) as (HTMLInputElement | HTMLSelectElement)[]) {
+        if (!el.name) continue;
+        const values = params.getAll(el.name);
+        if (el instanceof HTMLInputElement && el.type === 'checkbox') el.checked = values.includes(el.value);
+        else if (values.length) el.value = values[0];
+      }
+      // Open the materials section if anything in it was chosen.
+      if (params.has('materials') || params.has('tools') || params.has('surfaces') || params.has('noSharp'))
+        (form.querySelector('details') as HTMLDetailsElement | null)?.setAttribute('open', '');
+    }
+    function remember() {
+      const q = new URLSearchParams(new FormData(form) as unknown as Record<string, string>);
+      for (const [k, v] of Array.from(q.entries())) if (!v) q.delete(k);
+      try { history.replaceState(null, '', q.toString() ? '?' + q.toString() : location.pathname); } catch {}
+      try { sessionStorage.setItem('tp-finder', q.toString()); } catch {}
+    }
+    const update = () => { render(); remember(); };
+    form.addEventListener('input', update);
+    form.addEventListener('change', update);
+    form.addEventListener('reset', () => setTimeout(update, 0));
+    form.addEventListener('submit', (e) => e.preventDefault());
+    restore();
+    render();
+  </script>
+</Base>
