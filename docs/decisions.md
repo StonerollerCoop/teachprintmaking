@@ -45,3 +45,12 @@ The search form asks for a grade band (for example, grades 9 to 12, which starts
 - Video: YouTube videos may be embedded with full credit to the creator.
 
 Open question: the current vocabulary has separate families for monotype, collagraph, transfer, and experimental work. These need to be placed within the four families or kept as cross-family techniques.
+
+## 2026-10-12: Mission, money, and contributor credit
+
+- The site is noncommercial. Its only income will be donations toward server costs. Its purpose is to promote printmaking in all its forms for all ages while building a searchable database of lessons.
+- Because the site is noncommercial, sources under NonCommercial licenses (CC BY-NC, CC BY-NC-SA) may be used, with attribution.
+- We never take anyone's lesson. When contemporary lessons turn up that aren't openly licensed, they go on an outreach list so Libby can ask the creator for permission to feature them.
+- The outreach list holds names and contact details, so it must stay private and out of this repository, which is public.
+- The submission form must ask how contributors want to be credited and where the material came from (their own original work, or adapted from a named source). Libby's own original lessons must carry her credit.
+- Open sources may also be used as reference for illustrations drawn for the site, such as process diagrams. Illustrations should not copy a protected work.
