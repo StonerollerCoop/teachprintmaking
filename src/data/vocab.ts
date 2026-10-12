@@ -27,6 +27,7 @@ export const techniques = {
   collagraph: { label: 'Collagraph', family: 'collagraph' },
   'trace-monotype': { label: 'Trace monotype', family: 'monotype' },
   'gel-plate-monoprint': { label: 'Gel plate monoprint', family: 'monotype' },
+  monoprint: { label: 'Monoprint', family: 'monotype' },
   'stencil-print': { label: 'Stencil printing', family: 'stencil' },
   screenprint: { label: 'Screenprint', family: 'stencil' },
 } as const;
@@ -58,6 +59,8 @@ export const materials = {
   'leaves': { label: 'Fresh, flat leaves', assumed: false },
   sponges: { label: 'Sponges or foam daubers', assumed: false },
   'blank-totes': { label: 'Blank cotton tote bags or fabric', assumed: false },
+  'tissue-paper': { label: 'Colored tissue paper', assumed: false },
+  'cotton-swabs': { label: 'Cotton swabs', assumed: false },
 } as const;
 
 export const tools = {
