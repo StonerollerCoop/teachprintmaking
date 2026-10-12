@@ -20,6 +20,27 @@ export interface Source {
   url: string;
 }
 
+/** A public-domain artwork shown with an entry, served by the museum. */
+export interface TimelineImage {
+  src: string;
+  link: string;
+  title: string;
+  artist: string;
+  date: string;
+  medium: string;
+  credit: string;
+}
+
+const aic = (id: number, imageId: string, title: string, artist: string, date: string, medium: string): TimelineImage => ({
+  src: `https://www.artic.edu/iiif/2/${imageId}/full/843,/0/default.jpg`,
+  link: `https://www.artic.edu/artworks/${id}`,
+  title,
+  artist,
+  date,
+  medium,
+  credit: 'Art Institute of Chicago, public domain (CC0)',
+});
+
 export interface TimelineEntry {
   id: string;
   year: number;
@@ -30,6 +51,7 @@ export interface TimelineEntry {
   text: string;
   /** Slugs of lessons on this site that let students try the idea. */
   tryIt?: string[];
+  image?: TimelineImage;
   sources: Source[];
 }
 
@@ -171,6 +193,7 @@ export const timeline: TimelineEntry[] = [
     place: 'Germany',
     category: 'intaglio',
     text: 'Goldsmiths, who already cut lines into metal, began inking engraved plates and pressing paper into the grooves. In intaglio the ink sits below the surface, which is the opposite of relief, and the paper has to be forced down to reach it.',
+    image: aic(3687, '754066c0-cda2-d591-5dc7-a8c6ed97f0e5', 'St. George Killing the Dragon', 'Master B with Two Crossed Daggers', '15th century', 'Engraving'),
     sources: [{ title: 'Wikipedia: Old master print', url: 'https://en.wikipedia.org/wiki/Old_master_print' }],
   },
   {
@@ -191,6 +214,7 @@ export const timeline: TimelineEntry[] = [
     place: 'Nuremberg',
     category: 'relief',
     text: 'Albrecht Dürer published a series of large woodcuts of the Book of Revelation, including the Four Horsemen. He showed that a woodcut could be as ambitious as a painting, and he went on to master engraving and early etching as well.',
+    image: aic(55330, '5d017b13-70a8-7b6a-1c2c-ef69d0f7dbb2', 'The Four Horsemen of the Apocalypse, from The Apocalypse', 'Albrecht Dürer', 'c. 1497/98', 'Woodcut'),
     sources: [{ title: 'Wikipedia: Apocalypse (Dürer)', url: 'https://en.wikipedia.org/wiki/Apocalypse_(D%C3%BCrer)' }],
   },
   {
@@ -201,6 +225,7 @@ export const timeline: TimelineEntry[] = [
     place: 'Augsburg, Germany',
     category: 'intaglio',
     text: 'Armorers already used acid to decorate steel. Daniel Hopfer, an Augsburg armor decorator, is widely believed to have been among the first to print from an etched plate; the earliest dated etchings come from the 1510s. Etching let artists draw freely through a waxy ground instead of carving each line with a burin.',
+    image: aic(4181, 'f3fd468e-5d90-d8d1-55a7-e7c98b06ada2', 'The Church Enthroned', 'Daniel Hopfer', '1490/1536', 'Etching'),
     sources: [{ title: 'Wikipedia: Daniel Hopfer', url: 'https://en.wikipedia.org/wiki/Daniel_Hopfer' }],
   },
   {
@@ -221,6 +246,7 @@ export const timeline: TimelineEntry[] = [
     place: 'Amsterdam',
     category: 'intaglio',
     text: 'Ludwig von Siegen made a portrait by roughening a plate into tiny pits that hold ink, then smoothing areas to bring up the lights. It was the first printmaking method built for soft tones instead of lines.',
+    image: aic(62, '8317e653-b0eb-3ba3-1886-3141db56f529', 'Head of Executioner, from John Evelyn’s Sculptura', 'Richard Houston, after Prince Rupert of the Rhine', '1755', 'Mezzotint'),
     sources: [{ title: 'Wikipedia: Mezzotint', url: 'https://en.wikipedia.org/wiki/Mezzotint' }],
   },
   {
@@ -232,6 +258,7 @@ export const timeline: TimelineEntry[] = [
     category: 'planographic',
     text: 'Giovanni Benedetto Castiglione painted or wiped ink on a smooth copper plate and printed it once. Every monotype is a single image that can never be repeated exactly, and the same idea powers gel plate printing in classrooms now.',
     tryIt: ['insect-monoprints', 'gel-plate-leaf-monoprints'],
+    image: aic(105073, '413a9edf-ee27-ee07-5b51-88712143cb89', 'The Creation of Adam', 'Giovanni Benedetto Castiglione', 'c. 1645/50', 'Monotype in black ink'),
     sources: [{ title: 'Wikipedia: Monotyping', url: 'https://en.wikipedia.org/wiki/Monotyping' }],
   },
   {
@@ -242,6 +269,7 @@ export const timeline: TimelineEntry[] = [
     place: 'Amsterdam',
     category: 'intaglio',
     text: 'Rembrandt combined drypoint and etching and kept reworking the same plate, printing it in several very different states. He also varied how much ink he left on the plate surface, so no two impressions look quite alike.',
+    image: aic(80077, '72238441-3c93-f0f9-3ab3-f290dc60f256', 'Christ Crucified between the Two Thieves: “The Three Crosses”', 'Rembrandt van Rijn', '1653', 'Drypoint and burin'),
     sources: [{ title: 'Wikipedia: The Three Crosses', url: 'https://en.wikipedia.org/wiki/The_Three_Crosses' }],
   },
   {
@@ -262,6 +290,7 @@ export const timeline: TimelineEntry[] = [
     place: 'France',
     category: 'intaglio',
     text: 'Jean-Baptiste Le Prince developed a way to etch tone by fusing a fine dust of rosin to the plate. Francisco Goya later used it for the dark, smoky passages in his print series.',
+    image: aic(44617, '3adea549-8221-9e65-9802-55b7135a7d3a', 'Francisco de Goya y Lucientes, Painter, plate one from Los Caprichos', 'Francisco de Goya', '1797/99', 'Etching and aquatint'),
     sources: [{ title: 'Wikipedia: Aquatint', url: 'https://en.wikipedia.org/wiki/Aquatint' }],
   },
   {
@@ -292,6 +321,7 @@ export const timeline: TimelineEntry[] = [
     place: 'Newcastle, England',
     category: 'relief',
     text: 'Thomas Bewick cut into the hard end grain of boxwood with engraving tools, getting fine detail from a relief block. His History of British Birds was a forerunner of modern field guides and made wood engraving the standard way to illustrate books for the next century.',
+    image: aic(20141, 'eeec471f-0537-7d82-05ae-b959f836008a', 'The Night-Jar', 'Thomas Bewick', 'n.d.', 'Wood engraving'),
     sources: [{ title: 'Wikipedia: Thomas Bewick', url: 'https://en.wikipedia.org/wiki/Thomas_Bewick' }],
   },
   {
@@ -313,6 +343,7 @@ export const timeline: TimelineEntry[] = [
     category: 'relief',
     text: 'Katsushika Hokusai’s Under the Wave off Kanagawa was printed from multiple carved woodblocks, one for each color, by a team of designer, carver, printer, and publisher. It used imported Prussian blue pigment, and it became one of the most reproduced images in the world.',
     tryIt: ['foam-relief-landscapes'],
+    image: aic(24645, 'b3974542-b9b4-7568-fc4b-966738f61d78', 'Under the Wave off Kanagawa (The Great Wave)', 'Katsushika Hokusai', '1830/33', 'Color woodblock print'),
     sources: [{ title: 'Wikipedia: The Great Wave off Kanagawa', url: 'https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa' }],
   },
   {
@@ -354,6 +385,7 @@ export const timeline: TimelineEntry[] = [
     place: 'Mexico City',
     category: 'relief',
     text: 'José Guadalupe Posada cut thousands of images on metal and wood for cheap broadsides, including the skeletal calaveras that became part of the visual language of Día de Muertos. His work showed later Mexican printmakers how prints could speak to everyone.',
+    image: aic(11052, 'a1712a1f-44bf-9dd2-d482-895e7d0f1260', '¡Terrible y verdadera noticia! (Terrible and Real News!)', 'José Guadalupe Posada', '1910', 'Relief print'),
     sources: [{ title: 'Wikipedia: José Guadalupe Posada', url: 'https://en.wikipedia.org/wiki/Jos%C3%A9_Guadalupe_Posada' }],
   },
   {
@@ -364,6 +396,7 @@ export const timeline: TimelineEntry[] = [
     place: 'Paris',
     category: 'planographic',
     text: 'Henri de Toulouse-Lautrec’s poster for the Moulin Rouge used flat areas of color and bold outlines, printed from stones in several colors. Posters turned the street into a gallery and lithography into an artist’s medium.',
+    image: aic(82287, '1d82da66-d99e-f4f6-d5fc-56b22b6678ba', 'Moulin Rouge, La Goulue', 'Henri de Toulouse-Lautrec', '1891', 'Color lithograph'),
     sources: [{ title: 'Wikipedia: Henri de Toulouse-Lautrec', url: 'https://en.wikipedia.org/wiki/Henri_de_Toulouse-Lautrec' }],
   },
   {
