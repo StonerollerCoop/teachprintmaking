@@ -75,3 +75,12 @@ Open question: the current vocabulary has separate families for monotype, collag
 - The home page is a welcome. It keeps the lesson form, but results appear on a separate Find page (/find/), which reads the form from the address bar or from what the home page saved.
 - Five pages explain the parts every print shares: substrate, plate or stencil, ink or paint, edition, and press or means of transfer. They link to lessons and timeline entries and are written as Markdown files in src/content/parts so they can be edited like lessons.
 - Pacific barkcloth traditions are in the timeline: Fijian leaf stencils on masi, Tongan ngatu rubbed over kupesi, and Tahitian bamboo stamps.
+
+## 2026-10-12: A first real visual direction
+
+- Type: Libre Caslon (after William Caslon’s types, which set the look of early American printing) for headings and reading text, and Archivo, a grotesque in the spirit of nineteenth-century wood type, for the interface. Fonts are bundled with the site rather than loaded from Google.
+- Color: printing inks on printmaking paper. Prussian blue leads; a warm relief red and an ochre are used sparingly; black ink carries the text.
+- The home page title prints in two colors slightly out of register, the one decorative flourish on the site.
+- The lesson form reads as a sentence a teacher fills in, with materials and tools as grouped chips underneath.
+- The four types on the home page list the processes people actually know them by.
+- All of this is a starting point for Libby to shape.

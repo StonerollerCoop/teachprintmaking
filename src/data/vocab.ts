@@ -26,6 +26,14 @@ export const familyBlurbs: Record<keyof typeof families, string> = {
   stencil: 'Ink passes through openings in a stencil or screen. Whatever blocks it stays blank.',
 };
 
+/** The processes people actually know each family by, for the home page. */
+export const familyProcesses: Record<keyof typeof families, string[]> = {
+  relief: ['Woodcut', 'Linocut', 'Wood engraving', 'Letterpress', 'Foam and potato prints', 'Rubber stamps', 'Collagraph'],
+  intaglio: ['Etching', 'Drypoint', 'Engraving', 'Aquatint', 'Mezzotint', 'Juice-box drypoint'],
+  planographic: ['Lithography', 'Monotype', 'Monoprint', 'Gel plate printing', 'Offset printing'],
+  stencil: ['Screenprinting', 'Silkscreen', 'Paper and leaf stencils', 'Pochoir', 'Risograph', 'Spray stencils'],
+};
+
 export const techniques = {
   linocut: { label: 'Linocut', family: 'relief' },
   'soft-cut': { label: 'Soft-cut block relief', family: 'relief' },

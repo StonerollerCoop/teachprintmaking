@@ -1,107 +1,172 @@
 ---
 /**
- * The classroom form, shared by the home page (which sends you to the Find
- * page) and the Find page (which updates results as you change it).
+ * The classroom form, written as a sentence a teacher fills in. Shared by the
+ * home page (which sends you to the Find page) and the Find page (which
+ * updates results as you change it). Field names are the contract with
+ * src/pages/find.astro; change them together.
  */
-import { materials, tools, surfaces, experienceLevels, ageBands, tableSpace, messLevels } from '../data/vocab';
+import { materials, tools, surfaces, type MaterialId, type ToolId } from '../data/vocab';
 
 interface Props {
   variant: 'home' | 'find';
 }
 const { variant } = Astro.props;
-const asked = (Object.keys(materials) as (keyof typeof materials)[]).filter((m) => !materials[m].assumed);
-const assumed = (Object.keys(materials) as (keyof typeof materials)[]).filter((m) => materials[m].assumed);
+
+const materialGroups: { label: string; items: MaterialId[] }[] = [
+  { label: 'Inks and paints', items: ['water-block-ink', 'oil-block-ink', 'intaglio-ink', 'fabric-ink', 'tempera', 'acrylic'] },
+  { label: 'Plates and blocks', items: ['foam-sheets', 'linoleum', 'soft-cut-block', 'gel-plate', 'acetate-plate', 'cardboard'] },
+  { label: 'Paper and cloth', items: ['print-paper', 'cardstock', 'tissue-paper', 'blank-totes'] },
+  { label: 'Found and extra', items: ['texture-scraps', 'leaves', 'sponges', 'cotton-swabs'] },
+];
+const toolGroups: { label: string; items: ToolId[] }[] = [
+  { label: 'Inking and pressing', items: ['brayer', 'inking-slab', 'barren', 'press'] },
+  { label: 'Cutting and carving', items: ['carving-tools', 'bench-hook', 'scissors', 'craft-knife', 'etching-needle'] },
+  { label: 'Screens, setup, and drying', items: ['screen-squeegee', 'registration-jig', 'drying-rack', 'soaking-tray'] },
+];
+const assumed = (Object.keys(materials) as MaterialId[]).filter((m) => materials[m].assumed);
+const short: Partial<Record<string, string>> = {
+  'water-block-ink': 'Water-based block ink',
+  'oil-block-ink': 'Oil-based relief ink',
+  'intaglio-ink': 'Intaglio ink',
+  'fabric-ink': 'Fabric screen ink',
+  'foam-sheets': 'Foam sheets or trays',
+  'soft-cut-block': 'Soft-cut blocks',
+  'acetate-plate': 'Acetate or plexiglass',
+  cardboard: 'Chipboard or cereal boxes',
+  'print-paper': 'Printmaking paper',
+  cardstock: 'Cardstock',
+  'blank-totes': 'Totes or fabric',
+  'texture-scraps': 'Texture scraps',
+  'carving-tools': 'Carving gouges',
+  'etching-needle': 'Etching needles',
+  'screen-squeegee': 'Screens and squeegees',
+  'registration-jig': 'Registration jig',
+  'soaking-tray': 'Paper-soaking tray',
+  barren: 'Baren or spoon',
+  brayer: 'Brayers',
+  'inking-slab': 'Inking slabs',
+  press: 'A printing press',
+};
+const label = (id: string, fallback: string) => short[id] ?? fallback;
 ---
 
 <form id="finder" class={`finder-form ${variant}`} action="/find/" method="get" autocomplete="off">
-  <div class="ff-basics">
-    <fieldset>
-      <legend>Your class</legend>
-      <label for="ff-students">How many students
-        <input id="ff-students" type="number" name="students" min="1" max="200" inputmode="numeric" placeholder="e.g. 24" />
-      </label>
-      <label for="ff-ages">Ages
-        <select id="ff-ages" name="ages">
-          <option value="">Any age</option>
-          {Object.entries(ageBands).map(([id, b]) => <option value={id}>{b.label}</option>)}
-        </select>
-      </label>
-      <label for="ff-exp">Experience
-        <select id="ff-exp" name="experience">
-          <option value="">Any experience</option>
-          {Object.entries(experienceLevels).map(([id, l]) => <option value={id}>{l}</option>)}
-        </select>
-      </label>
-    </fieldset>
-
-    <fieldset>
-      <legend>Your time</legend>
-      <label for="ff-minutes">Minutes per session
-        <input id="ff-minutes" type="number" name="minutes" min="10" max="600" step="5" inputmode="numeric" placeholder="e.g. 45" />
-      </label>
-      <label for="ff-sessions">Number of sessions
-        <input id="ff-sessions" type="number" name="sessions" min="1" max="30" inputmode="numeric" placeholder="e.g. 2" />
-      </label>
-    </fieldset>
-
-    <fieldset>
-      <legend>Your room</legend>
-      <label for="ff-sink">A sink in the room
-        <select id="ff-sink" name="sink"><option value="">Doesn't matter</option><option value="yes">Yes</option><option value="no">No</option></select>
-      </label>
-      <label for="ff-table">Table space
-        <select id="ff-table" name="tableSpace">
-          <option value="">Any</option>
-          {Object.entries(tableSpace).map(([id, l]) => <option value={id}>{l}</option>)}
-        </select>
-      </label>
-      <label for="ff-mess">Most mess you can handle
-        <select id="ff-mess" name="maxMess">
-          <option value="">Any</option>
-          {Object.entries(messLevels).map(([id, l]) => <option value={id}>{l}</option>)}
-        </select>
-      </label>
-      <label for="ff-vent">Good ventilation
-        <select id="ff-vent" name="ventilation"><option value="">Doesn't matter</option><option value="yes">Yes</option><option value="no">No</option></select>
-      </label>
-    </fieldset>
-  </div>
+  <p class="ff-sentence">
+    I'm teaching
+    <label class="ff-blank num"><span class="vh">Number of students</span><input type="number" name="students" min="1" max="200" inputmode="numeric" placeholder="how many" /></label>
+    students
+    <label class="ff-blank"><span class="vh">Ages</span>
+      <select name="ages">
+        <option value="">of any age</option>
+        <option value="prek">in pre-K</option>
+        <option value="k2">in grades K to 2</option>
+        <option value="g35">in grades 3 to 5</option>
+        <option value="g68">in grades 6 to 8</option>
+        <option value="g912">in grades 9 to 12</option>
+        <option value="adult">in college or adult classes</option>
+      </select>
+    </label>
+    who are
+    <label class="ff-blank"><span class="vh">Experience</span>
+      <select name="experience">
+        <option value="">at any level</option>
+        <option value="first">printing for the first time</option>
+        <option value="beginner">beginners</option>
+        <option value="intermediate">intermediate</option>
+        <option value="advanced">advanced</option>
+      </select>
+    </label>.
+  </p>
+  <p class="ff-sentence">
+    We have
+    <label class="ff-blank num"><span class="vh">Minutes per session</span><input type="number" name="minutes" min="10" max="600" step="5" inputmode="numeric" placeholder="how many" /></label>
+    minutes a session, for
+    <label class="ff-blank num"><span class="vh">Number of sessions</span><input type="number" name="sessions" min="1" max="30" inputmode="numeric" placeholder="how many" /></label>
+    sessions.
+  </p>
+  <p class="ff-sentence">
+    Our room
+    <label class="ff-blank"><span class="vh">Sink</span>
+      <select name="sink">
+        <option value="">may or may not have a sink</option>
+        <option value="yes">has a sink</option>
+        <option value="no">has no sink</option>
+      </select>
+    </label>
+    and
+    <label class="ff-blank"><span class="vh">Table space</span>
+      <select name="tableSpace">
+        <option value="">any amount of table space</option>
+        <option value="tight">only desks, tightly packed</option>
+        <option value="standard">ordinary classroom tables</option>
+        <option value="roomy">roomy studio tables</option>
+      </select>
+    </label>, and we can handle
+    <label class="ff-blank"><span class="vh">Mess</span>
+      <select name="maxMess">
+        <option value="">any amount of mess</option>
+        <option value="low">only a little mess</option>
+        <option value="medium">a fair amount of mess</option>
+        <option value="high">a big mess</option>
+      </select>
+    </label>.
+    <label class="ff-blank"><span class="vh">Ventilation</span>
+      <select name="ventilation">
+        <option value="">Ventilation isn't a concern.</option>
+        <option value="yes">The room is well ventilated.</option>
+        <option value="no">The room has poor ventilation.</option>
+      </select>
+    </label>
+  </p>
 
   <details class="ff-more">
-    <summary>What you have to print with <span class="muted">(optional)</span></summary>
+    <summary>
+      <span class="ff-more-title">What do you have to print with?</span>
+      <span class="ff-more-note">Optional. Once you choose anything here, we'll treat what you didn't choose as something you don't have.</span>
+    </summary>
     <div class="ff-more-body">
-      <fieldset class="ff-checks">
-        <legend>Materials</legend>
-        <p class="hint">We assume every room has {assumed.map((m) => materials[m].label.toLowerCase()).join(', ')}.</p>
-        <div class="ff-cols">
-          {asked.map((m) => (
-            <label><input type="checkbox" name="materials" value={m} /> {materials[m].label}</label>
-          ))}
-        </div>
-      </fieldset>
-      <fieldset class="ff-checks">
-        <legend>Tools</legend>
-        <div class="ff-cols">
-          {Object.entries(tools).map(([id, t]) => (
-            <label><input type="checkbox" name="tools" value={id} /> {t.label}</label>
-          ))}
-        </div>
-        <label class="ff-nosharp"><input type="checkbox" name="noSharp" value="1" /> No sharp tools with this group, whatever we own</label>
-      </fieldset>
-      <fieldset class="ff-checks">
-        <legend>You can print on</legend>
-        <div class="ff-cols">
+      <p class="hint">We assume every room has {assumed.map((m) => materials[m].label.toLowerCase()).join(', ')}.</p>
+      {materialGroups.map((g) => (
+        <fieldset class="ff-group">
+          <legend>{g.label}</legend>
+          <div class="ff-chips">
+            {g.items.map((m) => (
+              <label class="ff-chip"><input type="checkbox" name="materials" value={m} /><span>{label(m, materials[m].label)}</span></label>
+            ))}
+          </div>
+        </fieldset>
+      ))}
+      {toolGroups.map((g) => (
+        <fieldset class="ff-group">
+          <legend>{g.label}</legend>
+          <div class="ff-chips">
+            {g.items.map((t) => (
+              <label class="ff-chip"><input type="checkbox" name="tools" value={t} /><span>{label(t, tools[t].label)}</span></label>
+            ))}
+          </div>
+        </fieldset>
+      ))}
+      <fieldset class="ff-group">
+        <legend>We can print on</legend>
+        <div class="ff-chips">
           {Object.entries(surfaces).map(([id, l]) => (
-            <label><input type="checkbox" name="surfaces" value={id} /> {l}</label>
+            <label class="ff-chip"><input type="checkbox" name="surfaces" value={id} /><span>{l}</span></label>
           ))}
         </div>
       </fieldset>
+      <label class="ff-switch">
+        <input type="checkbox" name="noSharp" value="1" />
+        <span class="ff-switch-track" aria-hidden="true"></span>
+        <span>No sharp tools with this group, whatever we own</span>
+      </label>
     </div>
   </details>
 
   <div class="ff-actions">
-    {variant === 'home' ? <button type="submit">Find lessons</button> : <button type="reset" class="secondary">Clear everything</button>}
-    <span class="hint">Leave anything blank and it won't be used to narrow the list.</span>
+    {variant === 'home'
+      ? <button type="submit">Find lessons</button>
+      : <button type="reset" class="secondary">Start over</button>}
+    <span class="hint">Anything you leave as it is won't narrow the list.</span>
   </div>
 </form>
 
@@ -112,8 +177,36 @@ const assumed = (Object.keys(materials) as (keyof typeof materials)[]).filter((m
   if (form && form.classList.contains('home')) {
     form.addEventListener('submit', () => {
       try {
-        sessionStorage.setItem('tp-finder', new URLSearchParams(new FormData(form) as unknown as Record<string, string>).toString());
+        const q = new URLSearchParams(new FormData(form) as unknown as Record<string, string>);
+        for (const [k, v] of Array.from(q.entries())) if (!v) q.delete(k);
+        sessionStorage.setItem('tp-finder', q.toString());
       } catch {}
     });
   }
+  // Size each blank to its text so the sentence reads naturally. Measured with
+  // the blank's own font, so it works for any typeface and size.
+  const ruler = document.createElement('span');
+  ruler.setAttribute('aria-hidden', 'true');
+  ruler.style.cssText = 'position:absolute;visibility:hidden;white-space:pre;left:-9999px;top:0';
+  document.body.append(ruler);
+  const fit = (el: HTMLInputElement | HTMLSelectElement) => {
+    const text = el instanceof HTMLSelectElement ? el.options[el.selectedIndex]?.text ?? '' : el.value || el.placeholder;
+    const cs = getComputedStyle(el);
+    ruler.style.font = cs.font;
+    ruler.style.fontStyle = el instanceof HTMLInputElement && !el.value ? 'italic' : cs.fontStyle;
+    ruler.textContent = text;
+    const extra = el instanceof HTMLSelectElement ? 26 : 10;
+    el.style.width = Math.ceil(ruler.getBoundingClientRect().width + extra) + 'px';
+  };
+  const fitAll = () =>
+    document.querySelectorAll<HTMLInputElement | HTMLSelectElement>('.ff-blank input, .ff-blank select').forEach(fit);
+  document.querySelectorAll<HTMLInputElement | HTMLSelectElement>('.ff-blank input, .ff-blank select').forEach((el) => {
+    el.addEventListener('input', () => fit(el));
+    el.addEventListener('change', () => fit(el));
+  });
+  fitAll();
+  document.fonts?.ready.then(fitAll);
+  form?.addEventListener('reset', () => setTimeout(fitAll, 0));
+  document.addEventListener('tp-finder-restored', fitAll);
+  addEventListener('resize', fitAll);
 </script>

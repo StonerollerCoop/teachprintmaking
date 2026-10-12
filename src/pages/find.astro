@@ -9,7 +9,7 @@ const metas = (await allLessons()).map(toMeta);
 <Base title="Find a lesson" description="Printmaking lessons matched to your class and your room.">
   <h1>Lessons for your classroom</h1>
   <p class="lede">
-    Change anything on the left and the list updates. Lessons that fit come first, then lessons that work with a
+    Change anything in your description and the list updates. Lessons that fit come first, then lessons that work with a
     specific, tested change.
   </p>
 
@@ -90,12 +90,12 @@ const metas = (await allLessons()).map(toMeta);
 
     function render() {
       const res = search(lessons, readForm());
-      const section = (cls: string, title: string, note: string, items: MatchResult[]) =>
+      const section = (cls: string, title: string, note: string, items: MatchResult[], empty: string) =>
         `<section><h2 class="${cls}">${title} <span class="count">${items.length}</span></h2>
-         ${items.length ? `<p class="muted">${note}</p>` + items.map(card).join('') : '<p class="muted">None yet.</p>'}</section>`;
+         ${items.length ? `<p class="muted">${note}</p>` + items.map(card).join('') : `<p class="muted">${empty}</p>`}</section>`;
       out.innerHTML =
-        section('tag-strong', 'Fits your classroom', 'These lessons work with everything you told us.', res.strong) +
-        section('tag-adapt', 'Works with a change', 'Each of these needs the approved change listed under it.', res.adaptable) +
+        section('tag-strong', 'Fits your classroom', 'These lessons work with everything you told us.', res.strong, 'Nothing fits everything you described yet. Open “Doesn’t fit” below to see what each lesson is missing.') +
+        section('tag-adapt', 'Works with a change', 'Each of these needs the approved change listed under it.', res.adaptable, 'No tested changes cover what’s missing yet.') +
         (res.none.length
           ? `<section class="no-print"><details><summary>Doesn't fit (${res.none.length})</summary>${res.none.map(card).join('')}</details></section>`
           : '');
@@ -116,6 +116,7 @@ const metas = (await allLessons()).map(toMeta);
       // Open the materials section if anything in it was chosen.
       if (params.has('materials') || params.has('tools') || params.has('surfaces') || params.has('noSharp'))
         (form.querySelector('details') as HTMLDetailsElement | null)?.setAttribute('open', '');
+      document.dispatchEvent(new Event('tp-finder-restored'));
     }
     function remember() {
       const q = new URLSearchParams(new FormData(form) as unknown as Record<string, string>);

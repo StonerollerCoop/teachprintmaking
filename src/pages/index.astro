@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import { allLessons } from '../lib/lessons';
 import FamilyDiagram from '../components/FamilyDiagram.astro';
 import FinderForm from '../components/FinderForm.astro';
-import { families, familyBlurbs, techniques } from '../data/vocab';
+import { families, familyBlurbs, familyProcesses, techniques } from '../data/vocab';
 
 const entries = await allLessons();
 
@@ -26,7 +26,7 @@ const reasons = [
 
 <Base>
   <section class="intro">
-    <h1>Teach Printmaking</h1>
+    <h1>Teach Printmaking<span class="overprint" aria-hidden="true">Teach Printmaking</span></h1>
     <p class="lede">
       Printmaking lessons for art and design teachers at every level, from a first potato print to the college etching
       studio. Tell us what your classroom has and find lessons that fit.
@@ -40,6 +40,9 @@ const reasons = [
         <a class="type-card" href={`/lessons/#${f}`}>
           <FamilyDiagram family={f} />
           <h3>{families[f]}</h3>
+          <ul class="type-processes" aria-label={`${families[f]} processes`}>
+            {familyProcesses[f].map((p) => <li>{p}</li>)}
+          </ul>
           <p>{familyBlurbs[f]}</p>
           <span class="type-count">{familyCounts[f] === 1 ? '1 lesson' : `${familyCounts[f]} lessons`}</span>
         </a>
