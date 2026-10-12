@@ -34,3 +34,13 @@ The search form asks for a grade band (for example, grades 9 to 12, which starts
 
 - What license contributors grant when they submit a lesson.
 - How uploads handle photos of identifiable students.
+
+## 2026-10-12: Direction from Libby on organization and the opening page
+
+- Lessons are organized under the four families of printmaking: relief, intaglio, planographic, and stencil.
+- Alongside the families, the site celebrates everything around the process: all the things that can serve as a press, all the ways to make or find ink, and all the ways to make a plate.
+- The opening page is about the joy of printmaking. Libby's notes: printmaking is wonderful for teaching beginners through collaboration with materials, type, graphic space, composition, and color play. The print stands between the hand and the paper, which takes away the pressure drawing can carry. It also makes students pay attention to conditions such as how humid the air is that day and what paper they are using, which makes them more aware and more playful.
+- Libby will send interface notes before the opening page is redesigned.
+- Images: public domain and openly licensed photos are fine for now, from museum open access collections, Wikimedia Commons, Flickr, and Pexels, with attribution. Teacher photos should replace them over time.
+
+Open question: the current vocabulary has separate families for monotype, collagraph, transfer, and experimental work. These need to be placed within the four families or kept as cross-family techniques.
