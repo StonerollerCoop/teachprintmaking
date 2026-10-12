@@ -137,7 +137,7 @@ const sinkText = { required: 'Required', helpful: 'Helpful', none: 'Not needed' 
         {d.sources.map((s) => (
           <p>
             {{ 'adapted-from': 'Adapted from', 'based-on': 'Based on', reference: 'Reference:' }[s.relation]}{' '}
-            {s.url ? <a href={s.url}>{s.title}</a> : <em>{s.title}</em>} by {s.author},{' '}
+            {s.url ? <a href={s.url}>{s.title}</a> : s.library ? <a href={`/sources/#${s.library}`}><em>{s.title}</em></a> : <em>{s.title}</em>} by {s.author},{' '}
             {s.licenseUrl ? <a href={s.licenseUrl}>{s.license}</a> : s.license}.
           </p>
         ))}

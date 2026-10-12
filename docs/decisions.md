@@ -92,3 +92,9 @@ Open question: the current vocabulary has separate families for monotype, collag
 - Citing does not grant permission to reproduce. A source's wording, photographs, diagrams, worksheets, and distinctive project designs still need an open license or the creator's permission. Short quotations used to discuss a source are the narrow exception.
 - In lesson files, use `relation: based-on` when a source shaped the lesson and `relation: reference` for further reading. Use `adapted-from` only when we have the right to adapt the source itself.
 - This opens up the intaglio gap: safer intaglio methods described in copyrighted manuals can be taught in our own words with credit to their originators.
+
+## 2026-10-12: The library and the Books page
+
+- Books and papers we draw on live in src/data/library.ts and appear on a public Books page (/sources/). Lessons point to them with `library:` in their sources, and the Books page lists which lessons draw on each.
+- The book files themselves are never committed to this repository. They stay private.
+- Where a source gives outdated safety advice, the library entry carries a safety note (Kafka recommends carbon tetrachloride; DeSherlia's leaf prints use a candle flame).

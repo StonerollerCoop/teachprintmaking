@@ -90,6 +90,8 @@ const lessons = defineCollection({
             url: z.url().optional(),
             license: z.string(),
             licenseUrl: z.url().optional(),
+            /** Id of the source in src/data/library.ts, when it's a book or paper we keep. */
+            library: z.string().optional(),
           }),
         )
         .default([]),

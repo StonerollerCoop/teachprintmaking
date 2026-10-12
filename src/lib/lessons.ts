@@ -1,5 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import type { LessonMeta } from './match';
+import { libraryById } from '../data/library';
 
 export type LessonEntry = CollectionEntry<'lessons'>;
 
@@ -17,6 +18,8 @@ export async function allLessons(): Promise<LessonEntry[]> {
   for (const e of entries) {
     if (e.data.parent && !ids.has(e.data.parent)) problems.push(`${e.id}: parent "${e.data.parent}" does not exist`);
     if (e.data.parent === e.id) problems.push(`${e.id}: a lesson cannot be its own parent`);
+    for (const s of e.data.sources)
+      if (s.library && !libraryById.has(s.library)) problems.push(`${e.id}: source points to unknown library entry "${s.library}"`);
     for (const a of e.data.adaptations)
       if (a.variation && !ids.has(a.variation)) problems.push(`${e.id}: adaptation points to missing variation "${a.variation}"`);
   }

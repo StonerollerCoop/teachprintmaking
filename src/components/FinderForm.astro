@@ -13,15 +13,15 @@ interface Props {
 const { variant } = Astro.props;
 
 const materialGroups: { label: string; items: MaterialId[] }[] = [
-  { label: 'Inks and paints', items: ['water-block-ink', 'oil-block-ink', 'intaglio-ink', 'fabric-ink', 'tempera', 'acrylic'] },
-  { label: 'Plates and blocks', items: ['foam-sheets', 'linoleum', 'soft-cut-block', 'gel-plate', 'acetate-plate', 'cardboard'] },
+  { label: 'Inks and paints', items: ['water-block-ink', 'oil-block-ink', 'intaglio-ink', 'fabric-ink', 'tempera', 'acrylic', 'watercolor', 'gum-arabic'] },
+  { label: 'Plates and blocks', items: ['foam-sheets', 'linoleum', 'soft-cut-block', 'gel-plate', 'gelatin-glycerin', 'acetate-plate', 'cardboard'] },
   { label: 'Paper and cloth', items: ['print-paper', 'cardstock', 'tissue-paper', 'blank-totes'] },
-  { label: 'Found and extra', items: ['texture-scraps', 'leaves', 'sponges', 'cotton-swabs'] },
+  { label: 'Found and extra', items: ['texture-scraps', 'leaves', 'produce', 'found-objects', 'string', 'tubes', 'fish', 'sponges', 'cotton-swabs'] },
 ];
 const toolGroups: { label: string; items: ToolId[] }[] = [
-  { label: 'Inking and pressing', items: ['brayer', 'inking-slab', 'barren', 'press'] },
+  { label: 'Inking and pressing', items: ['brayer', 'inking-slab', 'brushes', 'barren', 'press'] },
   { label: 'Cutting and carving', items: ['carving-tools', 'bench-hook', 'scissors', 'craft-knife', 'etching-needle'] },
-  { label: 'Screens, setup, and drying', items: ['screen-squeegee', 'registration-jig', 'drying-rack', 'soaking-tray'] },
+  { label: 'Screens, setup, and drying', items: ['screen-squeegee', 'registration-jig', 'drying-rack', 'soaking-tray', 'pans', 'kettle'] },
 ];
 const assumed = (Object.keys(materials) as MaterialId[]).filter((m) => materials[m].assumed);
 const short: Partial<Record<string, string>> = {
@@ -46,6 +46,17 @@ const short: Partial<Record<string, string>> = {
   brayer: 'Brayers',
   'inking-slab': 'Inking slabs',
   press: 'A printing press',
+  'gelatin-glycerin': 'Gelatin and glycerin',
+  produce: 'Fruits and vegetables',
+  'found-objects': 'Found objects',
+  string: 'String or yarn',
+  tubes: 'Cardboard tubes or cans',
+  fish: 'A whole fish',
+  watercolor: 'Watercolor',
+  'gum-arabic': 'Gum arabic',
+  pans: 'Baking pans',
+  kettle: 'Kettle or microwave',
+  brushes: 'Paintbrushes',
 };
 const label = (id: string, fallback: string) => short[id] ?? fallback;
 ---

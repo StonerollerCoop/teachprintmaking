@@ -40,6 +40,8 @@ export const techniques = {
   woodcut: { label: 'Woodcut', family: 'relief' },
   'foam-relief': { label: 'Foam relief', family: 'relief' },
   'reduction-relief': { label: 'Reduction relief', family: 'relief' },
+  'stamp-print': { label: 'Stamp and roller printing', family: 'relief' },
+  'nature-print': { label: 'Nature printing', family: 'relief' },
   drypoint: { label: 'Drypoint', family: 'intaglio' },
   collagraph: { label: 'Collagraph (relief-inked)', family: 'relief' },
   'trace-monotype': { label: 'Trace monotype', family: 'planographic' },
@@ -78,6 +80,14 @@ export const materials = {
   'blank-totes': { label: 'Blank cotton tote bags or fabric', assumed: false },
   'tissue-paper': { label: 'Colored tissue paper', assumed: false },
   'cotton-swabs': { label: 'Cotton swabs', assumed: false },
+  produce: { label: 'Fruits and vegetables to cut and print', assumed: false },
+  'found-objects': { label: 'Found objects (corks, spools, bottle caps, blocks)', assumed: false },
+  string: { label: 'String or yarn', assumed: false },
+  tubes: { label: 'Cardboard tubes or clean tin cans', assumed: false },
+  fish: { label: 'A whole fish, fresh or thawed', assumed: false },
+  'gelatin-glycerin': { label: 'Unflavored gelatin and glycerin', assumed: false },
+  watercolor: { label: 'Watercolor paints, crayons, or pencils', assumed: false },
+  'gum-arabic': { label: 'Gum arabic', assumed: false },
 } as const;
 
 export const tools = {
@@ -94,6 +104,9 @@ export const tools = {
   'registration-jig': { label: 'Registration jig or pins', sharp: false },
   'drying-rack': { label: 'Drying rack or line', sharp: false },
   'soaking-tray': { label: 'Tray for soaking paper', sharp: false },
+  brushes: { label: 'Paintbrushes', sharp: false },
+  pans: { label: 'Baking pans or trays to use as molds', sharp: false },
+  kettle: { label: 'Kettle or microwave for boiling water', sharp: false },
 } as const;
 
 export const surfaces = {

@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import { library } from '../data/library';
+import { allLessons, lessonUrl } from '../lib/lessons';
+
+const lessons = await allLessons();
+const usedBy = (id: string) => lessons.filter((l) => l.data.sources.some((s) => s.library === id));
+const familyName: Record<string, string> = { all: 'All four families', relief: 'Relief', intaglio: 'Intaglio', planographic: 'Planographic', stencil: 'Stencil' };
+const surname = (authors: string) => authors.split(' and ')[0].trim().split(' ').pop() ?? authors;
+const sorted = [...library].sort((a, b) => surname(a.authors).localeCompare(surname(b.authors)));
+---
+
+<Base title="Books we draw on" description="The books and papers behind Teach Printmaking's lessons, with what each is good for.">
+  <h1>Books we draw on</h1>
+  <p class="lede">
+    Every lesson here is written in our own words. These are the books and papers we learn from, credited on each lesson
+    that draws on them. They're worth finding for your own shelf or your school library.
+  </p>
+
+  <ol class="biblio">
+    {sorted.map((b) => {
+      const used = usedBy(b.id);
+      return (
+        <li class="biblio-item" id={b.id}>
+          <p class="biblio-cite">
+            {b.authors}. {b.url ? <a href={b.url}><cite>{b.title}</cite></a> : <cite>{b.title}</cite>}. {b.publisher}, {b.year}.
+            {b.isbn && <span class="muted"> ISBN {b.isbn}.</span>}
+          </p>
+          <p class="biblio-note">{b.note}</p>
+          <p class="biblio-meta">
+            <span>{b.families.map((f) => familyName[f]).join(', ')}</span>
+            <span>{b.level}</span>
+            <span>{b.rights}</span>
+          </p>
+          {b.caution && <p class="biblio-caution"><strong>A safety note:</strong> {b.caution}</p>}
+          {used.length > 0 && (
+            <p class="biblio-used">
+              Lessons that draw on it:{' '}
+              {used.map((l, i) => <>{i > 0 && ', '}<a href={lessonUrl(l.id)}>{l.data.title}</a></>)}
+            </p>
+          )}
+        </li>
+      );
+    })}
+  </ol>
+</Base>
