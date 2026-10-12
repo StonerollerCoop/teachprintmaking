@@ -61,3 +61,11 @@ Open question: the current vocabulary has separate families for monotype, collag
 - Libby's own original work is credited as "Libby Clarke."
 - Common practice needs no credit. When many teachers describe a lesson the same way (foam plate printing, potato prints, a basic gel plate pull), it's shared knowledge, and we write it up in our own words without tracing it to anyone. Techniques and procedures aren't owned. What is owned is a particular person's expression: their wording, photos, handouts, or a distinctive project of their own design. We never copy those, and when a lesson is clearly someone's own, it gets credit or goes on the outreach list.
 - The outreach list lives in a private Claude artifact, not in this repository.
+
+## 2026-10-12: The printed word, design teachers, the four types, and the home page
+
+- The site serves design teachers as well as printmaking and art teachers. Typography is a strand through everything: type as a print technology, and the impact of the printed word.
+- The history timeline has its own category for the printed word, alongside the four families and a category for paper, ink, and presses.
+- The site now uses exactly four families: relief, intaglio, planographic, and stencil. Monotype and monoprint sit under planographic because they print from a flat surface. Collagraph is filed by how it is inked; the current demo is relief-inked. This was a default chosen to match Libby's sketch and can be revisited.
+- The home page follows Libby's sketch of October 12: the title and a short introduction, a row of the four types, a "Why?" row of six reasons, then "Plan a lesson here" with the lesson finder.
+- The six "Why?" reasons are drafted from Libby's own notes and are hers to rewrite.

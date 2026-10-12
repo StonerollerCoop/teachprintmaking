@@ -6,16 +6,25 @@
  * The search form does not ask about them, which keeps it short.
  */
 
+/**
+ * The four families of printmaking. Each technique sits in the family that
+ * matches how it is inked and printed. Monotype and monoprint are printed
+ * from a flat surface, so they sit with planographic. A collagraph inked on
+ * its raised surface is relief; one wiped like an etching plate is intaglio.
+ */
 export const families = {
   relief: 'Relief',
   intaglio: 'Intaglio',
   planographic: 'Planographic',
-  stencil: 'Stencil and screen',
-  monotype: 'Monotype and monoprint',
-  collagraph: 'Collagraph',
-  transfer: 'Transfer processes',
-  experimental: 'Experimental and hybrid',
+  stencil: 'Stencil',
 } as const;
+
+export const familyBlurbs: Record<keyof typeof families, string> = {
+  relief: 'Ink sits on the raised surface. Everything cut or pressed away stays the color of the paper.',
+  intaglio: 'Ink sits down in lines scratched or etched into a plate, and pressure pulls it out onto damp paper.',
+  planographic: 'Ink sits on a flat surface, as in lithography and monotype. Nothing is cut at all.',
+  stencil: 'Ink passes through openings in a stencil or screen. Whatever blocks it stays blank.',
+};
 
 export const techniques = {
   linocut: { label: 'Linocut', family: 'relief' },
@@ -24,10 +33,10 @@ export const techniques = {
   'foam-relief': { label: 'Foam relief', family: 'relief' },
   'reduction-relief': { label: 'Reduction relief', family: 'relief' },
   drypoint: { label: 'Drypoint', family: 'intaglio' },
-  collagraph: { label: 'Collagraph', family: 'collagraph' },
-  'trace-monotype': { label: 'Trace monotype', family: 'monotype' },
-  'gel-plate-monoprint': { label: 'Gel plate monoprint', family: 'monotype' },
-  monoprint: { label: 'Monoprint', family: 'monotype' },
+  collagraph: { label: 'Collagraph (relief-inked)', family: 'relief' },
+  'trace-monotype': { label: 'Trace monotype', family: 'planographic' },
+  'gel-plate-monoprint': { label: 'Gel plate monoprint', family: 'planographic' },
+  monoprint: { label: 'Monoprint', family: 'planographic' },
   'stencil-print': { label: 'Stencil printing', family: 'stencil' },
   screenprint: { label: 'Screenprint', family: 'stencil' },
 } as const;

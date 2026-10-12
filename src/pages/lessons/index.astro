@@ -1,22 +1,23 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { allLessons, variationsOf, lessonUrl } from '../../lib/lessons';
-import { families, techniques } from '../../data/vocab';
+import { families, familyBlurbs, techniques } from '../../data/vocab';
 
 const entries = await allLessons();
 const parents = entries.filter((e) => !e.data.parent);
 const familyIds = Object.keys(families) as (keyof typeof families)[];
 const groups = familyIds
-  .map((f) => ({ id: f, label: families[f], lessons: parents.filter((e) => techniques[e.data.technique].family === f) }))
-  .filter((g) => g.lessons.length > 0);
+  .map((f) => ({ id: f, label: families[f], lessons: parents.filter((e) => techniques[e.data.technique].family === f) }));
 ---
 
 <Base title="All lessons">
   <h1>All lessons</h1>
   <p class="lede">{parents.length} lessons and {entries.length - parents.length} variations, grouped by printmaking family.</p>
   {groups.map((g) => (
-    <section class="family">
+    <section class="family" id={g.id}>
       <h2>{g.label}</h2>
+      <p class="muted">{familyBlurbs[g.id]}</p>
+      {g.lessons.length === 0 && <p>No lessons here yet.</p>}
       {g.lessons.map((e) => {
         const vars = variationsOf(entries, e.id);
         return (

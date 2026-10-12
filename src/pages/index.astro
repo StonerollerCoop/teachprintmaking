@@ -1,17 +1,68 @@
 ---
 import Base from '../layouts/Base.astro';
 import { allLessons, toMeta } from '../lib/lessons';
-import { materials, tools, surfaces, experienceLevels, ageBands, tableSpace, messLevels } from '../data/vocab';
+import FamilyDiagram from '../components/FamilyDiagram.astro';
+import { materials, tools, surfaces, experienceLevels, ageBands, tableSpace, messLevels, families, familyBlurbs, techniques } from '../data/vocab';
 
 const entries = await allLessons();
 const metas = entries.map(toMeta);
+
+const familyIds = Object.keys(families) as (keyof typeof families)[];
+const familyCounts = Object.fromEntries(
+  familyIds.map((f) => [f, entries.filter((e) => !e.data.parent && techniques[e.data.technique].family === f).length]),
+);
+
+// Draft wording from Libby's notes of October 12, 2026, for her to revise.
+const reasons = [
+  { title: 'A collaboration with materials', text: 'The block, the ink, and the paper all have a say. Students learn to work with what the materials do instead of forcing them.' },
+  { title: 'Freedom from drawing', text: 'The plate stands between the hand and the paper, which takes away the pressure drawing can carry for so many people.' },
+  { title: 'The printed word', text: 'Carving and setting letters by hand makes type physical. Students feel the baseline and the space between letters and lines.' },
+  { title: 'Graphic space and composition', text: 'Working in positive and negative shapes teaches how an image or a page is built.' },
+  { title: 'Color play', text: 'Overprinting, layering, and changing the ink between pulls turn color into an experiment instead of a decision.' },
+  { title: 'Paying attention', text: 'How humid the air is, which paper you chose, how much ink is on the roller: printmaking makes students notice, and noticing makes them playful.' },
+];
 
 const askedMaterials = (Object.keys(materials) as (keyof typeof materials)[]).filter((m) => !materials[m].assumed);
 const assumedMaterials = (Object.keys(materials) as (keyof typeof materials)[]).filter((m) => materials[m].assumed);
 ---
 
 <Base>
-  <h1>Find a printmaking lesson that fits your classroom</h1>
+  <section class="intro">
+    <h1>Teach Printmaking</h1>
+    <p class="lede">
+      Printmaking lessons for art and design teachers at every level, from a first potato print to the college etching
+      studio. Tell us what your classroom has and find lessons that fit.
+    </p>
+  </section>
+
+  <section class="types" aria-labelledby="types-h">
+    <h2 id="types-h">Types</h2>
+    <div class="type-grid">
+      {familyIds.map((f) => (
+        <a class="type-card" href={`/lessons/#${f}`}>
+          <FamilyDiagram family={f} />
+          <h3>{families[f]}</h3>
+          <p>{familyBlurbs[f]}</p>
+          <span class="type-count">{familyCounts[f] === 1 ? '1 lesson' : `${familyCounts[f]} lessons`}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="why" aria-labelledby="why-h">
+    <h2 id="why-h">Why?</h2>
+    <div class="why-grid">
+      {reasons.map((r) => (
+        <div class="why-item">
+          <h3>{r.title}</h3>
+          <p>{r.text}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="plan" aria-labelledby="plan-h">
+  <h2 id="plan-h">Plan a lesson here</h2>
   <p class="lede">
     Tell us what you're working with. Anything you leave blank won't be used to filter. Lessons that fit come first, then
     lessons that can work with a specific, approved change.
@@ -99,6 +150,8 @@ const assumedMaterials = (Object.keys(materials) as (keyof typeof materials)[]).
       <noscript><p>The lesson finder needs JavaScript. You can still <a href="/lessons/">browse all lessons</a>.</p></noscript>
     </div>
   </div>
+
+  </section>
 
   <script type="application/json" id="lesson-data" set:html={JSON.stringify(metas)} />
 

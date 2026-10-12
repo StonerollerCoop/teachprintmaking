@@ -1,0 +1,73 @@
+---
+/**
+ * Cross-section diagrams showing where the ink sits in each family.
+ * Drawn in the page's own colors so they work in light and dark themes.
+ * Paper (dashed line) is above the plate; ink is the solid dark color.
+ */
+interface Props {
+  family: 'relief' | 'intaglio' | 'planographic' | 'stencil';
+}
+const { family } = Astro.props;
+const titles = {
+  relief: 'Cross-section of a relief block: ink sits on the raised parts only.',
+  intaglio: 'Cross-section of an intaglio plate: ink sits down in the grooves and the surface is wiped clean.',
+  planographic: 'Cross-section of a flat plate: ink sits only on the drawn areas, with no cutting.',
+  stencil: 'Cross-section of a stencil: ink is pushed through the openings onto the paper below.',
+};
+---
+
+<svg class="family-diagram" viewBox="0 0 200 110" role="img" aria-label={titles[family]}>
+  <title>{titles[family]}</title>
+  {family === 'relief' && (
+    <g>
+      <line class="paper" x1="10" y1="22" x2="190" y2="22" />
+      <path class="plate" d="M10 100 V48 H40 V70 H62 V48 H100 V70 H118 V48 H150 V70 H168 V48 H190 V100 Z" />
+      <rect class="ink" x="10" y="42" width="30" height="6" />
+      <rect class="ink" x="62" y="42" width="38" height="6" />
+      <rect class="ink" x="118" y="42" width="32" height="6" />
+      <rect class="ink" x="168" y="42" width="22" height="6" />
+    </g>
+  )}
+  {family === 'intaglio' && (
+    <g>
+      <line class="paper" x1="10" y1="22" x2="190" y2="22" />
+      <path class="plate" d="M10 100 V48 H48 L54 64 L60 48 H96 L101 70 L106 48 H140 L145 60 L150 48 H190 V100 Z" />
+      <path class="ink" d="M48 48 L54 64 L60 48 Z" />
+      <path class="ink" d="M96 48 L101 70 L106 48 Z" />
+      <path class="ink" d="M140 48 L145 60 L150 48 Z" />
+    </g>
+  )}
+  {family === 'planographic' && (
+    <g>
+      <line class="paper" x1="10" y1="22" x2="190" y2="22" />
+      <rect class="plate" x="10" y="48" width="180" height="52" />
+      <rect class="ink" x="28" y="43" width="44" height="5" />
+      <rect class="ink" x="104" y="43" width="20" height="5" />
+      <rect class="ink" x="140" y="43" width="34" height="5" />
+      <rect class="water" x="72" y="45" width="32" height="3" />
+      <rect class="water" x="124" y="45" width="16" height="3" />
+    </g>
+  )}
+  {family === 'stencil' && (
+    <g>
+      <rect class="ink" x="20" y="10" width="160" height="7" />
+      <rect class="plate" x="10" y="24" width="50" height="8" />
+      <rect class="plate" x="86" y="24" width="38" height="8" />
+      <rect class="plate" x="150" y="24" width="40" height="8" />
+      <path class="arrow" d="M73 20 V60 M68 54 L73 62 L78 54" />
+      <path class="arrow" d="M137 20 V60 M132 54 L137 62 L142 54" />
+      <rect class="ink" x="60" y="80" width="26" height="6" />
+      <rect class="ink" x="124" y="80" width="26" height="6" />
+      <line class="paper" x1="10" y1="88" x2="190" y2="88" />
+    </g>
+  )}
+</svg>
+
+<style>
+  .family-diagram { width: 100%; height: auto; display: block; }
+  .plate { fill: var(--paper-2); stroke: var(--ink-soft); stroke-width: 1.5; }
+  .ink { fill: var(--ink); }
+  .water { fill: var(--accent); opacity: 0.35; }
+  .paper { stroke: var(--ink-soft); stroke-width: 2; stroke-dasharray: 6 4; }
+  .arrow { fill: none; stroke: var(--ink-soft); stroke-width: 1.5; }
+</style>

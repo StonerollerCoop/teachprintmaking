@@ -1,0 +1,118 @@
+---
+import Base from '../layouts/Base.astro';
+import { allLessons, lessonUrl } from '../lib/lessons';
+import { timeline, eras, categories, type Category, type TimelineEntry } from '../data/timeline';
+
+const lessons = await allLessons();
+const lessonTitles = new Map(lessons.map((l) => [l.id, l.data.title]));
+for (const e of timeline)
+  for (const slug of e.tryIt ?? [])
+    if (!lessonTitles.has(slug)) throw new Error(`Timeline entry ${e.id} links to missing lesson "${slug}"`);
+
+const sorted = [...timeline].sort((a, b) => a.year - b.year);
+const groups = eras
+  .map((era) => ({ ...era, entries: sorted.filter((e) => e.year >= era.from && e.year <= era.to) }))
+  .filter((g) => g.entries.length > 0);
+
+const fmt = (n: number) => n.toLocaleString('en-US');
+function gapLabel(prev: TimelineEntry | undefined, next: TimelineEntry): string | null {
+  if (!prev) return null;
+  const gap = next.year - prev.year;
+  if (gap < 1000) return null;
+  const rounded = gap >= 10000 ? Math.round(gap / 1000) * 1000 : Math.round(gap / 100) * 100;
+  return `About ${fmt(rounded)} years pass`;
+}
+const catIds = Object.keys(categories) as Category[];
+---
+
+<Base title="History" description="An interactive timeline of printmaking, from hand stencils on cave walls to the printed word and the present.">
+  <h1>A history of printmaking</h1>
+  <p class="lede">
+    People have been pressing, rolling, and stenciling images for at least 67,800 years. Follow the thread from a hand
+    on a cave wall to the type on this page, and filter by the kind of printing you teach.
+  </p>
+
+  <div class="tl-controls no-print">
+    <div class="tl-chips" role="group" aria-label="Show these kinds of printing">
+      {catIds.map((c) => (
+        <button type="button" class={`tl-chip cat-${c}`} aria-pressed="true" data-cat={c}>
+          <span class="tl-dot" style="background: var(--cat)"></span>{categories[c]}
+        </button>
+      ))}
+    </div>
+    <nav class="tl-eras" aria-label="Jump to a period">
+      {groups.map((g) => <a href={`#${g.id}`}>{g.label}</a>)}
+    </nav>
+  </div>
+
+  <div class="tl" id="timeline">
+    {groups.map((g) => (
+      <section aria-labelledby={`h-${g.id}`} data-era>
+        <div class="tl-era" id={g.id}><h2 id={`h-${g.id}`}>{g.label}</h2></div>
+        {g.entries.map((e) => {
+          const prev = sorted[sorted.indexOf(e) - 1];
+          const gap = gapLabel(prev, e);
+          return (
+            <>
+              {gap && <div class="tl-gap" data-gap>{gap}</div>}
+              <article class={`tl-entry cat-${e.category}`} data-cat={e.category} id={e.id}>
+                <div class="tl-when">{e.when}</div>
+                <h3>{e.title}</h3>
+                <p class="tl-place"><span>{e.place}</span><span class="tl-cat">{categories[e.category]}</span></p>
+                <p class="tl-text">{e.text}</p>
+                <div class="tl-extra">
+                  {(e.tryIt ?? []).length > 0 && (
+                    <span>
+                      Try it:{' '}
+                      {(e.tryIt ?? []).map((slug, i) => (
+                        <>{i > 0 && ', '}<a href={lessonUrl(slug)}>{lessonTitles.get(slug)}</a></>
+                      ))}
+                    </span>
+                  )}
+                  <span>
+                    Source{e.sources.length > 1 ? 's' : ''}:{' '}
+                    {e.sources.map((s, i) => (
+                      <>{i > 0 && '; '}<a href={s.url}>{s.title}</a></>
+                    ))}
+                  </span>
+                </div>
+              </article>
+            </>
+          );
+        })}
+      </section>
+    ))}
+  </div>
+  <p class="muted" id="tl-empty" hidden>Choose at least one kind of printing to see the timeline.</p>
+
+  <script>
+    const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.tl-chip'));
+    const entries = Array.from(document.querySelectorAll<HTMLElement>('.tl-entry'));
+    const eraSections = Array.from(document.querySelectorAll<HTMLElement>('[data-era]'));
+    const gaps = Array.from(document.querySelectorAll<HTMLElement>('[data-gap]'));
+    const empty = document.getElementById('tl-empty')!;
+
+    function apply() {
+      const on = new Set(chips.filter((c) => c.getAttribute('aria-pressed') === 'true').map((c) => c.dataset.cat));
+      const all = on.size === chips.length;
+      entries.forEach((e) => (e.hidden = !on.has(e.dataset.cat)));
+      // Gaps describe the full sequence, so only show them when nothing is filtered out.
+      gaps.forEach((g) => (g.hidden = !all));
+      eraSections.forEach((s) => (s.hidden = !s.querySelector('.tl-entry:not([hidden])')));
+      empty.hidden = on.size > 0;
+    }
+    chips.forEach((c) =>
+      c.addEventListener('click', () => {
+        c.setAttribute('aria-pressed', String(c.getAttribute('aria-pressed') !== 'true'));
+        apply();
+      }),
+    );
+    // Double-click a chip to show only that kind.
+    chips.forEach((c) =>
+      c.addEventListener('dblclick', () => {
+        chips.forEach((o) => o.setAttribute('aria-pressed', String(o === c)));
+        apply();
+      }),
+    );
+  </script>
+</Base>
