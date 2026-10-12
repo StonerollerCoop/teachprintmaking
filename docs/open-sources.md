@@ -93,7 +93,7 @@ Monotype and gel plate printing are where the open material is. Nothing open cov
 | Open Press Project ebook, above | Leaves, ribbon, string, foil, onion net, juice boxes, old CDs. | CC BY-NC-ND 4.0 | Link only |
 | [APH: Making a Monoprint](https://sites.aph.org/wp-content/uploads/2021/05/Making-a-Monoprint-Activity.pdf) | Packaging foam plate colored with washable markers and printed on dampened paper. | No license stated | Ask permission |
 
-## Images
+## Images and video
 
 Teacher photos are the long-term plan. Until then, these sources allow reuse. Every image file on the site should record its source link, creator, and license, so the credit can print under the image.
 
@@ -107,6 +107,16 @@ Teacher photos are the long-term plan. Until then, these sources allow reuse. Ev
 | Wikimedia Commons (where Wikipedia images live) | Per file: public domain, CC0, CC BY, or CC BY-SA. Commons does not accept NonCommercial or NoDerivatives files. | English Wikipedia also hosts some images under "fair use," usually modern artworks and book covers. Those are not on Commons and are not free for us to reuse. Only use an image if its file page is on Commons and shows a free license. CC BY and CC BY-SA need the creator's name and license next to the image. |
 | [Flickr](https://www.flickr.com/creativecommons/) | Per photo, chosen by the photographer | Use CC0, Public Domain Mark, CC BY, and CC BY-SA freely with credit. CC BY-NC and CC BY-NC-SA work only while the site stays noncommercial. Skip anything marked NoDerivatives, since we will crop and resize. |
 | [Pexels](https://www.pexels.com/license/) | Pexels License | Free to use and edit, and credit is optional, though we will credit anyway. It does not allow showing identifiable people in a bad light or implying endorsement. Search results include some sponsored stock photos from other sites that are not under the Pexels license. |
+
+## Video
+
+YouTube lets any site embed a video through YouTube's own player, unless the creator has turned embedding off ([YouTube help](https://support.google.com/youtube/answer/171780?hl=en)). Embedding shows the video in place on our page while it stays on the creator's channel, with their views and their ads. That is different from downloading or re-uploading a video, which we should never do.
+
+- **Embed, credit, and link.** Show the creator's name and channel under each video with a link back.
+- **Our text is ours.** An embedded video can sit beside a lesson. Its narration and steps should not be written up as our own lesson text unless the video is under Creative Commons. Creators can mark videos CC BY, which allows reuse with credit; the license shows in the video's description, and YouTube search can filter for it ([YouTube help](https://support.google.com/youtube/answer/2797468?hl=en)).
+- **Privacy-enhanced mode.** Embed from youtube-nocookie.com rather than youtube.com. It keeps YouTube from using a view on our page to shape what the viewer sees on YouTube, which matters on a site used by K–12 teachers.
+- **Videos disappear.** Record the title, creator, channel, and date added, so a dead video can be found or replaced.
+- **Asking anyway.** A short note to the creator saying we've featured their video is a courtesy, and it may turn a creator into a contributor.
 
 Two cautions apply to every image source:
 
