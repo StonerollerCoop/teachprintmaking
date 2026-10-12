@@ -132,8 +132,15 @@ const sinkText = { required: 'Required', helpful: 'Helpful', none: 'Not needed' 
       </div>
     )}
 
-    {d.credits.length > 0 && (
+    {(d.credits.length > 0 || d.sources.length > 0) && (
       <div class="credits">
+        {d.sources.map((s) => (
+          <p>
+            {{ 'adapted-from': 'Adapted from', 'based-on': 'Based on', reference: 'Reference:' }[s.relation]}{' '}
+            {s.url ? <a href={s.url}>{s.title}</a> : <em>{s.title}</em>} by {s.author},{' '}
+            {s.licenseUrl ? <a href={s.licenseUrl}>{s.license}</a> : s.license}.
+          </p>
+        ))}
         {d.credits.map((c) => (
           <p>{c.name}{c.organization && <>, {c.organization}</>}. {c.role}</p>
         ))}

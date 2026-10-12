@@ -77,6 +77,22 @@ const lessons = defineCollection({
       credits: z
         .array(z.object({ name: z.string(), role: z.string(), organization: z.string().optional() }))
         .default([]),
+      /**
+       * Where the lesson came from. Leave empty for original work or for
+       * common practice that belongs to no one in particular.
+       */
+      sources: z
+        .array(
+          z.object({
+            relation: z.enum(['adapted-from', 'based-on', 'reference']),
+            title: z.string(),
+            author: z.string(),
+            url: z.url().optional(),
+            license: z.string(),
+            licenseUrl: z.url().optional(),
+          }),
+        )
+        .default([]),
     })
     .refine((d) => d.ages.min <= d.ages.max, { message: 'ages.min must not exceed ages.max' })
     .refine((d) => d.students.min <= d.students.max, { message: 'students.min must not exceed students.max' })

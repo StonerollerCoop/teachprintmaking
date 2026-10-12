@@ -64,6 +64,7 @@ h3 { font-size: 1.1rem; margin: 1.4rem 0 .4rem; }
 .site-nav a:first-child { margin-left: 0; }
 main { padding: 28px 0 60px; }
 .site-footer { border-top: 1px solid var(--rule); color: var(--ink-soft); font-size: .9rem; padding: 18px 0 40px; }
+.site-footer p { margin: 0 0 6px; max-width: var(--measure); }
 
 .lede { font-size: 1.15rem; color: var(--ink-soft); max-width: var(--measure); }
 .demo-flag {
@@ -127,7 +128,7 @@ details summary { cursor: pointer; font-weight: 600; }
 @media print {
   :root { --paper: #fff; --ink: #000; --ink-soft: #333; --rule: #999; --accent: #000; }
   body { font: 11pt/1.4 var(--serif); }
-  .site-header, .site-footer, .site-nav, .actions, .no-print, .finder form { display: none !important; }
+  .site-header, .site-nav, .actions, .no-print, .finder form { display: none !important; }
   main { padding: 0; }
   .wrap, .lesson { max-width: none; padding: 0; }
   a { color: #000; text-decoration: none; }
@@ -137,5 +138,7 @@ details summary { cursor: pointer; font-weight: 600; }
   .callout { background: none; border-left: 2pt solid #000; }
   li, .facts { break-inside: avoid; }
   img { max-width: 100%; break-inside: avoid; }
+  .site-footer { border-top: 1px solid #999; padding: 8pt 0 0; margin-top: 16pt; font-size: 8.5pt; }
+  .site-footer p:last-child { display: none; }
   @page { margin: 0.6in; }
 }

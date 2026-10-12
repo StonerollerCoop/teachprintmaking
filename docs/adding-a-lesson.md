@@ -24,6 +24,9 @@ Everything between the two `---` lines is structured information the search uses
 | `safety` | Short safety notes, shown before the steps. |
 | `adaptations` | Approved changes for when a classroom can't meet a requirement. |
 | `credits` | Name, role, and optional organization for each contributor. |
+| `sources` | Where the lesson came from: `relation` (`adapted-from`, `based-on`, or `reference`), `title`, `author`, `url`, `license`, and `licenseUrl`. Leave it out for original work or common practice that belongs to no one in particular. |
+
+Every published lesson is shared under CC BY-NC-SA 4.0, which the site footer states. The `sources` entries record the terms of whatever we adapted from.
 
 ## Adaptation triggers
 
