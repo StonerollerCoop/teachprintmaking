@@ -84,3 +84,11 @@ Open question: the current vocabulary has separate families for monotype, collag
 - The lesson form reads as a sentence a teacher fills in, with materials and tools as grouped chips underneath.
 - The four types on the home page list the processes people actually know them by.
 - All of this is a starting point for Libby to shape.
+
+## 2026-10-12: Any source can inform a lesson, with citation
+
+- We are not limited to openly licensed material. Any book, article, handout, video, or museum essay can inform a lesson, as long as we write the lesson in our own words and cite the source.
+- Techniques, procedures, facts, and historical information belong to no one, so learning them from a copyrighted source and teaching them in our own words is fine. Citing is good practice and gives credit where it is due.
+- Citing does not grant permission to reproduce. A source's wording, photographs, diagrams, worksheets, and distinctive project designs still need an open license or the creator's permission. Short quotations used to discuss a source are the narrow exception.
+- In lesson files, use `relation: based-on` when a source shaped the lesson and `relation: reference` for further reading. Use `adapted-from` only when we have the right to adapt the source itself.
+- This opens up the intaglio gap: safer intaglio methods described in copyrighted manuals can be taught in our own words with credit to their originators.
