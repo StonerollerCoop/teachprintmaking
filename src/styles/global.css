@@ -162,7 +162,7 @@ main > section + section { margin-top: 44px; }
 .tl-scale-btn { font: 600 .84rem var(--sans); border: 0; background: transparent; color: var(--ink); padding: 7px 12px; cursor: pointer; border-radius: 0; }
 .tl-scale-btn[aria-pressed='true'] { background: var(--ink); color: var(--paper); }
 
-.tl-chart { --lane-h: 46px; --top: 34px; --axis: 40px; display: grid; grid-template-columns: 150px minmax(0, 1fr); border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--paper); }
+.tl-chart { --lane-h: 64px; --top: 34px; --axis: 40px; display: grid; grid-template-columns: 150px minmax(0, 1fr); border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--paper); }
 .tl-lanes-labels { border-right: 1px solid var(--rule); background: var(--paper); position: relative; z-index: 2; }
 .tl-label-spacer { height: var(--top); }
 .tl-lane-label { height: var(--lane-h); display: flex; align-items: center; gap: 8px; padding-right: 10px; font: 600 .8rem/1.15 var(--sans); color: var(--ink); }
@@ -180,6 +180,10 @@ main > section + section { margin-top: 44px; }
 .tl-lane.off { opacity: .3; }
 .tl-mark { position: absolute; top: calc(var(--top) + var(--lane) * var(--lane-h) + var(--lane-h) / 2 + var(--dy, 0px)); width: 16px; height: 16px; margin: -8px 0 0 -8px; padding: 0; border-radius: 50%; border: 2px solid var(--paper); background: var(--cat); cursor: pointer; box-shadow: 0 0 0 1px var(--cat); z-index: 1; }
 .tl-mark:hover, .tl-mark:focus-visible { transform: scale(1.35); z-index: 3; outline: none; }
+.tl-mark.has-img { width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 3px; border: 2px solid var(--cat); background: var(--paper); box-shadow: 0 1px 3px rgb(0 0 0 / .18); overflow: hidden; }
+.tl-mark.has-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tl-mark.has-img:hover, .tl-mark.has-img:focus-visible { transform: scale(1.6); box-shadow: 0 4px 14px rgb(0 0 0 / .25); }
+.tl-mark.has-img.selected { width: 52px; height: 52px; margin: -26px 0 0 -26px; border-width: 3px; box-shadow: 0 0 0 3px var(--paper), 0 0 0 5px var(--cat); background: var(--paper); }
 .tl-mark.selected { width: 22px; height: 22px; margin: -11px 0 0 -11px; background: var(--paper); border: 5px solid var(--cat); box-shadow: 0 0 0 2px var(--paper); z-index: 4; }
 .tl-axis { position: absolute; left: 0; right: 0; bottom: 0; height: var(--axis); border-top: 1px solid var(--ink); }
 .tl-tick { position: absolute; top: 0; padding-top: 8px; transform: translateX(-50%); font: 600 .74rem var(--sans); color: var(--ink-soft); white-space: nowrap; font-variant-numeric: tabular-nums; }
@@ -242,6 +246,31 @@ main > section + section { margin-top: 44px; }
 .parts-tag { color: var(--ink-soft); }
 .part { max-width: var(--measure); }
 .part-nav { display: flex; justify-content: space-between; gap: 16px; margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--rule); }
+
+/* Pop-up cards over the timeline */
+.tl-stage { position: relative; }
+.tl-pop { position: absolute; z-index: 20; width: min(820px, 100%); background: var(--paper); border: 1px solid var(--rule); border-top: 5px solid var(--cat); border-radius: 6px; box-shadow: 0 18px 48px rgb(0 0 0 / .22), 0 2px 6px rgb(0 0 0 / .08); padding: 22px 24px 16px; }
+.tl-pop::before { content: ''; position: absolute; top: -13px; left: calc(var(--arrow, 40px) - 8px); border: 8px solid transparent; border-bottom-color: var(--cat); }
+.tl-pop.popping { animation: tl-pop .22s ease-out; }
+@keyframes tl-pop { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .tl-pop.popping { animation: none; } }
+.tl-close { position: absolute; top: 8px; right: 10px; width: 36px; height: 36px; padding: 0; border: 0; background: transparent; color: var(--ink-soft); font: 400 1.7rem/1 var(--sans); cursor: pointer; border-radius: 50%; }
+.tl-close:hover { background: var(--paper-2); color: var(--ink); }
+.tl-pop-body { max-height: min(62vh, 640px); overflow-y: auto; padding-right: 6px; }
+.tl-pop .tl-card { border-top: 0; padding-top: 0; display: grid; gap: 18px 26px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 760px) { .tl-pop .tl-card.has-image { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); } }
+.tl-pop .tl-figure img { max-height: 420px; }
+.tl-pop .tl-card h2 { padding-right: 30px; font-size: clamp(1.4rem, 3vw, 1.9rem); }
+.tl-pop .tl-text { font-size: 1.02rem; line-height: 1.6; margin: 0; }
+.tl-pop-nav { display: flex; gap: 12px; align-items: center; justify-content: space-between; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--rule); }
+.tl-pop-nav button { font: 600 .9rem var(--sans); padding: 7px 14px; border-radius: 5px; border: 1px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; }
+.tl-pop-nav button:disabled { opacity: .35; cursor: default; }
+.tl-cards { display: none; }
+@media (max-width: 700px) {
+  .tl-pop { position: fixed; left: 0 !important; right: 0; bottom: 0; top: auto !important; width: auto; max-height: 82vh; border-radius: 12px 12px 0 0; padding: 18px 16px calc(14px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; }
+  .tl-pop::before { display: none; }
+  .tl-pop-body { max-height: none; flex: 1; }
+}
 
 /* Print: keep the lesson, drop the interface. */
 @media print {

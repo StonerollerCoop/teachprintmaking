@@ -18,6 +18,7 @@ const eraBands = eras.map((e) => ({
   from: Number.isFinite(e.from) ? e.from : sorted[0].year - 2000,
   to: Number.isFinite(e.to) ? e.to + 1 : 2026,
 }));
+const thumb = (src: string) => src.replace('/full/843,/', '/full/!240,240/');
 ---
 
 <Base title="History" description="An interactive timeline of printmaking, from hand stencils on cave walls to the printed word and the present.">
@@ -25,12 +26,11 @@ const eraBands = eras.map((e) => ({
     <h1>A history of printmaking</h1>
     <p class="lede">
       People have been pressing, rolling, and stenciling images for at least 67,800 years. Each kind of printing has its
-      own line below, so you can see when it first appears. Choose any mark to read about it, or step through history
-      with the arrows.
+      own line, so you can see when it first appears. Choose any mark or picture to open its story.
     </p>
   </header>
 
-  <div class="tl-controls no-print">
+  <div class="tl-controls">
     <div class="tl-chips" role="group" aria-label="Show these kinds of printing">
       {catIds.map((c) => (
         <button type="button" class={`tl-chip cat-${c}`} aria-pressed="true" data-cat={c}>
@@ -44,115 +44,134 @@ const eraBands = eras.map((e) => ({
     </div>
   </div>
 
-  <div class="tl-chart no-print">
-    <div class="tl-lanes-labels" aria-hidden="true">
-      <div class="tl-label-spacer"></div>
-      {catIds.map((c) => <div class={`tl-lane-label cat-${c}`} data-cat={c}><span class="tl-swatch"></span>{categories[c]}</div>)}
+  <div class="tl-stage" id="tl-stage">
+    <div class="tl-chart">
+      <div class="tl-lanes-labels" aria-hidden="true">
+        <div class="tl-label-spacer"></div>
+        {catIds.map((c) => <div class={`tl-lane-label cat-${c}`} data-cat={c}><span class="tl-swatch"></span>{categories[c]}</div>)}
+      </div>
+      <div class="tl-scroller" id="tl-scroller" tabindex="0" aria-label="Timeline. Use the arrow keys to move between entries.">
+        <div class="tl-canvas" id="tl-canvas">
+          {eraBands.map((b, i) => (
+            <div class={`tl-band${i % 2 ? ' alt' : ''}`} data-from={b.from} data-to={b.to}><span>{b.label}</span></div>
+          ))}
+          <div class="tl-highlight" id="tl-highlight" hidden><span>Since Gutenberg</span></div>
+          {catIds.map((c, i) => <div class="tl-lane" data-cat={c} style={`--lane:${i}`}></div>)}
+          {sorted.map((e) => (
+            <button
+              type="button"
+              class={`tl-mark cat-${e.category}${e.image ? ' has-img' : ''}`}
+              data-id={e.id}
+              data-year={e.year}
+              data-cat={e.category}
+              style={`--lane:${catIds.indexOf(e.category)}`}
+              aria-label={`${e.when}: ${e.title}`}
+              aria-haspopup="dialog"
+              title={`${e.when}: ${e.title}`}
+            >
+              {e.image && <img src={thumb(e.image.src)} alt="" loading="lazy" decoding="async" />}
+            </button>
+          ))}
+          <div class="tl-axis" id="tl-axis"></div>
+        </div>
+      </div>
     </div>
-    <div class="tl-scroller" id="tl-scroller" tabindex="0" aria-label="Timeline. Use the arrow keys to move between entries.">
-      <div class="tl-canvas" id="tl-canvas">
-        {eraBands.map((b, i) => (
-          <div class={`tl-band${i % 2 ? ' alt' : ''}`} data-from={b.from} data-to={b.to}>
-            <span>{b.label}</span>
-          </div>
-        ))}
-        <div class="tl-highlight" id="tl-highlight" data-from="1450" data-to="2026" hidden><span>Since Gutenberg</span></div>
-        {catIds.map((c, i) => <div class="tl-lane" data-cat={c} style={`--lane:${i}`}></div>)}
-        {sorted.map((e) => (
-          <button
-            type="button"
-            class={`tl-mark cat-${e.category}`}
-            data-id={e.id}
-            data-year={e.year}
-            data-cat={e.category}
-            style={`--lane:${catIds.indexOf(e.category)}`}
-            aria-label={`${e.when}: ${e.title}`}
-            title={`${e.when}: ${e.title}`}
-          ></button>
-        ))}
-        <div class="tl-axis" id="tl-axis"></div>
+
+    <div class="tl-pop" id="tl-pop" role="dialog" aria-modal="false" aria-labelledby="tl-pop-title" hidden>
+      <button type="button" class="tl-close" id="tl-close" aria-label="Close">×</button>
+      <div class="tl-pop-body" id="tl-pop-body"></div>
+      <div class="tl-pop-nav">
+        <button type="button" id="tl-prev">← Earlier</button>
+        <span id="tl-count" class="muted"></span>
+        <button type="button" id="tl-next">Later →</button>
       </div>
     </div>
   </div>
-  <p class="tl-scale-note muted no-print" id="tl-scale-note" aria-live="polite"></p>
+  <p class="tl-scale-note muted" id="tl-scale-note" aria-live="polite"></p>
 
-  <section class="tl-detail" id="tl-detail" aria-live="polite">
-    <div class="tl-stepper no-print">
-      <button type="button" id="tl-prev" aria-label="Earlier entry">← Earlier</button>
-      <span id="tl-count" class="muted"></span>
-      <button type="button" id="tl-next" aria-label="Later entry">Later →</button>
-      <button type="button" id="tl-listmode" class="tl-listmode" aria-pressed="false">Read it all as a list</button>
-    </div>
-
+  <!-- Card content, one per entry. Shown inside the pop-up card; all of them print. -->
+  <div class="tl-cards" id="tl-cards">
     {sorted.map((e) => (
-      <article class={`tl-card cat-${e.category}${e.image ? ' has-image' : ''}`} id={e.id} data-cat={e.category} data-entry>
-        {e.image && (
-          <figure class="tl-figure">
-            <a href={e.image.link}>
-              <img src={e.image.src} alt={`${e.image.title}, ${e.image.artist}`} loading="lazy" decoding="async" />
-            </a>
-            <figcaption>
-              {e.image.artist}, <em>{e.image.title}</em>, {e.image.date}. {e.image.medium}. {e.image.credit}.
-            </figcaption>
-          </figure>
-        )}
-        <div class="tl-card-text">
-          <div class="tl-era-name">{eraOf(e.year).label}</div>
-          <div class="tl-when">{e.when}</div>
-          <h2>{e.title}</h2>
-          <p class="tl-place"><span>{e.place}</span><span class="tl-cat">{categories[e.category]}</span></p>
-          <p>{e.text}</p>
-          <div class="tl-extra">
-            {(e.tryIt ?? []).length > 0 && (
+      <template data-card={e.id}>
+        <article class={`tl-card cat-${e.category}${e.image ? ' has-image' : ''}`}>
+          {e.image && (
+            <figure class="tl-figure">
+              <a href={e.image.link}>
+                <img src={e.image.src} alt={`${e.image.title}, ${e.image.artist}`} decoding="async" />
+              </a>
+              <figcaption>
+                {e.image.artist}, <em>{e.image.title}</em>, {e.image.date}. {e.image.medium}. {e.image.credit}.
+              </figcaption>
+            </figure>
+          )}
+          <div class="tl-card-text">
+            <div class="tl-era-name">{eraOf(e.year).label}</div>
+            <div class="tl-when">{e.when}</div>
+            <h2 id="tl-pop-title">{e.title}</h2>
+            <p class="tl-place"><span>{e.place}</span><span class="tl-cat">{categories[e.category]}</span></p>
+            <p class="tl-text">{e.text}</p>
+            <div class="tl-extra">
+              {(e.tryIt ?? []).length > 0 && (
+                <span>
+                  Try it:{' '}
+                  {(e.tryIt ?? []).map((slug, i) => (
+                    <>{i > 0 && ', '}<a href={lessonUrl(slug)}>{lessonTitles.get(slug)}</a></>
+                  ))}
+                </span>
+              )}
               <span>
-                Try it:{' '}
-                {(e.tryIt ?? []).map((slug, i) => (
-                  <>{i > 0 && ', '}<a href={lessonUrl(slug)}>{lessonTitles.get(slug)}</a></>
+                Source{e.sources.length > 1 ? 's' : ''}:{' '}
+                {e.sources.map((s, i) => (
+                  <>{i > 0 && '; '}<a href={s.url}>{s.title}</a></>
                 ))}
               </span>
-            )}
-            <span>
-              Source{e.sources.length > 1 ? 's' : ''}:{' '}
-              {e.sources.map((s, i) => (
-                <>{i > 0 && '; '}<a href={s.url}>{s.title}</a></>
-              ))}
-            </span>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </template>
     ))}
-  </section>
+  </div>
 
   <script>
     const NOW = 2026;
-    const C = 25; // softens the compressed scale near the present
-    const PAD = 36;
+    const C = 25;
+    const PAD = 48;
+    const stage = document.getElementById('tl-stage')!;
     const scroller = document.getElementById('tl-scroller')!;
     const canvas = document.getElementById('tl-canvas')!;
     const axis = document.getElementById('tl-axis')!;
     const note = document.getElementById('tl-scale-note')!;
     const highlight = document.getElementById('tl-highlight')!;
+    const pop = document.getElementById('tl-pop')!;
+    const popBody = document.getElementById('tl-pop-body')!;
+    const closeBtn = document.getElementById('tl-close') as HTMLButtonElement;
+    const prev = document.getElementById('tl-prev') as HTMLButtonElement;
+    const next = document.getElementById('tl-next') as HTMLButtonElement;
+    const count = document.getElementById('tl-count')!;
     const marks = Array.from(document.querySelectorAll<HTMLButtonElement>('.tl-mark'));
-    const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-entry]'));
     const bands = Array.from(document.querySelectorAll<HTMLElement>('.tl-band'));
     const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.tl-chip'));
     const laneEls = Array.from(document.querySelectorAll<HTMLElement>('.tl-lane, .tl-lane-label'));
     const scaleBtns = Array.from(document.querySelectorAll<HTMLButtonElement>('.tl-scale-btn'));
-    const prev = document.getElementById('tl-prev') as HTMLButtonElement;
-    const next = document.getElementById('tl-next') as HTMLButtonElement;
-    const count = document.getElementById('tl-count')!;
-    const listBtn = document.getElementById('tl-listmode') as HTMLButtonElement;
-    const detail = document.getElementById('tl-detail')!;
+    const templates = new Map(
+      Array.from(document.querySelectorAll<HTMLTemplateElement>('template[data-card]')).map((t) => [t.dataset.card!, t]),
+    );
+
+    // A picture that can't load falls back to a plain dot.
+    marks.forEach((m) => {
+      const img = m.querySelector('img');
+      if (!img) return;
+      const fail = () => { m.classList.remove('has-img'); img.remove(); layout(); };
+      if (img.complete && img.naturalWidth === 0) fail();
+      else img.addEventListener('error', fail, { once: true });
+    });
 
     const years = marks.map((m) => Number(m.dataset.year));
     const maxAgo = NOW - Math.min(...years) + 2000;
     let scale: 'compressed' | 'true' = 'compressed';
-    let selected = marks[0].dataset.id!;
-    let listMode = false;
+    let openId: string | null = null;
 
-    const ago = (year: number) => Math.max(0, NOW - year);
-    // Compressed scale is logarithmic in years ago, normalized so the oldest
-    // point sits at the left edge and today at the right.
+    const ago = (y: number) => Math.max(0, NOW - y);
     function pos(year: number, width: number) {
       let f: number;
       if (scale === 'true') f = 1 - ago(year) / maxAgo;
@@ -162,7 +181,6 @@ const eraBands = eras.map((e) => ({
       }
       return PAD + f * (width - PAD * 2);
     }
-
     const fmt = (n: number) => n.toLocaleString('en-US');
     const compressedTicks: [number, string][] = [
       [NOW - 60000, '60,000 years ago'], [NOW - 40000, '40,000'], [NOW - 20000, '20,000'], [NOW - 10000, '10,000 years ago'],
@@ -172,17 +190,14 @@ const eraBands = eras.map((e) => ({
     const trueTicks: [number, string][] = [60000, 50000, 40000, 30000, 20000, 10000]
       .map((a) => [NOW - a, `${fmt(a)} years ago`] as [number, string])
       .concat([[NOW, 'Today']]);
-
-    function visibleCats() {
-      return new Set(chips.filter((c) => c.getAttribute('aria-pressed') === 'true').map((c) => c.dataset.cat!));
-    }
+    const visibleCats = () =>
+      new Set(chips.filter((c) => c.getAttribute('aria-pressed') === 'true').map((c) => c.dataset.cat!));
 
     function layout() {
       const view = scroller.clientWidth;
-      const width = scale === 'compressed' ? Math.max(view, 2400) : view;
+      const width = scale === 'compressed' ? Math.max(view, 3000) : view;
       canvas.style.width = width + 'px';
       const cats = visibleCats();
-
       bands.forEach((b) => {
         const x1 = pos(Number(b.dataset.from), width), x2 = pos(Number(b.dataset.to), width);
         b.style.left = x1 + 'px';
@@ -194,18 +209,20 @@ const eraBands = eras.map((e) => ({
       highlight.style.width = Math.max(3, hx2 - hx1) + 'px';
       highlight.hidden = scale !== 'true';
 
-      // Place marks, nudging up and down when two in the same lane would overlap.
-      const lastX: Record<string, number> = {};
-      const flip: Record<string, number> = {};
+      // Pictures and dots sit on their lane; when two would collide, the later one
+      // steps above or below the line.
+      const placed: Record<string, { x: number; w: number; dy: number }[]> = {};
       marks.forEach((m) => {
         const x = pos(Number(m.dataset.year), width);
         const cat = m.dataset.cat!;
-        let dy = 0;
-        if (lastX[cat] !== undefined && x - lastX[cat] < 16) {
-          flip[cat] = (flip[cat] ?? 0) + 1;
-          dy = flip[cat] % 2 ? -11 : 11;
-        } else flip[cat] = 0;
-        lastX[cat] = x;
+        const isImg = m.classList.contains('has-img');
+        const w = isImg ? 44 : 16;
+        const tries = isImg ? [0, -14, 14] : [0, -12, 12, -22, 22];
+        const lane = (placed[cat] ??= []);
+        const clashes = (dy: number) =>
+          lane.some((p) => Math.abs(p.x - x) < (p.w + w) / 2 + 3 && Math.abs(p.dy - dy) < (p.w + w) / 2);
+        const dy = tries.find((d) => !clashes(d)) ?? tries[tries.length - 1];
+        if (!m.hidden || cats.has(cat)) lane.push({ x, w, dy });
         m.style.left = x + 'px';
         m.style.setProperty('--dy', dy + 'px');
         m.hidden = !cats.has(cat);
@@ -224,7 +241,6 @@ const eraBands = eras.map((e) => ({
         t.textContent = label;
         axis.append(t);
       }
-
       if (scale === 'true') {
         const seals = ((NOW + 3500) / maxAgo) * 100;
         const gut = ((NOW - 1450) / maxAgo) * 100;
@@ -232,75 +248,105 @@ const eraBands = eras.map((e) => ({
       } else {
         note.textContent = 'Time is compressed here: each stretch of the line covers less time than the one before it, so tens of thousands of years of cave walls and the busy last five centuries fit on one line. Switch to true scale to feel the real distances.';
       }
+      if (openId) place(openId);
     }
 
-    function visibleOrder() {
+    const order = () => {
       const cats = visibleCats();
       return marks.filter((m) => cats.has(m.dataset.cat!)).map((m) => m.dataset.id!);
+    };
+    const markFor = (id: string) => marks.find((m) => m.dataset.id === id)!;
+
+    function place(id: string) {
+      const m = markFor(id);
+      if (matchMedia('(max-width: 700px)').matches) { pop.style.left = ''; pop.style.top = ''; return; }
+      const stageBox = stage.getBoundingClientRect();
+      const markBox = m.getBoundingClientRect();
+      const w = pop.offsetWidth;
+      const center = markBox.left + markBox.width / 2 - stageBox.left;
+      const left = Math.min(Math.max(0, center - w / 2), stageBox.width - w);
+      pop.style.left = left + 'px';
+      pop.style.setProperty('--arrow', Math.min(Math.max(24, center - left), w - 24) + 'px');
+      // Sit just below the mark's lane so the mark itself stays visible.
+      const top = markBox.bottom - stageBox.top + 14;
+      pop.style.top = top + 'px';
     }
 
-    function select(id: string, opts: { scroll?: boolean } = {}) {
-      selected = id;
+    function open(id: string, opts: { focus?: boolean } = {}) {
+      const tpl = templates.get(id);
+      if (!tpl) return;
+      openId = id;
+      popBody.replaceChildren(tpl.content.cloneNode(true));
+      const cat = markFor(id).dataset.cat!;
+      pop.className = `tl-pop cat-${cat}`;
+      pop.hidden = false;
       marks.forEach((m) => m.classList.toggle('selected', m.dataset.id === id));
-      if (!listMode) cards.forEach((c) => (c.hidden = c.id !== id));
-      const order = visibleOrder();
-      const i = order.indexOf(id);
-      count.textContent = i >= 0 ? `${i + 1} of ${order.length}` : '';
+      const ids = order();
+      const i = ids.indexOf(id);
+      count.textContent = i >= 0 ? `${i + 1} of ${ids.length}` : '';
       prev.disabled = i <= 0;
-      next.disabled = i < 0 || i >= order.length - 1;
-      if (opts.scroll !== false) {
-        const m = marks.find((x) => x.dataset.id === id)!;
-        const target = m.offsetLeft - scroller.clientWidth / 2;
-        scroller.scrollTo({ left: target, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-      }
-      try { history.replaceState(null, '', '#' + id); } catch {}
+      next.disabled = i < 0 || i >= ids.length - 1;
+      // Bring the mark into view inside the timeline, without moving the page.
+      const m = markFor(id);
+      const target = m.offsetLeft - scroller.clientWidth / 2;
+      scroller.scrollTo({ left: target, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      requestAnimationFrame(() => place(id));
+      setTimeout(() => place(id), 420);
+      pop.classList.remove('popping'); void pop.offsetWidth; pop.classList.add('popping');
+      if (opts.focus) closeBtn.focus({ preventScroll: true });
+    }
+
+    function close() {
+      if (!openId) return;
+      const m = markFor(openId);
+      openId = null;
+      pop.hidden = true;
+      marks.forEach((x) => x.classList.remove('selected'));
+      m.focus({ preventScroll: true });
     }
 
     function step(dir: number) {
-      const order = visibleOrder();
-      const i = order.indexOf(selected);
-      const j = Math.min(order.length - 1, Math.max(0, (i < 0 ? 0 : i + dir)));
-      if (order[j]) select(order[j]);
+      const ids = order();
+      const i = openId ? ids.indexOf(openId) : -1;
+      const j = Math.min(ids.length - 1, Math.max(0, i < 0 ? 0 : i + dir));
+      if (ids[j]) open(ids[j]);
     }
 
-    marks.forEach((m) => m.addEventListener('click', () => select(m.dataset.id!)));
+    marks.forEach((m) => m.addEventListener('click', () => (openId === m.dataset.id ? close() : open(m.dataset.id!))));
+    closeBtn.addEventListener('click', close);
     prev.addEventListener('click', () => step(-1));
     next.addEventListener('click', () => step(1));
-    scroller.addEventListener('keydown', (e) => {
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && openId) { e.preventDefault(); close(); }
+      const inTimeline = stage.contains(document.activeElement);
+      if (!inTimeline) return;
       if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
       if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
     });
+    document.addEventListener('click', (e) => {
+      if (openId && !stage.contains(e.target as Node)) close();
+    });
+    scroller.addEventListener('scroll', () => { if (openId) place(openId); }, { passive: true });
     chips.forEach((c) => c.addEventListener('click', () => {
       c.setAttribute('aria-pressed', String(c.getAttribute('aria-pressed') !== 'true'));
       layout();
-      const cats = visibleCats();
-      if (listMode) cards.forEach((card) => (card.hidden = !cats.has(card.dataset.cat!)));
-      const order = visibleOrder();
-      if (!order.includes(selected) && order.length) select(order[0]);
-      else select(selected, { scroll: false });
+      if (openId && !order().includes(openId)) close();
     }));
     scaleBtns.forEach((b) => b.addEventListener('click', () => {
       scale = b.dataset.scale as 'compressed' | 'true';
       scaleBtns.forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
       layout();
-      select(selected);
+      if (openId) open(openId);
     }));
-    listBtn.addEventListener('click', () => {
-      listMode = !listMode;
-      listBtn.setAttribute('aria-pressed', String(listMode));
-      listBtn.textContent = listMode ? 'Show one at a time' : 'Read it all as a list';
-      detail.classList.toggle('list', listMode);
-      const cats = visibleCats();
-      if (listMode) cards.forEach((c) => (c.hidden = !cats.has(c.dataset.cat!)));
-      else select(selected, { scroll: false });
-    });
-
     let resizeTimer = 0;
     addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = window.setTimeout(layout, 120); });
 
     document.documentElement.classList.add('tl-ready');
     layout();
-    const fromHash = location.hash.slice(1);
-    select(marks.some((m) => m.dataset.id === fromHash) ? fromHash : marks[0].dataset.id!, { scroll: !!fromHash });
+    // Links from other pages can point at an entry, e.g. /history/#hokusai. Nothing on
+    // the page carries that id, so the browser won't jump; we open the card instead.
+    const fromHash = () => { const id = location.hash.slice(1); if (templates.has(id)) open(id); };
+    addEventListener('hashchange', fromHash);
+    fromHash();
   </script>
 </Base>
