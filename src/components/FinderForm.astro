@@ -62,73 +62,78 @@ const label = (id: string, fallback: string) => short[id] ?? fallback;
 ---
 
 <form id="finder" class={`finder-form ${variant}`} action="/find/" method="get" autocomplete="off">
-  <p class="ff-sentence">
-    I'm teaching
-    <label class="ff-blank num"><span class="vh">Number of students</span><input type="number" name="students" min="1" max="200" inputmode="numeric" placeholder="how many" /></label>
-    students
-    <label class="ff-blank"><span class="vh">Ages</span>
-      <select name="ages">
-        <option value="">of any age</option>
-        <option value="prek">in pre-K</option>
-        <option value="k2">in grades K to 2</option>
-        <option value="g35">in grades 3 to 5</option>
-        <option value="g68">in grades 6 to 8</option>
-        <option value="g912">in grades 9 to 12</option>
-        <option value="adult">in college or adult classes</option>
-      </select>
-    </label>
-    who are
-    <label class="ff-blank"><span class="vh">Experience</span>
-      <select name="experience">
-        <option value="">at any level</option>
-        <option value="first">printing for the first time</option>
-        <option value="beginner">beginners</option>
-        <option value="intermediate">intermediate</option>
-        <option value="advanced">advanced</option>
-      </select>
-    </label>.
-  </p>
-  <p class="ff-sentence">
-    We have
-    <label class="ff-blank num"><span class="vh">Minutes per session</span><input type="number" name="minutes" min="10" max="600" step="5" inputmode="numeric" placeholder="how many" /></label>
-    minutes a session, for
-    <label class="ff-blank num"><span class="vh">Number of sessions</span><input type="number" name="sessions" min="1" max="30" inputmode="numeric" placeholder="how many" /></label>
-    sessions.
-  </p>
-  <p class="ff-sentence">
-    Our room
-    <label class="ff-blank"><span class="vh">Sink</span>
-      <select name="sink">
-        <option value="">may or may not have a sink</option>
-        <option value="yes">has a sink</option>
-        <option value="no">has no sink</option>
-      </select>
-    </label>
-    and
-    <label class="ff-blank"><span class="vh">Table space</span>
-      <select name="tableSpace">
-        <option value="">any amount of table space</option>
-        <option value="tight">only desks, tightly packed</option>
-        <option value="standard">ordinary classroom tables</option>
-        <option value="roomy">roomy studio tables</option>
-      </select>
-    </label>, and we can handle
-    <label class="ff-blank"><span class="vh">Mess</span>
-      <select name="maxMess">
-        <option value="">any amount of mess</option>
-        <option value="low">only a little mess</option>
-        <option value="medium">a fair amount of mess</option>
-        <option value="high">a big mess</option>
-      </select>
-    </label>.
-    <label class="ff-blank"><span class="vh">Ventilation</span>
-      <select name="ventilation">
-        <option value="">Ventilation isn't a concern.</option>
-        <option value="yes">The room is well ventilated.</option>
-        <option value="no">The room has poor ventilation.</option>
-      </select>
-    </label>
-  </p>
+  <div class="ff-basics">
+    <fieldset>
+      <legend>Your class</legend>
+      <label for="ff-students">Number of students
+        <input id="ff-students" type="number" name="students" min="1" max="200" inputmode="numeric" />
+      </label>
+      <label for="ff-ages">Grade or age
+        <select id="ff-ages" name="ages">
+          <option value="">Any</option>
+          <option value="prek">Pre-K</option>
+          <option value="k2">Grades K to 2</option>
+          <option value="g35">Grades 3 to 5</option>
+          <option value="g68">Grades 6 to 8</option>
+          <option value="g912">Grades 9 to 12</option>
+          <option value="adult">College and adult</option>
+        </select>
+      </label>
+      <label for="ff-exp">Experience
+        <select id="ff-exp" name="experience">
+          <option value="">Any</option>
+          <option value="first">First time printing</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your time</legend>
+      <label for="ff-minutes">Minutes per class
+        <input id="ff-minutes" type="number" name="minutes" min="10" max="600" step="5" inputmode="numeric" />
+      </label>
+      <label for="ff-sessions">Number of classes
+        <input id="ff-sessions" type="number" name="sessions" min="1" max="30" inputmode="numeric" />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your room</legend>
+      <label for="ff-sink">Sink
+        <select id="ff-sink" name="sink">
+          <option value="">Doesn't matter</option>
+          <option value="yes">We have a sink</option>
+          <option value="no">No sink</option>
+        </select>
+      </label>
+      <label for="ff-table">Table space
+        <select id="ff-table" name="tableSpace">
+          <option value="">Any</option>
+          <option value="tight">Desks only</option>
+          <option value="standard">Classroom tables</option>
+          <option value="roomy">Studio tables</option>
+        </select>
+      </label>
+      <label for="ff-mess">Mess we can handle
+        <select id="ff-mess" name="maxMess">
+          <option value="">Any</option>
+          <option value="low">A little</option>
+          <option value="medium">Some</option>
+          <option value="high">A lot</option>
+        </select>
+      </label>
+      <label for="ff-vent">Ventilation
+        <select id="ff-vent" name="ventilation">
+          <option value="">Doesn't matter</option>
+          <option value="yes">Good</option>
+          <option value="no">Poor</option>
+        </select>
+      </label>
+    </fieldset>
+  </div>
 
   <details class="ff-more">
     <summary>
@@ -177,7 +182,7 @@ const label = (id: string, fallback: string) => short[id] ?? fallback;
     {variant === 'home'
       ? <button type="submit">Find lessons</button>
       : <button type="reset" class="secondary">Start over</button>}
-    <span class="hint">Anything you leave as it is won't narrow the list.</span>
+    <span class="hint">Leave anything blank and it won't narrow the list.</span>
   </div>
 </form>
 
@@ -194,30 +199,4 @@ const label = (id: string, fallback: string) => short[id] ?? fallback;
       } catch {}
     });
   }
-  // Size each blank to its text so the sentence reads naturally. Measured with
-  // the blank's own font, so it works for any typeface and size.
-  const ruler = document.createElement('span');
-  ruler.setAttribute('aria-hidden', 'true');
-  ruler.style.cssText = 'position:absolute;visibility:hidden;white-space:pre;left:-9999px;top:0';
-  document.body.append(ruler);
-  const fit = (el: HTMLInputElement | HTMLSelectElement) => {
-    const text = el instanceof HTMLSelectElement ? el.options[el.selectedIndex]?.text ?? '' : el.value || el.placeholder;
-    const cs = getComputedStyle(el);
-    ruler.style.font = cs.font;
-    ruler.style.fontStyle = el instanceof HTMLInputElement && !el.value ? 'italic' : cs.fontStyle;
-    ruler.textContent = text;
-    const extra = el instanceof HTMLSelectElement ? 26 : 10;
-    el.style.width = Math.ceil(ruler.getBoundingClientRect().width + extra) + 'px';
-  };
-  const fitAll = () =>
-    document.querySelectorAll<HTMLInputElement | HTMLSelectElement>('.ff-blank input, .ff-blank select').forEach(fit);
-  document.querySelectorAll<HTMLInputElement | HTMLSelectElement>('.ff-blank input, .ff-blank select').forEach((el) => {
-    el.addEventListener('input', () => fit(el));
-    el.addEventListener('change', () => fit(el));
-  });
-  fitAll();
-  document.fonts?.ready.then(fitAll);
-  form?.addEventListener('reset', () => setTimeout(fitAll, 0));
-  document.addEventListener('tp-finder-restored', fitAll);
-  addEventListener('resize', fitAll);
 </script>

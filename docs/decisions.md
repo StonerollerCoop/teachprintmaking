@@ -98,3 +98,11 @@ Open question: the current vocabulary has separate families for monotype, collag
 - Books and papers we draw on live in src/data/library.ts and appear on a public Books page (/sources/). Lessons point to them with `library:` in their sources, and the Books page lists which lessons draw on each.
 - The book files themselves are never committed to this repository. They stay private.
 - Where a source gives outdated safety advice, the library entry carries a safety note (Kafka recommends carbon tetrachloride; DeSherlia's leaf prints use a candle flame).
+
+## 2026-10-12: Libby's design direction, round one
+
+- No imposed page width. Pages run full width with side gutters only, unless Libby asks for a narrower column.
+- No heavy black rules across the page, including under the header.
+- The home title is plain type with no effects.
+- The six "Why?" reasons sit in one row of six columns, stepping down to three, two, and one on smaller screens.
+- The lesson form is a conventional labeled form. Usability and the look and feel are Libby's to lead once the content is underway.
