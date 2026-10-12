@@ -54,3 +54,10 @@ Open question: the current vocabulary has separate families for monotype, collag
 - The outreach list holds names and contact details, so it must stay private and out of this repository, which is public.
 - The submission form must ask how contributors want to be credited and where the material came from (their own original work, or adapted from a named source). Libby's own original lessons must carry her credit.
 - Open sources may also be used as reference for illustrations drawn for the site, such as process diagrams. Illustrations should not copy a protected work.
+
+## 2026-10-12: Site license, Libby's credit, and common practice
+
+- Everything the site publishes is under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0), including Libby's own lessons. Contributors agree to it when they submit.
+- Libby's own original work is credited as "Libby Clarke."
+- Common practice needs no credit. When many teachers describe a lesson the same way (foam plate printing, potato prints, a basic gel plate pull), it's shared knowledge, and we write it up in our own words without tracing it to anyone. Techniques and procedures aren't owned. What is owned is a particular person's expression: their wording, photos, handouts, or a distinctive project of their own design. We never copy those, and when a lesson is clearly someone's own, it gets credit or goes on the outreach list.
+- The outreach list lives in a private Claude artifact, not in this repository.
