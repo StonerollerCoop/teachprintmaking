@@ -85,8 +85,7 @@ export const library: LibraryEntry[] = [
     note: 'A classroom-minded linocut course with graded projects: monograms, greeting cards, letterheads, multicolor printing, printing on fabric, and alphabets.',
     families: ['relief'],
     level: 'Middle school through adult',
-    rights: 'Copyright 1955; treat as in copyright, cited not reproduced',
-    check: 'Kafka may be in the public domain in the US if the 1955 copyright was not renewed in 1982 or 1983. Search the Copyright Office renewal records under Kafka before treating it as free to adapt.',
+    rights: 'In copyright: Kafka renewed the 1955 copyright on October 3, 1983 (renewal RE0000178775). Cited, not reproduced.',
     caution: 'Some cleaning advice is out of date. It recommends carbon tetrachloride and gasoline, which should never be used. Clean water-based ink with water and oil-based ink with vegetable oil and soap.',
   },
   {
@@ -256,8 +255,8 @@ export const library: LibraryEntry[] = [
     note: 'A 1950s survey of lithography, relief, intaglio, and serigraphy, each with a how-to, a gallery, and a troubleshooting section. Generous with cheap substitutes: cigar-box blocks, a tablespoon as a press, plaster prints cast with no press at all.',
     families: ['all'],
     level: 'College and adult',
-    rights: 'In copyright unless the 1958 copyright was not renewed; cited, not reproduced',
-    check: 'Heller 1958 may be public domain in the US if its copyright was not renewed in 1985 or 1986. Search the renewal records under Henry Holt and Heller before treating its text as free to adapt. Its illustrations belong to the museums and artists credited and stay off the site either way.',
+    rights: 'Probably public domain in the US: no renewal of the 1958 registration (A336302) turns up in the Copyright Office catalog. Cited, not reproduced, until confirmed.',
+    check: 'No renewal of Heller 1958 (registration A336302) turned up in the Copyright Office online catalog on October 13, 2026, which does list renewals from 1978 on, including Kafka’s of 1983. Confirm with one search of the Stanford Copyright Renewal Database before adapting its text. The 1972 second edition is a separate copyright, and the illustrations belong to the museums and artists credited, so they stay off the site either way.',
     caution: 'Its chemistry is not safe by current standards: strong nitric acid, Dutch mordant, dichromate etches, ether and chloroform grounds, benzene and carbon tetrachloride, molten lead, and open flames. Its first aid advice is also out of date.',
   },
   {

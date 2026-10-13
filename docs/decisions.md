@@ -153,3 +153,8 @@ Open question: the current vocabulary has separate families for monotype, collag
 - Parts pages can now list sources, and the ink page has a section on finding and making ink, with Logan's safety cautions.
 - Pictures: the workspace can't reach Wikimedia Commons, Flickr, or Openverse, so this sweep used Pexels, Unsplash, and the Library of Congress through the web-reading tool. It added 125 photographs of the work itself: hands carving and inking, presses, type cases, screens, school print shops, the Bureau of Engraving and Printing, mimeographs, and braille printing. They now show before the museum prints on each page. They were chosen from each source's own record; nobody has looked at the images themselves yet, so they need a visual check before launch.
 - Collagraph, drypoint, aquatint, mezzotint, gel plate, and lithography without a stone still have no process photographs. Teacher photos are the best way to fill them.
+
+## 2026-10-13: Copyright renewals for Kafka and Heller
+
+- Kafka's *Linoleum Block Printing* is in copyright. Kafka renewed the 1955 registration (A191236) on October 3, 1983, as renewal RE0000178775, found in the Copyright Office online catalog. It stays cited, not adapted.
+- Heller's *Printmaking Today* (1958, registration A336302) is probably public domain in the US. The same catalog shows no renewal for it. It shows only a 1984 transfer of the 1972 second edition from CBS College Publishing to Heller and a 2001 bulk assignment of many publisher titles, neither of which is a renewal. The Stanford Copyright Renewal Database blocked automated searches, so one manual search there is still needed before its text is adapted. The 1972 edition and the book's illustrations are protected regardless.
