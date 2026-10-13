@@ -9,6 +9,11 @@ setting: classroom
 techniques: []
 timeline: [katagami]
 related: [stencil/cut-stencils, stencil/screenprinting]
+sources:
+  - library: martin-encyclopedia
+    where: "p. 140, stenciling onto a lithograph"
+  - library: heller-1958
+    where: "pp. 116 and 188, stencils on an intaglio plate"
 ---
 
 ## How it works
@@ -16,6 +21,8 @@ related: [stencil/cut-stencils, stencil/screenprinting]
 Pochoir is French for stencil, and the word names a refined way of using many of them. The image is broken into areas of color, and a separate stencil is cut for each one. Paint is applied through each stencil in turn with a round, flat-ended brush, dabbed or swirled so the color builds up evenly or fades from dark to light within a single shape.
 
 Because each color is applied by hand, a pochoir can have gradients, soft edges, and layered transparent color that are hard to get any other way. Registration keeps every stencil in the same place: each stencil has the same outer edge and is aligned to marks on the base board, or the stencils are hinged to the board with tape.
+
+Stencil color can also finish a print made another way. David Koster adds small touches of color by stenciling onto finished lithographs, and Leonard Edmondson rolled color through stencils onto the surface of an inked intaglio plate before printing it. <cite>Martin, p. 140; Heller 1958, pp. 116 and 188</cite>
 
 A traditional pochoir stencil was cut from thin metal, oiled card, or celluloid. Oiled card is easy to make: brush thin card with linseed oil, let it dry, and it becomes water-resistant and stiff enough to cut cleanly.
 

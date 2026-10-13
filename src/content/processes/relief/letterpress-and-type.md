@@ -16,6 +16,10 @@ sources:
     where: "ch. 4, on type height and presses"
   - library: walker-woodcut
     where: "ch. 5, on presses and makeready"
+  - library: martin-encyclopedia
+    where: "pp. 14–15, on relief presses"
+  - library: heller-1958
+    where: "p. 87, on the Washington hand press"
 ---
 
 ## How it works
@@ -44,6 +48,6 @@ Metal type is made of a lead alloy. Students handling it should not eat or drink
 
 Plates: metal and wood type, carved linoleum or foam letters, letters cut from craft foam or cardboard, and photopolymer plates made from digital files.
 
-Presses: a baren or spoon for carved blocks, a tabletop platen press, a proof press such as a Vandercook, or an etching press with a type-high bed. Uneven impressions are corrected with makeready, thin layers of paper placed under low areas.
+Presses: a baren or spoon for carved blocks, a tabletop platen press, a proof press such as a Vandercook, or an etching press with a type-high bed. Uneven impressions are corrected with makeready, thin layers of paper placed under low areas. Nineteenth-century iron hand presses such as the Columbian, the Albion, and the Washington still print type and wood engravings in many studios, and an old type-proofing press will take thick blocks. <cite>Martin, pp. 14–15; Heller 1958, p. 87</cite>
 
 Inks: oil-based or rubber-based letterpress inks rolled very thin, and water-based relief inks for carved letters.

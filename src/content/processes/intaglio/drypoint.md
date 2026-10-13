@@ -18,6 +18,10 @@ sources:
     where: "the Intaglio section, on drypoint"
   - library: ross-romano-intaglio
     where: "the drypoint section"
+  - library: heller-1958
+    where: "p. 165, on points and transfers"
+  - library: martin-encyclopedia
+    where: "pp. 76–79 and 105, drypoint"
 ---
 
 ## How it works
@@ -28,13 +32,15 @@ Pressure controls the line. A light scratch prints pale and fine; a heavy one pr
 
 The burr wears down under the pressure of the press, so a drypoint on soft material gives only a small number of strong prints. That suits a classroom, where each student usually wants a few good impressions.
 
+Lay an early and a late impression side by side, and students can see the burr wear away. <cite>Martin, p. 78</cite> On metal, a sketch can be transferred by dampening a pencil or ballpoint drawing and running it face down through the press on the plate, which leaves a faint guide to scratch over. <cite>Heller 1958, p. 165</cite>
+
 Drypoint on a juice box or the inside of a food carton adds another possibility. The plastic coating can be scratched, and it can also be cut and peeled away to expose the cardboard underneath. The bare card holds ink like a sponge and prints as a solid dark. <cite>Dalton, ch. 4</cite>
 
 On soft plates the burr wears quickly. Copper and zinc give perhaps twenty strong impressions; plastic and card give fewer. A carbide-tipped scribe stays sharp far longer than a steel needle, and a wire brush or steel wool dragged across a plastic plate scuffs in a light tone. <cite>Hughes and Vernon-Morris, Intaglio; Fick and Grabowski, ch. 5</cite>
 
 ## History
 
-Drypoint lines appear in prints from the late fifteenth century. Rembrandt combined drypoint with etching and reworked his plates repeatedly, so his impressions vary from one printing to the next. In schools, drypoint on plastic became popular because it needs no chemicals at all. In recent years, printmakers have shared methods for drypoint on flattened juice and milk cartons, foil cake tins, and plastic-coated card.
+Drypoint lines appear in prints from the late fifteenth century. Rembrandt combined drypoint with etching and reworked his plates repeatedly, so his impressions vary from one printing to the next. In schools, drypoint on plastic became popular because it needs no chemicals at all. In 1958 Heller dismissed celluloid drypoint as useless even for practice, and plastic plates have since become the standard classroom method. <cite>Heller 1958, p. 165</cite> In recent years, printmakers have shared methods for drypoint on flattened juice and milk cartons, foil cake tins, and plastic-coated card.
 
 ## Ages, safety, and setting
 
@@ -48,4 +54,4 @@ Plates: rigid acetate, PETG, plexiglass, flattened juice and milk cartons, plast
 
 Presses: an etching press is ideal. A pasta machine with felt and a plexiglass carrier, an old clothes wringer for shallow lines, or a small 3D-printed press can work at small sizes. Hand burnishing rarely pushes damp paper far enough into the lines, though a firm spoon on thin damp paper gives a pale proof.
 
-Inks: water-washable intaglio ink, wiped with tarlatan and then with paper or the palm. Paper should be soaked or misted and blotted before printing.
+Inks: water-washable intaglio ink, wiped with tarlatan and then with paper or the palm. Paper should be soaked or misted and blotted before printing. Zinc is easier to scratch than copper but wears faster. Martin wipes metal drypoint plates with paper instead of the hand, because the burr is abrasive. <cite>Martin, pp. 77 and 105</cite>

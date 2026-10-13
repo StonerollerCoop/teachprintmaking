@@ -16,6 +16,8 @@ sources:
     where: "ch. 5, on engraving"
   - library: ross-romano-intaglio
     where: "the engraving section"
+  - library: heller-1958
+    where: "pp. 117 and 169–175, line engraving"
 ---
 
 ## How it works
@@ -24,9 +26,11 @@ An engraver holds a burin, a steel bar with a diamond-shaped point, with the han
 
 The burr that drypoint keeps is scraped off in engraving, so the printed line is crisp and hard-edged. Tone is built with parallel lines, crosshatching, and dots, and the engraver's systems of lines can model forms with astonishing precision.
 
+Heller advised each engraver to find a grip that feels natural instead of forcing a prescribed one. He dulled the mirror shine of new copper with pumice so the drawing would show, and hung tracing paper over the window to soften the glare on the plate. To transfer a complicated design, he coated the plate with gum arabic and scratched the drawing through it. <cite>Heller 1958, pp. 172–174</cite>
+
 ## History
 
-Goldsmiths, who already decorated metal with cut lines, began inking engraved plates and printing them on paper in the 1430s. Martin Schongauer and Albrecht Dürer brought engraving to great refinement in the late fifteenth and early sixteenth centuries. For centuries afterward, engraving was the way paintings, maps, and banknotes were reproduced, and engravers on banknotes and stamps still use the burin today.
+Goldsmiths, who already decorated metal with cut lines, began inking engraved plates and printing them on paper in the 1430s. Martin Schongauer and Albrecht Dürer brought engraving to great refinement in the late fifteenth and early sixteenth centuries. For centuries afterward, engraving was the way paintings, maps, and banknotes were reproduced, and engravers on banknotes and stamps still use the burin today. In the twentieth century Harry Sternberg engraved with a flexible-shaft tool of the kind dentists use. <cite>Heller 1958, p. 117</cite>
 
 ## Ages, safety, and setting
 

@@ -114,6 +114,7 @@ const parts = defineCollection({
     timeline: z.array(z.string()).default([]),
     /** Lesson slugs that explore this part. */
     lessons: z.array(z.string()).default([]),
+    sources: z.array(z.lazy(() => pageSource)).default([]),
   }),
 });
 
@@ -181,4 +182,25 @@ const processes = defineCollection({
   }),
 });
 
-export const collections = { lessons, parts, families, processes };
+/**
+ * The Teaching section: how to run a print class, the concepts printmaking
+ * teaches well, and how to reach particular learners. One file per page in
+ * src/content/teaching.
+ */
+const teaching = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/teaching' }),
+  schema: z.object({
+    title: z.string(),
+    group: z.enum(['class', 'concepts', 'learners']),
+    order: z.number().int(),
+    tagline: z.string(),
+    /** Lesson slugs that fit this page. */
+    lessons: z.array(z.string()).default([]),
+    /** Process ids that fit this page ("relief/collagraph"). */
+    processes: z.array(z.string()).default([]),
+    sources: z.array(pageSource).default([]),
+    checks,
+  }),
+});
+
+export const collections = { lessons, parts, families, processes, teaching };

@@ -6,11 +6,13 @@ timeline: [cylinder-seals, woodblock-textiles, diamond-sutra, st-christopher, du
 sources:
   - library: fick-grabowski
     where: "ch. 1, \"Practical Matters,\" on safety"
+  - library: heller-1958
+    where: "p. xvii, on explaining relief"
 ---
 
 ## How it works
 
-A relief print comes from whatever stands highest on the block. The printmaker cuts, carves, or presses away the parts that should stay blank, rolls ink across the top, lays paper over it, and applies pressure. The ink transfers only where the surface touches the paper.
+A relief print comes from whatever stands highest on the block. The printmaker cuts, carves, or presses away the parts that should stay blank, rolls ink across the top, lays paper over it, and applies pressure. The ink transfers only where the surface touches the paper. Heller explained relief with the rubber stamp and the typewriter key, objects his readers handled every day, and a rubber stamp still makes a good first example. <cite>Heller 1958, p. xvii</cite>
 
 That makes relief the most intuitive family for students. They can see and feel the printing surface, and a thumb run across the block tells them what will print. It is also the family where the reversal of the image first surprises them: a block cut to read correctly prints backward, which is the first lesson of every letter carved by hand.
 

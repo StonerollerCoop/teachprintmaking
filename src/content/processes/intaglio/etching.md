@@ -20,6 +20,12 @@ sources:
     where: "for traditional methods and the hazards in them"
   - library: ash-soft-ground
     where: "soft ground"
+  - library: heller-1958
+    where: "pp. 117, 129–130, 157, and 189"
+  - library: martin-encyclopedia
+    where: "pp. 84–101, etching"
+checks:
+  - "Hayter's offset-roller color method: confirm against Heller 1958, p. 189, exactly how it worked before this description goes public."
 ---
 
 ## How it works
@@ -28,7 +34,11 @@ A metal plate is coated with a ground, a thin layer that resists the etchant. Th
 
 A hard ground takes needle drawing. A soft ground stays tacky, so anything pressed into it lifts the ground away: a drawing made on paper laid over the plate, or the texture of lace, leaves, or fabric. The plate is then cleaned, inked, wiped, and printed on damp paper through a press.
 
+Soft ground takes almost any texture pressed into it: fabric, tarlatan, cellophane, ribbon, feathers, leaves, wood veneer, a fingerprint, or the teeth of a pocket comb. <cite>Martin, pp. 96–97; Heller 1958, pp. 117 and 157</cite>
+
 Etching feels like drawing. The needle moves freely through the ground, with none of the resistance of a burin, and that freedom drew painters to the process for five centuries.
+
+<span class="flag">Heller describes an offset-roller color method from Stanley William Hayter's Atelier 17, in which color is rolled over the surface of an inked and wiped plate so one plate prints several colors in a single pass.</span> <cite>Heller 1958, p. 189</cite>
 
 ## History
 
@@ -41,6 +51,8 @@ Kiekeben also developed Saline Sulfate Etch, a copper sulfate and salt solution 
 ## Ages, safety, and setting
 
 Etching belongs in high school, college, and adult classes, and only with the safer methods. Older manuals describe practices that should not be used anywhere students are present, including nitric acid baths without fume extraction, grounds made with chloroform or ether, smoking grounds over a flame, dichromate etches, and asbestos drying boards. <cite>Ross and Romano 1974</cite> If a school can't provide a sink, ventilation, and a plan for disposing of spent etchant, drypoint and collagraph teach the same printing skills without any of it.
+
+Martin and Heller both etch with Dutch mordant, a mix of hydrochloric acid and potassium chlorate that gives off chlorine gas, and neither book's acid strengths should be followed. Dutch mordant has no place in a school. <cite>Martin, p. 92; Heller 1958, p. 130</cite>
 
 With the safer methods, students still need nitrile gloves, goggles, and an apron. Ferric chloride stains and irritates skin, and copper sulfate is toxic to aquatic life, so neither goes down the drain. Follow the supplier's safety data sheet and local disposal rules.
 
@@ -55,5 +67,7 @@ Grounds: acrylic hard and soft grounds that clean up with soda ash or a mild alk
 Presses: an etching press. Small tabletop presses work well for plates up to about the size of a postcard.
 
 Inks: water-washable intaglio ink, wiped with tarlatan, printed on soaked and blotted paper.
+
+An etching needle is easy to improvise. Heller used a darning needle, a dulled dental tool, or an old phonograph needle held in a pin vise. Martin draws double lines with a split-nib pen and dotted lines with a dentist's drill bit used as a roulette. <cite>Heller 1958, p. 129; Martin, p. 91</cite>
 
 Copper roofing sheet is an inexpensive alternative to etcher's copper. Zinc etches fast but wears and shifts some ink colors; steel holds color truest. <cite>Fick and Grabowski, ch. 5; Hughes and Vernon-Morris, Intaglio</cite>

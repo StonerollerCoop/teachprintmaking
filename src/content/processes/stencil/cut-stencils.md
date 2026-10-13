@@ -16,6 +16,8 @@ sources:
     where: "chs. 2 and 3"
   - library: fick-grabowski
     where: "ch. 3, on paper stencils"
+  - library: logan-make-ink
+    where: "on homemade inks for brush and pen"
 ---
 
 ## How it works
@@ -46,6 +48,6 @@ Stencils: copy paper, freezer paper (which irons onto fabric and peels off clean
 
 Tools: sponges, stencil brushes, foam daubers, brayers, toothbrushes for spatter, and spray bottles of thin paint.
 
-Inks: tempera, acrylic paint, watercolor, water-based block printing ink, and fabric paint for cloth.
+Inks: tempera, acrylic paint, watercolor, water-based block printing ink, and fabric paint for cloth. Thin homemade inks from plants and kitchen scraps, of the kind Jason Logan makes, can be dabbed, sponged, or spattered through a stencil as they are, with no thickening; see [Ink or paint](/parts/ink/). <cite>Logan</cite>
 
 Clear self-adhesive shelf liner makes a reusable stencil that won't shift. A test print can itself be cut into a stencil for the next color. <cite>Medley, chs. 2–3</cite>

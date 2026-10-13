@@ -18,6 +18,10 @@ sources:
     where: "the Relief section"
   - library: kafka-linoleum
     where: "chs. III, IV, and X"
+  - library: heller-1958
+    where: "pp. 90–92, linoleum"
+  - library: martin-encyclopedia
+    where: "pp. 26–35, linocut, and pp. 133 and 150"
 ---
 
 ## How it works
@@ -30,9 +34,11 @@ A reduction linocut uses one block for several colors. The printmaker carves, pr
 
 First, sand off any shiny coating so drawing materials and ink hold. Rubbing a stick of graphite over thin paper laid on the block shows what it will print without any ink. Many printmakers keep a scrap of lino with a line from each of their gouges, as a reference for which tool makes which mark. <cite>Walker, chs. 1–3; Hughes and Vernon-Morris, Relief</cite>
 
+A carved block can print over a monotype. Rebecca Owens prints a loose field of color from a plate first and then overprints a cut block, sometimes inking parts of the block in different colors with small rollers and brushes. <cite>Martin, pp. 133 and 150</cite> A carved block printed with no ink presses a raised design into damp paper. This is called blind embossing, and students can read the result by touch. <cite>Heller 1958, pp. 91–92</cite>
+
 ## History
 
-Frederick Walton patented linoleum as a floor covering in the 1860s, made from oxidized linseed oil on a canvas backing. <cite>Kafka, ch. IV</cite> Artists found it soft, even, and free of grain, and by the early twentieth century it was in use for art prints. The German Expressionists of Die Brücke cut it alongside wood. In the 1920s Claude Flight taught linocut at the Grosvenor School of Modern Art in London and promoted it as a cheap medium anyone could take up, and schools adopted it quickly. The Taller de Gráfica Popular in Mexico used linocut for posters and broadsides from 1937. Picasso made celebrated reduction linocuts in the late 1950s.
+Frederick Walton patented linoleum as a floor covering in the 1860s, made from oxidized linseed oil on a canvas backing. <cite>Kafka, ch. IV</cite> Artists found it soft, even, and free of grain, and by the early twentieth century it was in use for art prints. The German Expressionists of Die Brücke cut it alongside wood. In the 1920s Claude Flight taught linocut at the Grosvenor School of Modern Art in London and promoted it as a cheap medium anyone could take up, and schools adopted it quickly. The Taller de Gráfica Popular in Mexico used linocut for posters and broadsides from 1937. Heller reported watching more than 2,500 impressions pulled from one linoleum block in Mexico City in 1947, a measure of how much wear the material can take. <cite>Heller 1958, p. 90</cite> Picasso made celebrated reduction linocuts in the late 1950s.
 
 ## Ages, safety, and setting
 

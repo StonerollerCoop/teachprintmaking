@@ -16,6 +16,10 @@ sources:
     where: "chs. 17 and 18, on monotype"
   - library: ross-romano-printmaker
     where: "the monotype chapter"
+  - library: martin-encyclopedia
+    where: "pp. 20–25, monoprint"
+  - library: logan-make-ink
+    where: "on homemade inks for brush and pen"
 ---
 
 ## How it works
@@ -24,7 +28,9 @@ A monotype starts with a smooth, nonabsorbent plate. The printmaker paints on it
 
 Working additively, the printmaker paints the image onto a clean plate. Working subtractively, the printmaker rolls the plate solid and removes ink with rags, cotton swabs, brushes, combs, or a fingertip, drawing light out of dark.
 
-In a trace monotype, the plate is rolled with a thin layer of ink, paper is laid on top, and the printmaker draws on the back of the paper. Wherever the pencil presses, ink transfers, giving a soft, grainy line. Anything that touches the paper prints as well, including the side of a hand, which students learn to use on purpose.
+In a trace monotype, the plate is rolled with a thin layer of ink, paper is laid on top, and the printmaker draws on the back of the paper. Wherever the pencil presses, ink transfers, giving a soft, grainy line. Anything that touches the paper prints as well, including the side of a hand, which students learn to use on purpose. The end of a brush handle works as a drawing tool as well as a pencil does.
+
+A sketch slipped under a glass or clear plastic plate guides the painting, and the same sketch helps place a second and third color in register. For a blotted monoprint, a sheet of paper is pressed onto wet ink and lifted away, leaving a random texture on the plate that is then printed. <cite>Martin, pp. 21–25</cite>
 
 Printers use monoprint for a print that has a repeated element, such as a carved block or a stencil, combined with painted or rolled ink that changes each time. Both words are often used loosely for the same thing.
 
@@ -36,7 +42,7 @@ Giovanni Benedetto Castiglione made the first monotypes in Genoa in the 1640s, p
 
 ## Ages, safety, and setting
 
-Monotype suits every age. Preschoolers can finger-paint on plexiglass and press paper onto it. Trace monotype works at desks and suits upper elementary and up.
+Monotype suits every age. Preschoolers can finger-paint on plexiglass and press paper onto it. Trace monotype works at desks and suits upper elementary and up. Blotted monoprints need no planning and give a result right away, which suits students with short attention spans. <cite>Martin, p. 24</cite>
 
 Water-based ink and tempera clean up with water. Oil-based ink stays workable longer and gives richer color; clean it up with vegetable oil and soap rather than solvents. Glass plates should have their edges taped or filed.
 
@@ -46,6 +52,6 @@ Plates: plexiglass, glass with taped edges, acetate, laminated card, a baking sh
 
 Presses: the palm of the hand, a wooden spoon, a clean brayer, a tennis ball, or an etching press for large or rich prints.
 
-Inks: water-based block printing ink, tempera with a little glycerin to slow drying, acrylic with a retarder, watercolor and water-soluble crayon on the plate printed onto damp paper, and oil-based ink. Paper masks, leaves, and string laid on the plate before printing act as stencils.
+Inks: water-based block printing ink, tempera with a little glycerin to slow drying, acrylic with a retarder, watercolor and water-soluble crayon on the plate printed onto damp paper, and oil-based ink. Paper masks, leaves, and string laid on the plate before printing act as stencils. Natural inks of the kind Jason Logan makes from plants and kitchen scraps can be brushed onto a smooth plate nearly as they are and printed onto damp paper; see [Ink or paint](/parts/ink/). <cite>Logan</cite>
 
 PETG plastic sheet is a good all-purpose monotype plate, and plastic and countertop scraps from sign shops and kitchen fitters work too. The back of a used metal plate also works. A smooth doorknob burnishes well by hand. <cite>Fick and Grabowski, ch. 8; Hughes and Vernon-Morris, ch. 18</cite>

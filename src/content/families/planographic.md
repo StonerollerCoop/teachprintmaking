@@ -6,13 +6,15 @@ timeline: [castiglione, senefelder, hectograph, lautrec, tamarind]
 sources:
   - library: fick-grabowski
     where: "ch. 1, \"Practical Matters,\" on safety"
+  - library: martin-encyclopedia
+    where: "p. 11 and pp. 119–123, on offset printing"
 ---
 
 ## How it works
 
 In a planographic print, the printing surface is flat. Nothing is carved away or etched below it. The image is held on the surface in one of two ways.
 
-In lithography, it is held by chemistry. A greasy drawing on stone, metal, or plastic attracts oily ink, and the bare areas around it are treated so they hold a film of water. Oil and water repel each other, so when the surface is dampened and rolled with ink, the ink sticks only to the drawing. The surface can be inked and printed again and again.
+In lithography, it is held by chemistry. A greasy drawing on stone, metal, or plastic attracts oily ink, and the bare areas around it are treated so they hold a film of water. Oil and water repel each other, so when the surface is dampened and rolled with ink, the ink sticks only to the drawing. The surface can be inked and printed again and again. Most lithography today is printed offset: the inked plate prints onto a rubber blanket, and the blanket prints onto the paper. The image reverses twice and comes out the same way round as the drawing, so nothing has to be drawn backward. Martin's lithography demonstrations print metal plates this way. <cite>Martin, pp. 11 and 119–123</cite>
 
 In monotype, the image is simply painted, rolled, or wiped onto a smooth plate and printed once. There is only one full print, and often a fainter second one called a ghost. Gel plate printing is a monotype process.
 

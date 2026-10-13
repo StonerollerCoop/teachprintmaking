@@ -8,6 +8,8 @@ sources:
     where: "on safer intaglio"
   - library: ross-romano-intaglio
     where: "for traditional methods and their hazards"
+  - library: heller-1958
+    where: "pp. xvii, 134–135, and 197"
 ---
 
 ## How it works
@@ -16,7 +18,7 @@ Intaglio is relief turned inside out. The printmaker makes marks below the surfa
 
 The wiping is where intaglio becomes its own craft. Wipe hard and only the lines print; leave a film of ink on the surface and the whole plate takes on a soft tone. Two impressions from the same plate can look very different, and students learn to read the plate as a set of choices rather than a fixed image.
 
-Intaglio prints carry a sign of how they were made: the plate mark, a slight embossed edge where the plate pressed into the paper.
+Intaglio prints carry a sign of how they were made: the plate mark, a slight embossed edge where the plate pressed into the paper. Run a finger across an intaglio print and the inked lines stand up from the sheet. Heller described the print as a cast of the plate in paper, and that raised line gives students who are blind or have low vision a way to read a print by touch. <cite>Heller 1958, pp. xvii and 134–135</cite>
 
 ## A short history
 
@@ -34,6 +36,6 @@ Scribes and burins are sharp and need the same care as carving tools.
 
 ## Plates, presses, and inks
 
-A plate can be copper, zinc, steel, aluminum, plexiglass, acetate, a flattened juice box, the plastic-lined inside of a food carton, the lid of a foil cake tin, or a sealed cardboard collagraph. A press is the hardest part of intaglio to improvise, since the paper has to be forced into the lines. A pasta machine with felt and a plexiglass sandwich, an old clothes wringer for shallow lines, or a small 3D-printed press can all stand in for an etching press at a small scale.
+A plate can be copper, zinc, steel, aluminum, plexiglass, acetate, a flattened juice box, the plastic-lined inside of a food carton, the lid of a foil cake tin, or a sealed cardboard collagraph. A press is the hardest part of intaglio to improvise, since the paper has to be forced into the lines. A pasta machine with felt and a plexiglass sandwich, an old clothes wringer for shallow lines, or a small 3D-printed press can all stand in for an etching press at a small scale. A plaster cast skips the press entirely: plaster poured over an inked plate inside a frame picks up the ink as it sets. <cite>Heller 1958, p. 197</cite>
 
 Water-washable intaglio inks clean up with soap and water and suit schools. Tarlatan, a stiff open-weave cloth, wipes the ink across the plate; old phone-book pages or newsprint polish the surface clean.

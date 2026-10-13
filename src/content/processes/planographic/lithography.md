@@ -18,6 +18,10 @@ sources:
     where: "ch. 7, \"Lithography\""
   - library: hughes-vernon-morris
     where: "chs. 10–13, on stone, zinc, and polyester lithography"
+  - library: heller-1958
+    where: "pp. 28, 34–35, and 244–245"
+  - library: martin-encyclopedia
+    where: "pp. 110–123, lithography"
 ---
 
 ## How it works
@@ -28,9 +32,11 @@ The drawing is then processed. A coat of gum arabic, made slightly acidic, is ap
 
 To print, the surface is sponged with water, which sits on the bare areas, and rolled with oily ink, which sticks only to the image. Paper is laid on and passed through a scraper-bar press, which drags a leather-covered bar across the back of the sheet under great pressure. <cite>Antreasian and Adams, chs. 1–2</cite>
 
-Color lithographs use a separate stone or plate for each color, registered with marks or pins. <cite>Antreasian and Adams, ch. 7</cite>
+Color lithographs use a separate stone or plate for each color, registered with marks or pins. <cite>Antreasian and Adams, ch. 7</cite> Each added color doubles the possible combinations, counting the bare paper. Two stones give four, three give eight, and four give sixteen. Heller drew these combinations as a chart for planning a color print. <cite>Heller 1958, p. 28</cite>
 
 Conté, charcoal, and ordinary graphite don't print, because they hold no grease. A light color is drawn as a solid dark image and printed in pale ink; the drawing itself is always black on the stone. <cite>Hughes and Vernon-Morris, ch. 10; Fick and Grabowski, ch. 7</cite>
+
+A test plate of marks makes a good first exercise. Martin's test plate tries more than a dozen ways of making a greasy mark, from crayon and tusche washes to rubbed and spattered tone. Heller added string dipped in tusche, and gum arabic spattered from a toothbrush to hold out tiny flecks of white. <cite>Martin, p. 112; Heller 1958, pp. 34–35</cite>
 
 ## History
 
@@ -39,6 +45,8 @@ Alois Senefelder discovered lithography in Bavaria in 1796. It became the great 
 ## Ages, safety, and setting
 
 Stone and metal-plate lithography belong in a college or adult studio. Stones are heavy and need two people to lift. Processing uses gum arabic, mild acids, solvents, rosin, and talc. Older books recommend materials that should never be used now, including gasoline, benzine, phenol, dichromate compounds, and lead-based pigments. Current practice relies on ventilation, gloves, goggles, citrus or soy-based cleaners in place of turpentine, and phosphoric or citric acid etches where possible. <cite>Devon, Lagattuta, and Hamon, ch. 2</cite>
+
+Heller opened his lithography course with a group doodle. Every student made marks on one freshly grained stone, the last student tied the marks together into a composition, and the stone was processed and printed in under an hour, so the class saw the whole process on the first day. <cite>Heller 1958, pp. 244–245</cite>
 
 For school students, the polyester plate and kitchen lithography methods described in [Lithography without a stone](/types/planographic/lithography-without-a-stone/) teach the same principle safely.
 

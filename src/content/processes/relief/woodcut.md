@@ -20,6 +20,10 @@ sources:
     where: "the Japanese method of printing and registration"
   - library: tokuno-koehler
     where: "tools and the kento"
+  - library: heller-1958
+    where: "pp. 70, 78, and 92–98, on blocks, one-block color, and textures"
+  - library: martin-encyclopedia
+    where: "pp. 36–45, woodcut, and p. 133"
 ---
 
 ## How it works
@@ -29,6 +33,8 @@ A woodcut is cut into the side of a plank, along the grain, with knives and goug
 Western woodcut usually uses oil-based or water-based relief ink rolled on with a brayer. Japanese woodblock printing, called mokuhanga, uses water-based pigment brushed onto the block with a little rice paste, and the paper is sized and dampened. Each color has its own block. Registration is made with the kento, a corner and a straight notch cut into every block, so each sheet of paper drops into the same place. <cite>Fletcher; Tokuno and Koehler</cite>
 
 Japanese registration names its two marks: the kagi, the corner stop, and the hikitsuke, the straight stop along one side. A single block can also be cut apart like a jigsaw, inked in several colors, and reassembled to print them all at once, a method Edvard Munch used. <cite>Fick and Grabowski, ch. 4; Hughes and Vernon-Morris, Relief</cite>
+
+Heller also described rolling color through cut paper stencils onto a block before any carving, so the first colors print from the flat block. <cite>Heller 1958, p. 93</cite> Staining a pale block with diluted ink before carving makes every cut show as bare wood, and students can watch the print emerge as they work. <cite>Martin, p. 38</cite> Antonio Frasconi let the open grain of the wood print as texture, and Carole Katchen's woodcut Old Woman of the Andes uses the grain itself as a kind of halftone. <cite>Heller 1958, p. 70; Martin, p. 133</cite>
 
 ## History
 
@@ -45,6 +51,8 @@ Splinters fly when cutting hard woods, so students should wear eye protection. A
 ## Plates, presses, and inks
 
 Plates: pine, basswood, cherry, poplar, shina and birch plywood, Masonite or hardboard for coarse marks, balsa for very young carvers, and wood veneers glued to board.
+
+Heller suggested cigar boxes and the ends of orange crates as free blocks, and Martin recommends pine and plywood offcuts from a lumberyard for beginners. Marks can also be made without a gouge. Heller pounded wire screen into the wood and punched rows of dots with a nail, a texture with a long history called criblé, and rasps and files leave textures of their own. <cite>Heller 1958, pp. 78 and 97–98; Martin, p. 36</cite>
 
 Presses: a baren, a wooden spoon, a bamboo rice paddle, a rolling pin, or any relief or etching press. A simple test proof can be made with no ink at all by laying thin paper over the block and rubbing it with graphite.
 

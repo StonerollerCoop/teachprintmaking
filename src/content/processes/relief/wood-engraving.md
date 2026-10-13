@@ -16,6 +16,8 @@ sources:
     where: "ch. 4, \"Relief,\" on wood engraving"
   - library: hughes-vernon-morris
     where: "the Relief section, on wood engraving"
+  - library: martin-encyclopedia
+    where: "pp. 46–53, wood engraving"
 ---
 
 ## How it works
@@ -26,13 +28,15 @@ Because the lines are so fine, wood engravings are often worked as white line on
 
 Engraved lines are shallow, often only about a sixteenth of an inch deep. A line that swells in the middle and tapers at both ends is easiest cut from each end toward the center. Rubbing chalk into the cut lines, or brushing dark ink over a pale block before engraving, makes the work easier to see. <cite>Walker, chs. 2–3</cite>
 
+Tracing the design onto a darkened block with white transfer paper makes the drawing look like the white-line print it will become. <cite>Martin, p. 50</cite>
+
 ## History
 
 Thomas Bewick, working in Newcastle in the 1790s, cut detailed images of animals into boxwood end grain. His History of British Birds became a forerunner of modern field guides, and wood engraving became the standard way to illustrate books and newspapers for most of the nineteenth century, until photographic methods replaced it. Artists revived it in the twentieth century as a fine art.
 
 ## Ages, safety, and setting
 
-Wood engraving is a high school, college, and adult process. The tools are small and very sharp and are pushed toward the work, so students need instruction in holding the graver with the hand braced and the free hand clear of the line of cut. A sandbag steadies the block and lets the engraver turn it instead of turning the tool.
+Wood engraving is a high school, college, and adult process. The tools are small and very sharp and are pushed toward the work, so students need instruction in holding the graver with the hand braced and the free hand clear of the line of cut. A sandbag steadies the block and lets the engraver turn it instead of turning the tool. A book wrapped in a cloth can stand in for a leather sandbag. <cite>Martin, p. 51</cite>
 
 Boxwood is expensive and scarce, and beginners do better on end-grain maple, lemonwood, or a resin block. Resingrave, a resin engraving block, was developed by Richard Woodman; some engravers also use Corian countertop offcuts. <cite>Walker, ch. 1; Fick and Grabowski, ch. 4</cite>
 
@@ -42,4 +46,4 @@ Plates: end-grain boxwood, maple, lemonwood, and resin engraving blocks. Some te
 
 Presses: a baren or burnishing spoon for small blocks, or a proof press or letterpress, since the blocks are type high.
 
-Inks: oil-based relief ink rolled very thin, so the fine lines don't fill in.
+Inks: oil-based relief ink rolled very thin, so the fine lines don't fill in. Between proofs, wipe the block with a dry rag instead of a solvent, which can carry ink into the fine lines and stain them. <cite>Martin, p. 53</cite>

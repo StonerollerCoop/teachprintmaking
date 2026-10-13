@@ -18,6 +18,8 @@ sources:
     where: "ch. 12, \"Polyester plate\""
   - library: dalton-expressive
     where: "ch. 5, \"Mokulito,\" and ch. 6, \"Lithino\""
+  - library: heller-1958
+    where: "pp. 36 and 244–246, on other surfaces and methods"
 checks:
   - "Kitchen lithography: the credit to Émilie Aizier comes from general knowledge, not from any of our books. Confirm it, and find her own write-up to cite."
   - "Mokulito: the origin in Japan in the 1970s comes from Dalton. Confirm it with a second source and name the originator if one is known."
@@ -36,13 +38,15 @@ Every lithograph rests on the same principle: grease attracts oily ink, a treate
 
 **Lithino.** Lino sanded smooth can be drawn on and printed lithographically, even partway through a reduction linocut, so carved relief and drawn tone share one block. <span class="flag">The printmaker Mary Dalton developed the gentle sanding approach</span> described in her book Expressive Printmaking. <cite>Dalton, ch. 6</cite>
 
-**Transfer paper.** Paper brushed with a thin coating of gum arabic and glycerin can be drawn on and then transferred face down onto a plate. The drawing reverses twice, once onto the plate and once onto the paper, so writing done the right way round prints the right way round. <cite>Devon, Lagattuta, and Hamon, ch. 9</cite>
+**Transfer paper.** Paper brushed with a thin coating of gum arabic and glycerin can be drawn on and then transferred face down onto a plate. The drawing reverses twice, once onto the plate and once onto the paper, so writing done the right way round prints the right way round. <cite>Devon, Lagattuta, and Hamon, ch. 9</cite> Heller gives an older homemade transfer paper coated with dental plaster and flour. <cite>Heller 1958, p. 246</cite>
 
 **Paper lithography.** A black-and-white photocopy or laser print can serve as the plate. The toner image is greasy enough to take oil-based ink, and the bare paper, wiped with a thin mix of gum arabic and water, holds water and rejects it. The copy is laid face up, sponged, inked with a brayer, and printed face down on damp paper, usually on a press. Each copy gives only a few prints before it wears out, so students make several copies of the same image. It is one of the most immediate ways to show a class how lithography works. <cite>Fick and Grabowski, ch. 7</cite>
 
 ## History
 
 Lithography was discovered on stone in 1796, and metal plates were in use by the nineteenth century. Polyester plates came from the office printing industry. Mokulito developed in Japan in the 1970s, and kitchen lithography and lithino are twenty-first-century methods spread by printmakers through workshops, books, and online videos.
+
+Experiments away from the stone have a longer history than they seem to. In 1958 Heller noted that glass, iron, and rubber will all take a lithographic image, and he recorded Albert W. Barker's method of lithography with no etch and T. E. Griffits's method of transfer printing with magnesium chloride. <cite>Heller 1958, pp. 36 and 244</cite>
 
 ## Ages, safety, and setting
 

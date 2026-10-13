@@ -14,6 +14,10 @@ sources:
     where: "ch. 5, on mezzotint"
   - library: hughes-vernon-morris
     where: "the Intaglio section, on mezzotint"
+  - library: heller-1958
+    where: "pp. 152–153, mezzotint substitutes"
+  - library: martin-encyclopedia
+    where: "pp. 80–83 and 94"
 ---
 
 ## How it works
@@ -24,7 +28,7 @@ The image is made by smoothing that rough surface. A scraper removes burr, and a
 
 Preparing a plate by hand takes many hours, which is why many printmakers buy plates already rocked. Students can learn the dark-to-light approach quickly on materials that roughen easily.
 
-A plate needs to be rocked in at least eight directions to print an even black. Rockers come with anywhere from about 45 to 150 teeth to the inch; finer rockers give a smoother tone and take longer. <cite>Fick and Grabowski, ch. 5; Hughes and Vernon-Morris, Intaglio</cite>
+A plate needs to be rocked in at least eight directions to print an even black. Rockers come with anywhere from about 45 to 150 teeth to the inch; finer rockers give a smoother tone and take longer. <cite>Fick and Grabowski, ch. 5; Hughes and Vernon-Morris, Intaglio</cite> A rocker fixed to a weighted pole and stepped along a penciled grid makes rocking more even and less tiring. <cite>Martin, pp. 81–82</cite>
 
 ## History
 
@@ -40,7 +44,7 @@ The dark-to-light idea is easy to teach at younger ages. A plexiglass plate roug
 
 Plates: copper is the classic metal. Pre-rocked plates are sold commercially. Plexiglass and juice-box plates roughened with sandpaper work for teaching.
 
-Tools: a rocker or roulette to roughen; a scraper and burnisher to bring up the lights. The back of a metal spoon or a smooth bone folder can burnish a soft plate.
+Tools: a rocker or roulette to roughen; a scraper and burnisher to bring up the lights. In an etching studio, two other routes reach a mezzotint-like black without a rocker. An aquatint bitten to full black can be scraped and burnished back to the lights, and a hard ground ruled in four directions with a dull needle and then etched gives a similar dark field. <cite>Heller 1958, pp. 152–153; Martin, p. 94</cite> The back of a metal spoon or a smooth bone folder can burnish a soft plate.
 
 Presses: an etching press with firm pressure.
 

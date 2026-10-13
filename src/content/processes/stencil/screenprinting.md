@@ -18,6 +18,10 @@ sources:
     where: "ch. 5, on screen and photographic printing"
   - library: ross-romano-printmaker
     where: "ch. 4, \"Screen Prints\""
+  - library: martin-encyclopedia
+    where: "pp. 60–75, screenprinting"
+  - library: heller-1958
+    where: "pp. 200–203, on serigraphy's history and planning separations"
 ---
 
 ## How it works
@@ -33,11 +37,13 @@ There are many ways to make the stencil:
 
 Each color needs its own stencil, registered with marks or tabs on the printing board. A reduction print can be made from one screen by blocking out more of the mesh after each color.
 
+Where two colors meet edge to edge, cut the stencils to overlap by a hair so no white gap opens between them. A sheet of clear acetate hinged to the printing board makes registration easy: print each new color onto the acetate, slide the paper under it until the image lines up, and fold the acetate back. <cite>Martin, pp. 62 and 67</cite> Drawing each color separation on its own sheet of clear acetate lets students stack the layers and preview the print before they make any stencils. <cite>Heller 1958, p. 203</cite> Overprinting transparent cyan, magenta, and yellow builds a wide range of color from three screens, the same principle as the process color used to print books and magazines. <cite>Martin, pp. 70–73</cite>
+
 The screen should sit slightly above the paper, held up by a scrap of card under each corner, so the mesh touches the paper only under the squeegee and lifts cleanly behind it. Flood the screen with the squeegee held at a low angle, then print with it held more upright, at about forty-five to sixty degrees. <cite>Fick and Grabowski, ch. 3; Medley, ch. 5</cite>
 
 ## History
 
-Stencils on a mesh or with fine connecting threads have deep roots, including Japanese katagami. Patents for screen stencil processes appear from the 1880s, and Samuel Simon of Manchester's 1907 patent for printing through silk stretched on a frame is the one most often cited. <cite>Fick and Grabowski, ch. 3</cite> Screen printing spread through sign shops and textile works. In the 1960s, the printer Chris Prater at Kelpra Studio in London worked with Eduardo Paolozzi and other artists to make screenprinting a fine art in Britain. <cite>Hughes and Vernon-Morris, ch. 14</cite> In the 1930s, artists in the New Deal Federal Art Project, including Anthony Velonis, adapted it for posters and fine art, and the curator Carl Zigrosser helped coin the word serigraph to set artists' screenprints apart from commercial work. In the 1960s, Andy Warhol used photographic screens to repeat images from advertising and the news, and Corita Kent made joyful, text-filled serigraphs in Los Angeles.
+Stencils on a mesh or with fine connecting threads have deep roots, including Japanese katagami. Patents for screen stencil processes appear from the 1880s, and Samuel Simon of Manchester's 1907 patent for printing through silk stretched on a frame is the one most often cited. <cite>Fick and Grabowski, ch. 3</cite> Screen printing spread through sign shops and textile works. In the 1960s, the printer Chris Prater at Kelpra Studio in London worked with Eduardo Paolozzi and other artists to make screenprinting a fine art in Britain. <cite>Hughes and Vernon-Morris, ch. 14</cite> In the 1930s, artists in the New Deal Federal Art Project, including Anthony Velonis, adapted it for posters and fine art, and the curator Carl Zigrosser helped coin the word serigraph to set artists' screenprints apart from commercial work. Guy Maccoy held the first one-person exhibition of serigraphs. <cite>Heller 1958, pp. 200–201</cite> In the 1960s, Andy Warhol used photographic screens to repeat images from advertising and the news, and Corita Kent made joyful, text-filled serigraphs in Los Angeles.
 
 ## Ages, safety, and setting
 

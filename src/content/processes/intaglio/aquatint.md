@@ -16,6 +16,10 @@ sources:
     where: "the Intaglio section, on aquatint and sugar lift"
   - library: ross-romano-intaglio
     where: "the aquatint, sugar lift, and spit bite sections"
+  - library: heller-1958
+    where: "pp. 148–153 and 161"
+  - library: martin-encyclopedia
+    where: "pp. 94–95, aquatint"
 ---
 
 ## How it works
@@ -24,9 +28,9 @@ An etching bath bites evenly into bare metal, and a large bare area simply becom
 
 The traditional resist is rosin dust, shaken over the plate in a dust box or from a cloth bag and then melted onto the metal with gentle heat. Spray paint misted lightly over the plate does the same job without heating. Tone depth comes from the length of the bite: areas stopped out early print light, and areas left longest print darkest, so a plate can step from pale gray to deep black.
 
-Related methods paint the image directly. In sugar lift, the printmaker paints with a sugar solution, covers the plate with ground, and soaks it in water; the sugar swells and lifts the ground off, leaving the brushstroke open to aquatint. In spit bite, etchant is brushed straight onto an aquatinted plate for soft watercolor-like washes. <cite>Ross and Romano 1974</cite>
+Related methods paint the image directly. In sugar lift, the printmaker paints with a sugar solution, covers the plate with ground, and soaks it in water; the sugar swells and lifts the ground off, leaving the brushstroke open to aquatint. In spit bite, etchant is brushed straight onto an aquatinted plate for soft watercolor-like washes. <cite>Ross and Romano 1974</cite> At Atelier 17, Stanley William Hayter's sugar lift solution combined sugar with India ink and a little liquid soap. <cite>Heller 1958, p. 161</cite>
 
-A good aquatint covers about half the plate with resist. Printmakers bite a test strip at a series of times, from under a minute up to half an hour, and print it to see the full range of tones before working on the real plate. <cite>Fick and Grabowski, ch. 5</cite>
+A good aquatint covers about half the plate with resist. Printmakers bite a test strip at a series of times, from under a minute up to half an hour, and print it to see the full range of tones before working on the real plate. <cite>Fick and Grabowski, ch. 5</cite> Heller bit his test steps at 1, 4, and 16 minutes, each four times the last, a geometric sequence a math class will recognize. <cite>Heller 1958, p. 148</cite>
 
 ## History
 
@@ -44,7 +48,7 @@ Students too young for a studio can still explore the idea. Sandpaper pressed fa
 
 Plates: copper or zinc with a safer etchant, or photopolymer plates exposed through an aquatint screen.
 
-Resists: rosin dust, spray paint, airbrushed acrylic, or a sandpaper texture pressed into ground.
+Resists: rosin dust, spray paint, airbrushed acrylic, or a sandpaper texture pressed into ground. Rosin can be dusted from a cheesecloth or nylon stocking bag, a salt shaker, or a kitchen sifter in place of a dust box. Salt sprinkled onto a warm ground and later dissolved in water leaves a speckled tone. <cite>Martin, p. 95; Heller 1958, pp. 149 and 152–153</cite>
 
 Presses: an etching press.
 

@@ -18,6 +18,10 @@ sources:
     where: "chs. 2 and 3, on stamps, produce, and found objects"
   - library: ross-romano-printmaker
     where: "the chapter on school printmaking, for starting ages"
+  - library: heller-1958
+    where: "p. 98, Frasconi's repeat blocks"
+  - library: martin-encyclopedia
+    where: "p. 134, Ian Mowforth's square blocks"
 ---
 
 ## How it works
@@ -29,6 +33,8 @@ Foam takes the idea one step further. Drawing into a sheet of craft foam or a cl
 String glued around a cardboard tube or a can becomes a roller. String glued to a block, or a design trailed in white glue and left to dry, prints as raised line. Leaves, feathers, and fish print their own surface; the Japanese practice of printing fish, gyotaku, began as a way for anglers to record a catch. <cite>DeSherlia, sec. IV</cite>
 
 An inked object can also be printed by offset. Roll a clean brayer over an inked leaf, toy, or textured scrap so the image transfers to the roller, then roll the brayer across paper. Objects that can't be held, such as fabric scraps and lace, can be laid on the inked slab, covered with scrap paper, and rolled, then lifted and printed. <cite>Medley, chs. 2–3</cite>
+
+Small blocks can build larger designs. Antonio Frasconi cut small repeat blocks and printed them within a larger block. Ian Mowforth's Dancing Figures is printed from nine separately cut square blocks that can be arranged in any order, a good model for a class pattern project in which each student cuts one square. <cite>Heller 1958, p. 98; Martin, p. 134</cite>
 
 ## History
 

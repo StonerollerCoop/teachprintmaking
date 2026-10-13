@@ -1,0 +1,50 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const pages = (await getCollection('teaching')).sort((a, b) => a.data.order - b.data.order);
+const groups = [
+  {
+    id: 'class',
+    title: 'Running a print class',
+    note: 'Demonstrating, setting up the room, and talking about the prints afterward.',
+  },
+  {
+    id: 'concepts',
+    title: 'What printmaking teaches',
+    note: 'Ideas that a print makes visible and that carry well beyond the print room.',
+  },
+  {
+    id: 'learners',
+    title: 'Reaching every learner',
+    note: 'How to open printmaking to learners who are blind or have low vision, who have intellectual disabilities, or who have sensory and attention needs.',
+  },
+] as const;
+---
+
+<Base
+  title="Teaching"
+  description="How to run a print class, what printmaking teaches, and how to reach every learner in the room."
+>
+  <h1>Teaching</h1>
+  <p class="lede">
+    These pages are about the teaching itself. They cover running a print class, the concepts printmaking teaches
+    well, and the changes that let more people into the work.
+  </p>
+  {groups.map((g) => (
+    <section>
+      <h2>{g.title}</h2>
+      <p class="muted">{g.note}</p>
+      <div class="card-grid">
+        {pages
+          .filter((p) => p.data.group === g.id)
+          .map((p) => (
+            <a class:list={['grid-card', { flagged: p.data.checks.length > 0 }]} href={`/teaching/${p.id}/`}>
+              <h3>{p.data.title}</h3>
+              <p class="grid-card-note">{p.data.tagline}</p>
+            </a>
+          ))}
+      </div>
+    </section>
+  ))}
+</Base>
