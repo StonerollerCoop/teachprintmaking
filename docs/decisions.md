@@ -133,3 +133,11 @@ Open question: the current vocabulary has separate families for monotype, collag
 - The site won't go public until every permission is in hand. Anything that needs permission or checking is marked in red: the claim itself is wrapped in `<span class="flag">`, and the reason is listed under `checks:` in the page's frontmatter, which shows a red "Before this goes public" box at the top of the page. A book's rights question goes in `check` on its library entry.
 - /checks/ gathers every flag on the site in one place. It isn't linked from the menu.
 - Content keeps being updated as Libby sends new sources.
+
+## 2026-10-13: Pictures on the family and process pages
+
+- Family and process pages show a Pictures section of image cards: the picture, its title, maker, date, and medium, a line on what it shows teachers, and its source and license. Each picture links to its record at the source.
+- Pictures live in src/data/images.json, one entry per image, keyed to a page id ("relief" or "relief/woodcut"). Images are served from the source (the Art Institute of Chicago's image server for the first batch), the same way the timeline does it.
+- The first sweep added 102 public-domain (CC0) images from the Art Institute of Chicago, each confirmed against its own museum record. The Met, Wikimedia Commons, and the Library of Congress could not be reached in that sweep, so process photos (tools, presses, people printing) and the modern processes (linocut, collagraph, gel plate, Risograph) are still missing.
+- Libby wants the sweep to go well beyond museums, to the wider public domain: Wikimedia Commons, the Library of Congress, Flickr Commons, Internet Archive book scans, the NYPL's public-domain collections, Openverse, and openly licensed photo sites.
+- An image entry with `check` shows in red and appears on /checks/. Six are flagged, mostly to confirm the subject suits children before launch.

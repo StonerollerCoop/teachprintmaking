@@ -6,6 +6,7 @@ import { ageBands } from '../../../data/vocab';
 import TimelineCards from '../../../components/TimelineCards.astro';
 import SourceCards from '../../../components/SourceCards.astro';
 import ChecksBox from '../../../components/ChecksBox.astro';
+import ImageCards from '../../../components/ImageCards.astro';
 import {
   allTypes,
   processUrl,
@@ -64,6 +65,8 @@ const mine = processes.filter((p) => processFamily(p) === family.id);
     </div>
 
     <div class="lesson-body"><Content /></div>
+
+    <ImageCards page={family.id} />
 
     <TimelineCards ids={family.data.timeline} />
 

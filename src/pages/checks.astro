@@ -6,11 +6,13 @@
 import Base from '../layouts/Base.astro';
 import { allTypes, familyUrl, processUrl } from '../lib/types';
 import { library } from '../data/library';
+import { images } from '../data/images';
 
 const { families, processes } = await allTypes();
 const groups = [
   ...families.filter((f) => f.data.checks.length).map((f) => ({ title: f.data.title, href: familyUrl(f.id), checks: f.data.checks })),
   ...processes.filter((p) => p.data.checks.length).map((p) => ({ title: p.data.title, href: processUrl(p.id), checks: p.data.checks })),
+  ...images.filter((i) => i.check).map((i) => ({ title: `Picture: ${i.title}`, href: i.page.includes('/') ? processUrl(i.page) : familyUrl(i.page), checks: [i.check!] })),
   ...library.filter((b) => b.check).map((b) => ({ title: b.title, href: `/sources/#${b.id}`, checks: [b.check!] })),
 ];
 const total = groups.reduce((n, g) => n + g.checks.length, 0);

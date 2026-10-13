@@ -6,6 +6,7 @@ import LessonCard from '../../../components/LessonCard.astro';
 import TimelineCards from '../../../components/TimelineCards.astro';
 import SourceCards from '../../../components/SourceCards.astro';
 import ChecksBox from '../../../components/ChecksBox.astro';
+import ImageCards from '../../../components/ImageCards.astro';
 import { allLessons } from '../../../lib/lessons';
 import {
   allTypes,
@@ -62,6 +63,8 @@ const related = d.related.map((r) => processes.find((p) => p.id === r)!);
     </dl>
 
     <div class="lesson-body"><Content /></div>
+
+    <ImageCards page={proc.id} />
 
     <h2>Lessons on this site</h2>
     {lessons.length === 0 ? (

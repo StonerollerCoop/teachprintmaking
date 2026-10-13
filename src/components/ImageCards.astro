@@ -1,0 +1,31 @@
+---
+import { imagesFor } from '../data/images';
+
+interface Props {
+  page: string;
+}
+const { page } = Astro.props;
+const imgs = imagesFor(page);
+---
+
+{imgs.length > 0 && (
+  <>
+    <h2>Pictures</h2>
+    <div class="card-grid image-grid">
+      {imgs.map((i) => (
+        <figure class:list={['grid-card', 'image-card', { flagged: i.check }]}>
+          <a class="image-frame" href={i.link}>
+            <img src={i.src} alt={i.alt} loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+          </a>
+          <figcaption>
+            <p class="image-title"><a href={i.link}>{i.title}</a></p>
+            <p class="grid-card-meta">{[i.creator, i.date].filter(Boolean).join(', ')}{i.medium && <><br />{i.medium}</>}</p>
+            <p>{i.why}</p>
+            <p class="image-credit">{i.license.includes(i.source) ? i.license : `${i.source}. ${i.license}`}.</p>
+            {i.check && <p class="flag image-check">{i.check}</p>}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </>
+)}
