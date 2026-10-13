@@ -9,6 +9,10 @@ setting: studio
 techniques: []
 timeline: [aquatint]
 related: [intaglio/etching, intaglio/mezzotint]
+sources:
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
+  - library: ross-romano-intaglio
 ---
 
 ## How it works
@@ -19,9 +23,13 @@ The traditional resist is rosin dust, shaken over the plate in a dust box or fro
 
 Related methods paint the image directly. In sugar lift, the printmaker paints with a sugar solution, covers the plate with ground, and soaks it in water; the sugar swells and lifts the ground off, leaving the brushstroke open to aquatint. In spit bite, etchant is brushed straight onto an aquatinted plate for soft watercolor-like washes.
 
+A good aquatint covers about half the plate with resist. Printmakers bite a test strip at a series of times, from under a minute up to half an hour, and print it to see the full range of tones before working on the real plate.
+
 ## History
 
 Jean-Baptiste Le Prince developed aquatint in France in the 1760s, as a way to imitate wash drawings. Francisco Goya used it for the smoky, shadowed passages of his print series. Picasso was among the twentieth-century artists who used sugar lift, painting directly with the brush.
+
+Jan van de Velde IV made tonal etchings in the Netherlands around 1650, and the English painter Paul Sandby gave the process the name aquatint in the 1770s.
 
 ## Ages, safety, and setting
 

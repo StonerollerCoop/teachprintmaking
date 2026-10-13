@@ -9,6 +9,9 @@ setting: art-room
 techniques: []
 timeline: [mezzotint]
 related: [intaglio/aquatint, planographic/monotype]
+sources:
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
 ---
 
 ## How it works
@@ -18,6 +21,8 @@ Mezzotint works backward from every other intaglio method. The printmaker first 
 The image is made by smoothing that rough surface. A scraper removes burr, and a burnisher polishes the metal flat. Lightly burnished areas hold less ink and print gray; fully polished areas print white. The printmaker works from dark to light, drawing with light out of the darkness.
 
 Preparing a plate by hand takes many hours, which is why many printmakers buy plates already rocked. Students can learn the dark-to-light approach quickly on materials that roughen easily.
+
+A plate needs to be rocked in at least eight directions to print an even black. Rockers come with anywhere from about 45 to 150 teeth to the inch; finer rockers give a smoother tone and take longer.
 
 ## History
 

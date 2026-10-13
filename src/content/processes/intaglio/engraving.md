@@ -9,6 +9,10 @@ setting: art-room
 techniques: []
 timeline: [engraving, durer, rolling-press]
 related: [intaglio/drypoint, relief/wood-engraving, intaglio/etching]
+sources:
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
+  - library: ross-romano-intaglio
 ---
 
 ## How it works
@@ -34,3 +38,5 @@ Plates: copper is the classic metal. Plexiglass engraves well for practice, and 
 Presses: an etching press. Engraved lines are shallow and crisp, so a small press with good pressure works well.
 
 Inks: water-washable or oil-based intaglio ink, wiped with tarlatan and polished with paper or the palm, printed on damp paper.
+
+Copper for engraving is usually bought half-hard, about a millimeter thick. Ink a new plate twice before the first proof so the lines fill completely.

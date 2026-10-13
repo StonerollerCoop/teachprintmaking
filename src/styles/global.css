@@ -372,3 +372,26 @@ main > section + section { margin-top: 44px; }
 .process-card dd { margin: 0; color: var(--ink-soft); }
 .type-head svg.family-diagram, .types-family-head svg.family-diagram { flex: 0 0 auto; width: 160px; height: auto; }
 @media (max-width: 520px) { .type-head, .types-family-head { flex-direction: column; align-items: flex-start; gap: 8px; } .type-head svg.family-diagram, .types-family-head svg.family-diagram { width: 120px; } }
+
+/* Gridded cards for lessons, books, timeline entries, and related pages */
+.card-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); margin: 12px 0 28px; padding: 0; list-style: none; }
+.card-grid.compact { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.grid-card { display: flex; flex-direction: column; gap: 6px; padding: 14px; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper-2); color: var(--ink); }
+.grid-card h3 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 1.3rem; line-height: 1.2; }
+.grid-card h3 a { color: var(--ink); text-decoration: none; }
+.grid-card h3 a:hover, .grid-card h3 a:focus-visible { text-decoration: underline; }
+.grid-card p { margin: 0; font-size: .92rem; }
+.grid-card .grid-card-meta { font: 500 .8rem/1.35 var(--sans); color: var(--ink-soft); }
+.grid-card-links { list-style: none; margin: 4px 0 0; padding: 8px 0 0; border-top: 1px solid var(--rule); font-size: .86rem; display: grid; gap: 3px; }
+.grid-card-links li::before { content: 'Variation: '; color: var(--ink-soft); }
+a.grid-card { text-decoration: none; }
+a.grid-card:hover, a.grid-card:focus-visible { border-color: var(--ink); }
+a.grid-card h3 { color: var(--ink); }
+.grid-card .grid-card-note { color: var(--ink-soft); }
+.grid-card .chips { display: flex; flex-wrap: wrap; gap: 4px 6px; margin-top: 2px; }
+.grid-card .chips span { font: 500 .76rem/1.2 var(--sans); padding: 3px 7px; border-radius: 3px; border: 1px solid var(--rule); background: var(--paper); }
+.grid-card .biblio-caution { font-size: .86rem; border-left: 3px solid var(--ochre); padding-left: 8px; }
+.grid-card .biblio-used { font-size: .86rem; margin-top: auto; padding-top: 8px; border-top: 1px solid var(--rule); }
+.video-embed { position: relative; aspect-ratio: 16 / 9; margin-top: 4px; }
+.video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 4px; }
+@media print { .video-embed { display: none; } }

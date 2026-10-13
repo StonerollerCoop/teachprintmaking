@@ -9,6 +9,11 @@ setting: classroom
 techniques: [foam-relief, stamp-print, nature-print]
 timeline: [cylinder-seals, rubbings, tahiti-bamboo, tongan-kupesi, adinkra]
 related: [relief/linocut, relief/collagraph, stencil/cut-stencils]
+sources:
+  - library: medley-anything
+  - library: desherlia-1967
+  - library: kafka-linoleum
+  - library: ross-romano-printmaker
 ---
 
 ## How it works
@@ -18,6 +23,8 @@ Anything with a surface that can hold ink can print. A potato cut in half, a cor
 Foam takes the idea one step further. Drawing into a sheet of craft foam or a clean polystyrene tray with a dull pencil presses a line below the surface, and that line stays white when the sheet is rolled with ink. It is the gentlest way to teach the logic of relief: what is pressed down stays blank, and what stands up prints.
 
 String glued around a cardboard tube or a can becomes a roller. String glued to a block, or a design trailed in white glue and left to dry, prints as raised line. Leaves, feathers, and fish print their own surface; the Japanese practice of printing fish, gyotaku, began as a way for anglers to record a catch.
+
+An inked object can also be printed by offset. Roll a clean brayer over an inked leaf, toy, or textured scrap so the image transfers to the roller, then roll the brayer across paper. Objects that can't be held, such as fabric scraps and lace, can be laid on the inked slab, covered with scrap paper, and rolled, then lifted and printed.
 
 ## History
 
@@ -36,3 +43,5 @@ Plates: potatoes, carrots, celery ends, apples, onions, corks, spools, bottle ca
 Presses: the hand, a fist, a clean brayer rolled over the back of the paper, a rolling pin, or the back of a wooden spoon.
 
 Inks: tempera, washable paint, water-based block printing ink, stamp pads, and watercolor brushed onto leaves.
+
+Wood and cork take ink well from a brayer; rubber and foam stamps do better pressed onto a stamp pad or a thin layer of ink on a slab. Cut citrus and cucumber print more cleanly after drying cut side up for about an hour, while lettuce and other leafy greens wilt and need to be printed right away. A slice off the end refreshes a potato or carrot stamp the next day. Wear gloves or skip hot peppers, since the oils burn skin.

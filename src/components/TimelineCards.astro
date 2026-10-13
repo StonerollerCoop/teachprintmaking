@@ -1,0 +1,28 @@
+---
+import { timeline } from '../data/timeline';
+
+interface Props {
+  ids: string[];
+}
+const { ids } = Astro.props;
+const entries = ids.map((id) => {
+  const e = timeline.find((t) => t.id === id);
+  if (!e) throw new Error(`Unknown timeline entry "${id}"`);
+  return e;
+});
+---
+
+{entries.length > 0 && (
+  <>
+    <h2>In the timeline</h2>
+    <div class="card-grid compact">
+      {entries.map((e) => (
+        <a class="grid-card" href={`/history/#${e.id}`}>
+          <p class="grid-card-meta">{e.when}</p>
+          <h3>{e.title}</h3>
+          {e.place && <p class="grid-card-note">{e.place}</p>}
+        </a>
+      ))}
+    </div>
+  </>
+)}

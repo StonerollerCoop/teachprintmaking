@@ -9,6 +9,11 @@ setting: studio
 techniques: []
 timeline: [senefelder, lautrec, tamarind]
 related: [planographic/lithography-without-a-stone, planographic/monotype]
+sources:
+  - library: tamarind-1971
+  - library: tamarind-2008
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
 ---
 
 ## How it works
@@ -20,6 +25,8 @@ The drawing is then processed. A coat of gum arabic, made slightly acidic, is ap
 To print, the surface is sponged with water, which sits on the bare areas, and rolled with oily ink, which sticks only to the image. Paper is laid on and passed through a scraper-bar press, which drags a leather-covered bar across the back of the sheet under great pressure.
 
 Color lithographs use a separate stone or plate for each color, registered with marks or pins.
+
+Conté, charcoal, and ordinary graphite don't print, because they hold no grease. A light color is drawn as a solid dark image and printed in pale ink; the drawing itself is always black on the stone.
 
 ## History
 
@@ -40,3 +47,5 @@ Drawing materials: lithographic crayons and pencils, rubbing crayon, and stick o
 Presses: a scraper-bar lithography press. Small aluminum and polyester plates can be printed on an etching press with a sheet of plastic over the paper.
 
 Inks: oil-based lithographic ink. Magnesium carbonate stiffens it, and transparent base makes tints.
+
+The color of a stone shows its hardness. Pale yellow stones are softer and suit bold work; gray and blue-gray stones are harder and hold fine detail. Small stones should be at least two inches thick, and large stones three or four, or they may crack under the press.

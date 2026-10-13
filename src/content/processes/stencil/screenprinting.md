@@ -9,6 +9,11 @@ setting: art-room
 techniques: [screenprint]
 timeline: [screen-patent, wpa, pop]
 related: [stencil/cut-stencils, stencil/duplicators, stencil/pochoir]
+sources:
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
+  - library: medley-anything
+  - library: ross-romano-printmaker
 ---
 
 ## How it works
@@ -24,15 +29,19 @@ There are many ways to make the stencil:
 
 Each color needs its own stencil, registered with marks or tabs on the printing board. A reduction print can be made from one screen by blocking out more of the mesh after each color.
 
+The screen should sit slightly above the paper, held up by a scrap of card under each corner, so the mesh touches the paper only under the squeegee and lifts cleanly behind it. Flood the screen with the squeegee held at a low angle, then print with it held more upright, at about forty-five to sixty degrees.
+
 ## History
 
-Stencils on a mesh or with fine connecting threads have deep roots, including Japanese katagami. Samuel Simon of Manchester patented a process using silk stretched on a frame in 1907, and screen printing spread through sign shops and textile works. In the 1930s, artists in the New Deal Federal Art Project, including Anthony Velonis, adapted it for posters and fine art, and the curator Carl Zigrosser helped coin the word serigraph to set artists' screenprints apart from commercial work. In the 1960s, Andy Warhol used photographic screens to repeat images from advertising and the news, and Corita Kent made joyful, text-filled serigraphs in Los Angeles.
+Stencils on a mesh or with fine connecting threads have deep roots, including Japanese katagami. Patents for screen stencil processes appear from the 1880s, and Samuel Simon of Manchester's 1907 patent for printing through silk stretched on a frame is the one most often cited. Screen printing spread through sign shops and textile works. In the 1960s, the printer Chris Prater at Kelpra Studio in London worked with Eduardo Paolozzi and other artists to make screenprinting a fine art in Britain. In the 1930s, artists in the New Deal Federal Art Project, including Anthony Velonis, adapted it for posters and fine art, and the curator Carl Zigrosser helped coin the word serigraph to set artists' screenprints apart from commercial work. In the 1960s, Andy Warhol used photographic screens to repeat images from advertising and the news, and Corita Kent made joyful, text-filled serigraphs in Los Angeles.
 
 ## Ages, safety, and setting
 
 Screenprinting with paper stencils works from upper elementary, with an adult helping to pull the squeegee for an even print. Middle school students can manage their own screens. Photo emulsion suits high school and up.
 
 Use water-based screen inks, which clean up with water before they dry. Clean screens promptly, since dried ink clogs the mesh. Photo emulsions, their sensitizers, and emulsion removers can irritate skin and eyes; use gloves, eye protection, and good ventilation, and follow the supplier's instructions. Older books describe lacquer stencils and solvent-based inks, which belong only in professionally ventilated studios.
+
+A simple exposure unit can be made from a bright work lamp hung above the screen, with a sheet of tempered glass pressing the transparency flat. Plain glass can crack and acrylic can melt under a hot lamp.
 
 ## Plates, presses, and inks
 
@@ -43,3 +52,5 @@ Stencils: copy paper, freezer paper, contact paper, drawing fluid and screen fil
 Tools: a squeegee slightly wider than the image, a hinged printing board, and packing tape to seal the edges of the screen.
 
 Inks: water-based screen ink for paper, textile ink for fabric (heat set with an iron), or acrylic paint mixed with screen-printing medium so it doesn't dry in the mesh.
+
+Water-based ink needs a fairly fine mesh, around 200 threads to the inch or more for paper. A little glycerin slows drying in the mesh. When printing a T-shirt, slide cardboard inside so the ink doesn't print through to the back, and expect to pull opaque white on dark fabric three or four times.

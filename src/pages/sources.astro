@@ -17,21 +17,22 @@ const sorted = [...library].sort((a, b) => surname(a.authors).localeCompare(surn
     that draws on them. They're worth finding for your own shelf or your school library.
   </p>
 
-  <ol class="biblio">
+  <div class="card-grid">
     {sorted.map((b) => {
       const used = usedBy(b.id);
       return (
-        <li class="biblio-item" id={b.id}>
-          <p class="biblio-cite">
-            {b.authors}. {b.url ? <a href={b.url}><cite>{b.title}</cite></a> : <cite>{b.title}</cite>}. {b.publisher}, {b.year}.
-            {b.isbn && <span class="muted"> ISBN {b.isbn}.</span>}
+        <article class="grid-card" id={b.id}>
+          <h3>{b.url ? <a href={b.url}>{b.title}</a> : b.title}</h3>
+          <p class="grid-card-meta">
+            {b.authors}<br />
+            {b.publisher}, {b.year}{b.isbn && <>. ISBN {b.isbn}</>}
           </p>
-          <p class="biblio-note">{b.note}</p>
-          <p class="biblio-meta">
+          <p>{b.note}</p>
+          <div class="chips">
             <span>{b.families.map((f) => familyName[f]).join(', ')}</span>
             <span>{b.level}</span>
-            <span>{b.rights}</span>
-          </p>
+          </div>
+          <p class="grid-card-note">{b.rights}</p>
           {b.caution && <p class="biblio-caution"><strong>A safety note:</strong> {b.caution}</p>}
           {used.length > 0 && (
             <p class="biblio-used">
@@ -39,8 +40,8 @@ const sorted = [...library].sort((a, b) => surname(a.authors).localeCompare(surn
               {used.map((l, i) => <>{i > 0 && ', '}<a href={lessonUrl(l.id)}>{l.data.title}</a></>)}
             </p>
           )}
-        </li>
+        </article>
       );
     })}
-  </ol>
+  </div>
 </Base>

@@ -9,6 +9,11 @@ setting: classroom
 techniques: [drypoint]
 timeline: [rembrandt, rolling-press, open-press]
 related: [intaglio/engraving, relief/collagraph, intaglio/etching]
+sources:
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
+  - library: dalton-expressive
+  - library: ross-romano-intaglio
 ---
 
 ## How it works
@@ -20,6 +25,8 @@ Pressure controls the line. A light scratch prints pale and fine; a heavy one pr
 The burr wears down under the pressure of the press, so a drypoint on soft material gives only a small number of strong prints. That suits a classroom, where each student usually wants a few good impressions.
 
 Drypoint on a juice box or the inside of a food carton adds another possibility. The plastic coating can be scratched, and it can also be cut and peeled away to expose the cardboard underneath. The bare card holds ink like a sponge and prints as a solid dark.
+
+On soft plates the burr wears quickly. Copper and zinc give perhaps twenty strong impressions; plastic and card give fewer. A carbide-tipped scribe stays sharp far longer than a steel needle, and a wire brush or steel wool dragged across a plastic plate scuffs in a light tone.
 
 ## History
 

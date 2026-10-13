@@ -1,0 +1,56 @@
+---
+import { libraryById } from '../data/library';
+
+interface Source {
+  title?: string;
+  author?: string;
+  url?: string;
+  library?: string;
+  youtube?: string;
+  note?: string;
+}
+interface Props {
+  sources: Source[];
+  owner: string;
+}
+const { sources, owner } = Astro.props;
+
+const cards = sources.map((s) => {
+  if (s.library) {
+    const b = libraryById.get(s.library);
+    if (!b) throw new Error(`${owner}: source points to unknown library entry "${s.library}"`);
+    return { kind: 'Book', title: b.title, author: b.authors, href: `/sources/#${b.id}`, note: s.note, youtube: undefined };
+  }
+  if (!s.title || !s.author || !s.url) throw new Error(`${owner}: a web source needs a title, author, and url`);
+  return { kind: s.youtube ? 'Video' : 'Web page', title: s.title, author: s.author, href: s.url, note: s.note, youtube: s.youtube };
+});
+---
+
+{cards.length > 0 && (
+  <>
+    <h2>Sources for this page</h2>
+    <p class="muted">We learned from these and wrote this page in our own words. Their wording, photos, and videos belong to their creators.</p>
+    <div class="card-grid">
+      {cards.map((c) => (
+        <article class="grid-card">
+          <p class="grid-card-meta">{c.kind}</p>
+          <h3><a href={c.href}>{c.title}</a></h3>
+          <p class="grid-card-note">{c.author}</p>
+          {c.youtube && (
+            <div class="video-embed">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${c.youtube}`}
+                title={`${c.title}, by ${c.author}`}
+                loading="lazy"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          )}
+          {c.note && <p>{c.note}</p>}
+        </article>
+      ))}
+    </div>
+  </>
+)}

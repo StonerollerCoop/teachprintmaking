@@ -9,6 +9,12 @@ setting: studio
 techniques: []
 timeline: [etching, rembrandt, nontoxic]
 related: [intaglio/aquatint, intaglio/drypoint, intaglio/engraving]
+sources:
+  - library: adams-nontoxic
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
+  - library: ross-romano-intaglio
+  - library: ash-soft-ground
 ---
 
 ## How it works
@@ -25,11 +31,15 @@ Armorers decorated steel with acid long before anyone printed from it. Daniel Ho
 
 Traditional etching used nitric acid and solvent-based grounds. From the 1990s, printmakers developed safer methods. Friedhard Kiekeben developed Edinburgh Etch, a ferric chloride solution with citric acid for copper. Copper sulfate and salt solutions etch zinc, aluminum, and steel without nitric acid. Keith Howard developed intaglio methods using photopolymer film, and Dan Welden developed Solarplate, a light-sensitive steel-backed plate developed in water.
 
+Kiekeben also developed Saline Sulfate Etch, a copper sulfate and salt solution for zinc, aluminum, and steel, building on Cedric Green's copper sulfate etch. Andrew Baldwin developed BIG, a hard ground rolled onto the plate and baked, and Dwight Pogue and Skip Klepacki developed plant-based cleaners to replace studio solvents.
+
 ## Ages, safety, and setting
 
 Etching belongs in high school, college, and adult classes, and only with the safer methods. Older manuals describe practices that should not be used anywhere students are present, including nitric acid baths without fume extraction, grounds made with chloroform or ether, smoking grounds over a flame, dichromate etches, and asbestos drying boards. If a school can't provide a sink, ventilation, and a plan for disposing of spent etchant, drypoint and collagraph teach the same printing skills without any of it.
 
 With the safer methods, students still need nitrile gloves, goggles, and an apron. Ferric chloride stains and irritates skin, and copper sulfate is toxic to aquatic life, so neither goes down the drain. Follow the supplier's safety data sheet and local disposal rules.
+
+Plates can be degreased with a paste of salt and vinegar in place of the old whiting and ammonia. The hazard in many inks is the pigment, not the oil; check labels for the AP seal of the Art and Creative Materials Institute, which marks products certified nontoxic, and keep the safety data sheet for every chemical in the room.
 
 ## Plates, presses, and inks
 
@@ -40,3 +50,5 @@ Grounds: acrylic hard and soft grounds that clean up with soda ash or a mild alk
 Presses: an etching press. Small tabletop presses work well for plates up to about the size of a postcard.
 
 Inks: water-washable intaglio ink, wiped with tarlatan, printed on soaked and blotted paper.
+
+Copper roofing sheet is an inexpensive alternative to etcher's copper. Zinc etches fast but wears and shifts some ink colors; steel holds color truest.

@@ -1,8 +1,9 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
-import { allLessons, lessonUrl } from '../../lib/lessons';
-import { timeline } from '../../data/timeline';
+import { allLessons } from '../../lib/lessons';
+import LessonCard from '../../components/LessonCard.astro';
+import TimelineCards from '../../components/TimelineCards.astro';
 
 export async function getStaticPaths() {
   const parts = (await getCollection('parts')).sort((a, b) => a.data.order - b.data.order);
@@ -21,11 +22,6 @@ const { part, prev, next } = Astro.props;
 const { Content } = await render(part);
 const lessons = await allLessons();
 const lessonTitles = new Map(lessons.map((l) => [l.id, l.data.title]));
-const entries = part.data.timeline.map((id) => {
-  const e = timeline.find((t) => t.id === id);
-  if (!e) throw new Error(`Part ${part.id} links to missing timeline entry "${id}"`);
-  return e;
-});
 for (const slug of part.data.lessons)
   if (!lessonTitles.has(slug)) throw new Error(`Part ${part.id} links to missing lesson "${slug}"`);
 ---
@@ -40,15 +36,12 @@ for (const slug of part.data.lessons)
     {part.data.lessons.length > 0 && (
       <>
         <h2>Lessons that explore this</h2>
-        <ul>{part.data.lessons.map((slug) => <li><a href={lessonUrl(slug)}>{lessonTitles.get(slug)}</a></li>)}</ul>
+        <div class="card-grid">
+          {part.data.lessons.map((slug) => <LessonCard entry={lessons.find((l) => l.id === slug)!} entries={lessons} />)}
+        </div>
       </>
     )}
-    {entries.length > 0 && (
-      <>
-        <h2>In the timeline</h2>
-        <ul>{entries.map((e) => <li><a href={`/history/#${e.id}`}>{e.title}</a> <span class="muted">({e.when})</span></li>)}</ul>
-      </>
-    )}
+    <TimelineCards ids={part.data.timeline} />
 
     <nav class="part-nav no-print" aria-label="Other parts">
       {prev ? <a href={`/parts/${prev.id}/`}>← {prev.data.title}</a> : <span></span>}

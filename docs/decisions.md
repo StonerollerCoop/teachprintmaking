@@ -116,3 +116,11 @@ Open question: the current vocabulary has separate families for monotype, collag
 - The home page's four type cards now open the family pages instead of the lessons list. A "Types" link is in the main navigation, and lesson pages link their family and process.
 - Safety on these pages follows current practice, not the older books. Where a book recommends something now considered unsafe, the page says so rather than repeating the method.
 - New lessons drawn from the October 13 books are deferred to a later round, after Libby has reviewed these pages.
+
+## 2026-10-13: Cards instead of long lists, and sources on process pages
+
+- Libby asked for gridded cards in place of long lists. Lessons (the lessons index, process pages, and parts pages), books (the Books page), timeline entries, and related processes now appear as cards in a responsive grid. Lesson cards show the technique, ages, summary, and any variations.
+- Libby is gathering web sources for every process. Each process page can now list its sources in its frontmatter: a web page or video by title, author, and url, or a library book by id. They appear at the foot of the page as "Sources for this page," with a note on what we took from each. This credits what a page draws on; it is not the further-reading list Libby chose not to add.
+- YouTube videos listed as sources are embedded from youtube-nocookie.com, with the title and creator on the card and a link to the original.
+- None of the gel plate sources Libby sent state a license, so the gel plate page describes the method in our own words and credits all five. Recipes vary widely; the page explains the common pattern and credits named recipes (Linda Germain, Suzanne McNeill) without copying any one set of proportions.
+- The four remaining library books (Fick and Grabowski, Hughes and Vernon-Morris, Walker, Medley) have now been read in full, and their findings are folded into the process pages with credit.

@@ -2,8 +2,10 @@
 import Base from '../../../layouts/Base.astro';
 import { render } from 'astro:content';
 import { ageBands } from '../../../data/vocab';
-import { timeline } from '../../../data/timeline';
-import { allLessons, lessonUrl } from '../../../lib/lessons';
+import LessonCard from '../../../components/LessonCard.astro';
+import TimelineCards from '../../../components/TimelineCards.astro';
+import SourceCards from '../../../components/SourceCards.astro';
+import { allLessons } from '../../../lib/lessons';
 import {
   allTypes,
   familyUrl,
@@ -37,9 +39,9 @@ const d = proc.data;
 const { Content } = await render(proc);
 const { families, processes } = await allTypes();
 const family = families.find((f) => f.id === processFamily(proc))!;
-const lessons = (await allLessons()).filter((l) => !l.data.parent && d.techniques.includes(l.data.technique));
+const allEntries = await allLessons();
+const lessons = allEntries.filter((l) => !l.data.parent && d.techniques.includes(l.data.technique));
 const related = d.related.map((r) => processes.find((p) => p.id === r)!);
-const entries = d.timeline.map((id) => timeline.find((t) => t.id === id)!);
 ---
 
 <Base title={d.title} description={d.tagline}>
@@ -62,22 +64,27 @@ const entries = d.timeline.map((id) => timeline.find((t) => t.id === id)!);
     {lessons.length === 0 ? (
       <p>None yet.</p>
     ) : (
-      <ul>{lessons.map((l) => <li><a href={lessonUrl(l.id)}>{l.data.title}</a>{l.data.demo && <> <span class="demo-flag">Demo</span></>}</li>)}</ul>
+      <div class="card-grid">{lessons.map((l) => <LessonCard entry={l} entries={allEntries} />)}</div>
     )}
 
     {related.length > 0 && (
       <>
         <h2>Related processes</h2>
-        <ul>{related.map((r) => <li><a href={processUrl(r.id)}>{r.data.title}</a></li>)}</ul>
+        <div class="card-grid compact">
+          {related.map((r) => (
+            <a class="grid-card" href={processUrl(r.id)}>
+              <p class="grid-card-meta">{families.find((f) => f.id === r.id.split('/')[0])!.data.title}</p>
+              <h3>{r.data.title}</h3>
+              <p class="grid-card-note">{r.data.tagline}</p>
+            </a>
+          ))}
+        </div>
       </>
     )}
 
-    {entries.length > 0 && (
-      <>
-        <h2>In the timeline</h2>
-        <ul>{entries.map((e) => <li><a href={`/history/#${e.id}`}>{e.title}</a> <span class="muted">({e.when})</span></li>)}</ul>
-      </>
-    )}
+    <TimelineCards ids={d.timeline} />
+
+    <SourceCards sources={d.sources} owner={proc.id} />
 
     <nav class="part-nav no-print" aria-label={`Other ${family.data.title.toLowerCase()} processes`}>
       {prev ? <a href={processUrl(prev.id)}>← {prev.data.title}</a> : <a href={familyUrl(family.id)}>← {family.data.title}</a>}

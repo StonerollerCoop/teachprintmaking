@@ -9,6 +9,11 @@ setting: art-room
 techniques: []
 timeline: [senefelder]
 related: [planographic/lithography, planographic/monotype, relief/linocut]
+sources:
+  - library: tamarind-2008
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
+  - library: dalton-expressive
 ---
 
 ## How it works
@@ -24,6 +29,8 @@ Every lithograph rests on the same principle: grease attracts oily ink, a treate
 **Lithino.** Lino sanded smooth can be drawn on and printed lithographically, even partway through a reduction linocut, so carved relief and drawn tone share one block. The printmaker Mary Dalton developed the gentle sanding approach described in her book Expressive Printmaking.
 
 **Transfer paper.** Paper brushed with a thin coating of gum arabic and glycerin can be drawn on and then transferred face down onto a plate. The drawing reverses twice, once onto the plate and once onto the paper, so writing done the right way round prints the right way round.
+
+**Paper lithography.** A black-and-white photocopy or laser print can serve as the plate. The toner image is greasy enough to take oil-based ink, and the bare paper, wiped with a thin mix of gum arabic and water, holds water and rejects it. The copy is laid face up, sponged, inked with a brayer, and printed face down on damp paper, usually on a press. Each copy gives only a few prints before it wears out, so students make several copies of the same image. It is one of the most immediate ways to show a class how lithography works.
 
 ## History
 
@@ -44,3 +51,5 @@ Drawing materials: ballpoint pen, permanent marker, laser toner, litho crayon, o
 Presses: a wooden spoon, a baren, or a clean brayer for foil and polyester plates; an etching press for a stronger print.
 
 Inks: oil-based relief or lithographic ink. Water-based ink won't work, since the method depends on oil and water repelling.
+
+Polyester plates need a laser printer, since inkjet ink doesn't hold up. Keep halftones coarse, around 75 lines per inch or less. A water bath with a little gum arabic and citric acid keeps the plate clean while printing.

@@ -9,6 +9,12 @@ setting: classroom
 techniques: [woodcut]
 timeline: [woodblock-textiles, diamond-sutra, st-christopher, durer, hokusai, posada, die-brucke]
 related: [relief/linocut, relief/wood-engraving]
+sources:
+  - library: walker-woodcut
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
+  - library: fletcher-woodblock
+  - library: tokuno-koehler
 ---
 
 ## How it works
@@ -16,6 +22,8 @@ related: [relief/linocut, relief/wood-engraving]
 A woodcut is cut into the side of a plank, along the grain, with knives and gouges. Wood resists in one direction and splits in another, so the printmaker learns to read the grain and cut with it. The grain also prints: a block rolled with a thin layer of ink shows its growth rings and texture. Some printmakers raise the grain on purpose by scrubbing the block with a wire brush.
 
 Western woodcut usually uses oil-based or water-based relief ink rolled on with a brayer. Japanese woodblock printing, called mokuhanga, uses water-based pigment brushed onto the block with a little rice paste, and the paper is sized and dampened. Each color has its own block. Registration is made with the kento, a corner and a straight notch cut into every block, so each sheet of paper drops into the same place.
+
+Japanese registration names its two marks: the kagi, the corner stop, and the hikitsuke, the straight stop along one side. A single block can also be cut apart like a jigsaw, inked in several colors, and reassembled to print them all at once, a method Edvard Munch used.
 
 ## History
 
@@ -27,6 +35,8 @@ Wood is harder to cut than linoleum and the tools must be sharp, so woodcut usua
 
 Japanese water-based printing is clean and nontoxic and suits classrooms well. Oil-based ink cleans up with vegetable oil and soap. Avoid the solvent-based transfer methods described in older manuals for moving a photocopy onto the block; trace with graphite or carbon paper instead.
 
+Splinters fly when cutting hard woods, so students should wear eye protection. A thin wash of diluted white glue or shellac on plywood helps keep the surface from splintering.
+
 ## Plates, presses, and inks
 
 Plates: pine, basswood, cherry, poplar, shina and birch plywood, Masonite or hardboard for coarse marks, balsa for very young carvers, and wood veneers glued to board.
@@ -34,3 +44,5 @@ Plates: pine, basswood, cherry, poplar, shina and birch plywood, Masonite or har
 Presses: a baren, a wooden spoon, a bamboo rice paddle, a rolling pin, or any relief or etching press. A simple test proof can be made with no ink at all by laying thin paper over the block and rubbing it with graphite.
 
 Inks: water-based and oil-based relief ink, or for Japanese printing, watercolor or gouache brushed onto the block with a dab of rice paste. Sumi ink prints a deep black.
+
+Water-based ink and water-based cleanup can swell wood and narrow fine lines, which is why many woodcut printers prefer oil-based ink cleaned off with a dry rag and vegetable oil. Shina plywood can be carved on both faces if it is printed by hand. Let new wood rest in the classroom for a week or two so it settles to the room's humidity before carving.

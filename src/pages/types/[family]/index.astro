@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import FamilyDiagram from '../../../components/FamilyDiagram.astro';
 import { render } from 'astro:content';
 import { ageBands } from '../../../data/vocab';
-import { timeline } from '../../../data/timeline';
+import TimelineCards from '../../../components/TimelineCards.astro';
 import {
   allTypes,
   processUrl,
@@ -31,7 +31,6 @@ const { family, prev, next } = Astro.props;
 const { Content } = await render(family);
 const { processes } = await allTypes();
 const mine = processes.filter((p) => processFamily(p) === family.id);
-const entries = family.data.timeline.map((id) => timeline.find((t) => t.id === id)!);
 ---
 
 <Base title={family.data.title} description={family.data.tagline}>
@@ -62,12 +61,7 @@ const entries = family.data.timeline.map((id) => timeline.find((t) => t.id === i
 
     <div class="lesson-body"><Content /></div>
 
-    {entries.length > 0 && (
-      <>
-        <h2>In the timeline</h2>
-        <ul>{entries.map((e) => <li><a href={`/history/#${e.id}`}>{e.title}</a> <span class="muted">({e.when})</span></li>)}</ul>
-      </>
-    )}
+    <TimelineCards ids={family.data.timeline} />
 
     <p><a href={`/lessons/#${family.id}`}>All {family.data.title.toLowerCase()} lessons</a></p>
 

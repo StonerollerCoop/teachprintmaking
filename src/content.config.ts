@@ -152,6 +152,24 @@ const processes = defineCollection({
     timeline: z.array(z.string()).default([]),
     /** Ids of closely related processes, in any family ("intaglio/drypoint"). */
     related: z.array(z.string()).default([]),
+    /**
+     * What this page draws on, credited at the foot of the page. A web page or
+     * video needs a title, author, and url; a book in the library needs only
+     * its id. A YouTube id embeds the video with privacy-enhanced mode.
+     */
+    sources: z
+      .array(
+        z.object({
+          title: z.string().optional(),
+          author: z.string().optional(),
+          url: z.url().optional(),
+          library: z.string().optional(),
+          youtube: z.string().optional(),
+          /** What we took from it, in a few words. */
+          note: z.string().optional(),
+        }),
+      )
+      .default([]),
   }),
 });
 

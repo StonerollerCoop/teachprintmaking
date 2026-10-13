@@ -9,6 +9,8 @@ setting: classroom
 techniques: []
 timeline: [katagami]
 related: [stencil/cut-stencils, stencil/screenprinting]
+sources:
+  - library: ross-romano-printmaker
 ---
 
 ## How it works

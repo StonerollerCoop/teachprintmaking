@@ -9,6 +9,10 @@ setting: classroom
 techniques: [trace-monotype, monoprint]
 timeline: [castiglione, hectograph]
 related: [planographic/gel-plate-printing, intaglio/mezzotint, stencil/cut-stencils]
+sources:
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
+  - library: ross-romano-printmaker
 ---
 
 ## How it works
@@ -20,6 +24,8 @@ Working additively, the printmaker paints the image onto a clean plate. Working 
 In a trace monotype, the plate is rolled with a thin layer of ink, paper is laid on top, and the printmaker draws on the back of the paper. Wherever the pencil presses, ink transfers, giving a soft, grainy line. Anything that touches the paper prints as well, including the side of a hand, which students learn to use on purpose.
 
 Printers use monoprint for a print that has a repeated element, such as a carved block or a stencil, combined with painted or rolled ink that changes each time. Both words are often used loosely for the same thing.
+
+A color monotype can be made from three clear acetate plates, one painted for each of three transparent colors, registered by a mark in one corner and printed one over another. In a watercolor monoprint, a plastic plate is sanded lightly so watercolor will hold on it, then printed onto paper soaked until soft; the water in the paper lifts the paint.
 
 ## History
 
@@ -38,3 +44,5 @@ Plates: plexiglass, glass with taped edges, acetate, laminated card, a baking sh
 Presses: the palm of the hand, a wooden spoon, a clean brayer, a tennis ball, or an etching press for large or rich prints.
 
 Inks: water-based block printing ink, tempera with a little glycerin to slow drying, acrylic with a retarder, watercolor and water-soluble crayon on the plate printed onto damp paper, and oil-based ink. Paper masks, leaves, and string laid on the plate before printing act as stencils.
+
+PETG plastic sheet is a good all-purpose monotype plate, and plastic and countertop scraps from sign shops and kitchen fitters work too. The back of a used metal plate also works. A smooth doorknob burnishes well by hand.

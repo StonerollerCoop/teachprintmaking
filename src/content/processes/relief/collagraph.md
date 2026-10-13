@@ -9,6 +9,11 @@ setting: classroom
 techniques: [collagraph]
 timeline: []
 related: [relief/stamps-and-found-objects, intaglio/drypoint, intaglio/etching]
+sources:
+  - library: ross-romano-intaglio
+  - library: ross-romano-printmaker
+  - library: fick-grabowski
+  - library: hughes-vernon-morris
 ---
 
 ## How it works
@@ -23,11 +28,15 @@ Students quickly learn which materials print dark and which print light. Rough t
 
 The printmaker Glen Alps coined the word collagraph in the 1950s, from collage and graph. Its roots go back further: the Norwegian artist Rolf Nesch built printing plates from soldered and assembled pieces of metal in the 1930s. John Ross, Clare Romano, and others developed cardboard and gesso collagraphs as a teaching method in the following decades.
 
+The French artist Pierre Roche, whose embossed relief prints of the 1890s explored the raised plate in new ways, is also named as a forerunner.
+
 ## Ages, safety, and setting
 
 Relief-inked collagraphs suit young children; a K–2 class can glue cardboard shapes and texture scraps onto board and print them by hand. Intaglio-inked collagraphs suit upper elementary and up, wherever a press is available.
 
 Seal plates with acrylic medium, PVA glue, or shellac thinned with alcohol. Avoid the lacquer and solvent-based sealers in older manuals. Sand and grit glued to a plate should be fully sealed so they don't shed.
+
+Clean collagraph plates with vegetable oil or a citrus cleaner. Alcohol and acetone dissolve shellac and some sealers, and a plate cleaned with them can come apart. Never warm a collagraph on a hotplate.
 
 ## Plates, presses, and inks
 
@@ -36,3 +45,5 @@ Plates: chipboard, mat board, cereal-box card, and hardboard, built up with card
 Presses: hand, spoon, or rolling pin for relief inking; an etching press, pasta machine, or old clothes wringer for intaglio inking.
 
 Inks: water-based relief ink for surface printing; water-washable intaglio ink for wiped plates.
+
+Seal both sides of the plate, with two or three thin coats, so it doesn't curl or soak up ink. Thick objects such as coins and keys print better set into a hollow cut in the board, so the plate stays fairly level. Carborundum grit mixed into acrylic medium or wood glue and brushed on gives a rich, dark tone when inked as intaglio. An old toothbrush or a felt dauber works ink into deep textures, and heavier, damp paper of about 250 grams or more picks up the detail.

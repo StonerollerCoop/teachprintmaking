@@ -1,0 +1,28 @@
+---
+import { lessonUrl, variationsOf, type LessonEntry } from '../lib/lessons';
+import { techniques } from '../data/vocab';
+
+interface Props {
+  entry: LessonEntry;
+  /** All lessons, so the card can list this lesson's variations. */
+  entries: LessonEntry[];
+}
+const { entry, entries } = Astro.props;
+const d = entry.data;
+const vars = variationsOf(entries, entry.id);
+const ages = d.ages.max >= 99 ? `Ages ${d.ages.min} and up` : `Ages ${d.ages.min} to ${d.ages.max}`;
+---
+
+<article class="grid-card">
+  <h3><a href={lessonUrl(entry.id)}>{d.title}</a></h3>
+  <p class="grid-card-meta">
+    {techniques[d.technique].label} · {ages}
+    {d.demo && <> · <span class="demo-flag">Demo</span></>}
+  </p>
+  <p>{d.summary}</p>
+  {vars.length > 0 && (
+    <ul class="grid-card-links" aria-label="Variations">
+      {vars.map((v) => <li><a href={lessonUrl(v.id)}>{v.data.title}</a></li>)}
+    </ul>
+  )}
+</article>
