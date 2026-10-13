@@ -15,7 +15,7 @@ const groups = familyIds
   <p class="lede">{parents.length} lessons and {entries.length - parents.length} variations, grouped by printmaking family.</p>
   {groups.map((g) => (
     <section class="family" id={g.id}>
-      <h2>{g.label}</h2>
+      <h2><a href={`/types/${g.id}/`}>{g.label}</a></h2>
       <p class="muted">{familyBlurbs[g.id]}</p>
       {g.lessons.length === 0 && <p>No lessons here yet.</p>}
       {g.lessons.map((e) => {

@@ -106,3 +106,13 @@ Open question: the current vocabulary has separate families for monotype, collag
 - The home title is plain type with no effects.
 - The six "Why?" reasons sit in one row of six columns, stepping down to three, two, and one on smaller screens.
 - The lesson form is a conventional labeled form. Usability and the look and feel are Libby's to lead once the content is underway.
+
+## 2026-10-13: Types of printmaking, with a page for each process
+
+- The site has a Types section (/types/) with a page for each of the four families and a page for each process within them, 19 in all. Libby chose this layout over a single page per family.
+- Each family and process page covers how it works and its history; ages, safety, and setting; and plates, presses, and inks. Libby chose not to add a further-reading list to these pages. Named methods are still credited in the text (for example, Glen Alps for the collagraph, Mary Dalton for lithino, Friedhard Kiekeben for Edinburgh Etch).
+- The pages are Markdown files: src/content/families/<family>.md and src/content/processes/<family>/<process>.md. Each process lists the lesson techniques that belong to it, so its lessons appear automatically. The build fails if a technique belongs to no process page, belongs to two, or belongs to a process in another family.
+- Every process page gives the youngest grade band where it can reasonably start, whether a press is needed, and the setting it needs (an ordinary classroom, an art room with a sink, or a ventilated studio). These are editorial judgments drawn from the library books and current safety practice, and they are Libby's to revise.
+- The home page's four type cards now open the family pages instead of the lessons list. A "Types" link is in the main navigation, and lesson pages link their family and process.
+- Safety on these pages follows current practice, not the older books. Where a book recommends something now considered unsafe, the page says so rather than repeating the method.
+- New lessons drawn from the October 13 books are deferred to a later round, after Libby has reviewed these pages.

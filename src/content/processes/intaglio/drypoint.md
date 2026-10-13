@@ -1,0 +1,40 @@
+---
+title: Drypoint
+order: 1
+tagline: Scratching lines into a plate with a sharp point. No acid, and the softest velvety line in printmaking.
+youngest: g35
+youngestNote: juice-box or acetate plates with a blunt scribe, printed on a press the teacher runs
+press: needed
+setting: classroom
+techniques: [drypoint]
+timeline: [rembrandt, rolling-press, open-press]
+related: [intaglio/engraving, relief/collagraph, intaglio/etching]
+---
+
+## How it works
+
+The printmaker draws directly into the plate with a sharp, hard point. The point pushes up a ridge of rough material along each line, called the burr. When the plate is inked and wiped, ink collects in the groove and catches in the burr, and the printed line has a soft, velvety edge no other method gives.
+
+Pressure controls the line. A light scratch prints pale and fine; a heavy one prints dark and wide. Crosshatching builds tone, and sandpaper or a wire brush rubbed across the plate makes larger gray areas.
+
+The burr wears down under the pressure of the press, so a drypoint on soft material gives only a small number of strong prints. That suits a classroom, where each student usually wants a few good impressions.
+
+Drypoint on a juice box or the inside of a food carton adds another possibility. The plastic coating can be scratched, and it can also be cut and peeled away to expose the cardboard underneath. The bare card holds ink like a sponge and prints as a solid dark.
+
+## History
+
+Drypoint lines appear in prints from the late fifteenth century. Rembrandt combined drypoint with etching and reworked his plates repeatedly, so his impressions vary from one printing to the next. In schools, drypoint on plastic became popular because it needs no chemicals at all. In recent years, printmakers have shared methods for drypoint on flattened juice and milk cartons, foil cake tins, and plastic-coated card.
+
+## Ages, safety, and setting
+
+Juice-box drypoint, with a blunt scribe or an old ballpoint pen and a press run by the teacher, works from upper elementary. Acetate and plexiglass drypoint with a proper scribe suits middle school and up. Scribes are sharp; keep the free hand away from the line of the stroke and store scribes point-down in a block.
+
+Drypoint needs no chemicals. Water-washable intaglio ink cleans up with soap and water.
+
+## Plates, presses, and inks
+
+Plates: rigid acetate, PETG, plexiglass, flattened juice and milk cartons, plastic-lined food cartons, the lid of a foil cake tin, plastic-coated card, and copper or zinc for older students. Grey board sealed with several coats of hard wax oil makes a homemade drypoint card, a method shared by the printmaker Mary Dalton.
+
+Presses: an etching press is ideal. A pasta machine with felt and a plexiglass carrier, an old clothes wringer for shallow lines, or a small 3D-printed press can work at small sizes. Hand burnishing rarely pushes damp paper far enough into the lines, though a firm spoon on thin damp paper gives a pale proof.
+
+Inks: water-washable intaglio ink, wiped with tarlatan and then with paper or the palm. Paper should be soaked or misted and blotted before printing.

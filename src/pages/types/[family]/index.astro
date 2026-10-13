@@ -1,0 +1,79 @@
+---
+import Base from '../../../layouts/Base.astro';
+import FamilyDiagram from '../../../components/FamilyDiagram.astro';
+import { render } from 'astro:content';
+import { ageBands } from '../../../data/vocab';
+import { timeline } from '../../../data/timeline';
+import {
+  allTypes,
+  processUrl,
+  processFamily,
+  pressLabels,
+  settingLabels,
+  type FamilyEntry,
+  type FamilyId,
+} from '../../../lib/types';
+
+export async function getStaticPaths() {
+  const { families } = await allTypes();
+  return families.map((f, i) => ({
+    params: { family: f.id },
+    props: { family: f, prev: families[i - 1], next: families[i + 1] },
+  }));
+}
+
+interface Props {
+  family: FamilyEntry;
+  prev?: FamilyEntry;
+  next?: FamilyEntry;
+}
+const { family, prev, next } = Astro.props;
+const { Content } = await render(family);
+const { processes } = await allTypes();
+const mine = processes.filter((p) => processFamily(p) === family.id);
+const entries = family.data.timeline.map((id) => timeline.find((t) => t.id === id)!);
+---
+
+<Base title={family.data.title} description={family.data.tagline}>
+  <article class="type-page">
+    <p class="muted"><a href="/types/">Types of printmaking</a> · Family {family.data.order} of 4</p>
+    <div class="type-head">
+      <FamilyDiagram family={family.id as FamilyId} />
+      <div>
+        <h1>{family.data.title}</h1>
+        <p class="lede">{family.data.tagline}</p>
+      </div>
+    </div>
+
+    <h2>Processes</h2>
+    <div class="process-cards">
+      {mine.map((p) => (
+        <a class="process-card" href={processUrl(p.id)}>
+          <h3>{p.data.title}</h3>
+          <p>{p.data.tagline}</p>
+          <dl>
+            <dt>Youngest</dt><dd>{ageBands[p.data.youngest].label}</dd>
+            <dt>Press</dt><dd>{pressLabels[p.data.press].split(',')[0]}</dd>
+            <dt>Setting</dt><dd>{settingLabels[p.data.setting]}</dd>
+          </dl>
+        </a>
+      ))}
+    </div>
+
+    <div class="lesson-body"><Content /></div>
+
+    {entries.length > 0 && (
+      <>
+        <h2>In the timeline</h2>
+        <ul>{entries.map((e) => <li><a href={`/history/#${e.id}`}>{e.title}</a> <span class="muted">({e.when})</span></li>)}</ul>
+      </>
+    )}
+
+    <p><a href={`/lessons/#${family.id}`}>All {family.data.title.toLowerCase()} lessons</a></p>
+
+    <nav class="part-nav no-print" aria-label="Other families">
+      {prev ? <a href={`/types/${prev.id}/`}>← {prev.data.title}</a> : <span></span>}
+      {next ? <a href={`/types/${next.id}/`}>{next.data.title} →</a> : <span></span>}
+    </nav>
+  </article>
+</Base>

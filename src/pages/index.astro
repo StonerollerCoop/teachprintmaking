@@ -37,7 +37,7 @@ const reasons = [
     <h2 id="types-h">Types</h2>
     <div class="type-grid">
       {familyIds.map((f) => (
-        <a class="type-card" href={`/lessons/#${f}`}>
+        <a class="type-card" href={`/types/${f}/`}>
           <FamilyDiagram family={f} />
           <h3>{families[f]}</h3>
           <ul class="type-processes" aria-label={`${families[f]} processes`}>

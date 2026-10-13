@@ -9,6 +9,7 @@ import {
   messLevels,
   tableSpace,
   techniques,
+  ageBands,
   keys,
 } from './data/vocab';
 
@@ -116,4 +117,42 @@ const parts = defineCollection({
   }),
 });
 
-export const collections = { lessons, parts };
+/**
+ * The four families of printmaking. One file per family, named for its id in
+ * vocab.ts (relief.md, intaglio.md, and so on).
+ */
+const families = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/families' }),
+  schema: z.object({
+    title: z.string(),
+    order: z.number().int(),
+    tagline: z.string(),
+    timeline: z.array(z.string()).default([]),
+  }),
+});
+
+/**
+ * Processes within each family. Files live in a folder named for their family
+ * (src/content/processes/relief/linocut.md), so the id is "relief/linocut".
+ */
+const processes = defineCollection({
+  loader: glob({ pattern: '*/*.md', base: './src/content/processes' }),
+  schema: z.object({
+    title: z.string(),
+    order: z.number().int(),
+    tagline: z.string(),
+    /** Youngest grade band the process can reasonably start at, in some form. */
+    youngest: z.enum(keys(ageBands)),
+    /** How the youngest students meet it, in a short phrase. */
+    youngestNote: z.string(),
+    press: z.enum(['none', 'optional', 'needed']),
+    setting: z.enum(['classroom', 'art-room', 'studio']),
+    /** Lesson techniques that belong to this process, so its lessons list themselves. */
+    techniques: z.array(z.enum(keys(techniques))).default([]),
+    timeline: z.array(z.string()).default([]),
+    /** Ids of closely related processes, in any family ("intaglio/drypoint"). */
+    related: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { lessons, parts, families, processes };

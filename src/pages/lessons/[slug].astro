@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { render } from 'astro:content';
 import { allLessons, variationsOf, lessonUrl, type LessonEntry } from '../../lib/lessons';
 import { describeTrigger } from '../../lib/describe';
+import { processForTechnique, processUrl, familyUrl } from '../../lib/types';
 import {
   techniques,
   families,
@@ -31,6 +32,7 @@ const byId = new Map(entries.map((e) => [e.id, e]));
 const parent = d.parent ? byId.get(d.parent) : undefined;
 const variations = variationsOf(entries, entry.id);
 const technique = techniques[d.technique];
+const proc = await processForTechnique(d.technique);
 
 const pressNeed = d.tools.required.includes('press')
   ? 'Required'
@@ -48,7 +50,8 @@ const sinkText = { required: 'Required', helpful: 'Helpful', none: 'Not needed' 
 <Base title={d.title} description={d.summary}>
   <article class="lesson">
     <p class="muted">
-      {families[technique.family]} · {technique.label}
+      <a href={familyUrl(technique.family)}>{families[technique.family]}</a> ·{' '}
+      {proc ? <a href={processUrl(proc.id)}>{technique.label}</a> : technique.label}
       {d.demo && <> · <span class="demo-flag">Demo</span></>}
     </p>
     <h1>{d.title}</h1>
