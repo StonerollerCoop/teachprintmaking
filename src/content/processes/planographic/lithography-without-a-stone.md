@@ -11,26 +11,34 @@ timeline: [senefelder]
 related: [planographic/lithography, planographic/monotype, relief/linocut]
 sources:
   - library: tamarind-2008
+    where: "ch. 9, on polyester plates and transfer paper"
   - library: fick-grabowski
+    where: "ch. 7, on paper lithography and polyester plates"
   - library: hughes-vernon-morris
+    where: "ch. 12, \"Polyester plate\""
   - library: dalton-expressive
+    where: "ch. 5, \"Mokulito,\" and ch. 6, \"Lithino\""
+checks:
+  - "Kitchen lithography: the credit to Émilie Aizier comes from general knowledge, not from any of our books. Confirm it, and find her own write-up to cite."
+  - "Mokulito: the origin in Japan in the 1970s comes from Dalton. Confirm it with a second source and name the originator if one is known."
+  - "Lithino: Dalton presents the sanding method as coming out of her research without quite claiming to have invented it. Ask her how she would like it described and credited."
 ---
 
 ## How it works
 
 Every lithograph rests on the same principle: grease attracts oily ink, a treated bare surface holds water, and water repels the ink. Stone and grained aluminum are the classic surfaces, but several newer methods apply the principle to cheaper and safer materials.
 
-**Polyester plates.** A thin plastic plate with a specially treated surface accepts drawing in ballpoint pen, permanent marker, litho crayon, or laser-printer toner. The plate is wiped with water, inked with a brayer, and printed by hand with a spoon or baren, or on an etching press. Toothpaste works as a gentle eraser on these plates. Because laser prints can be transferred straight onto the plate, polyester plates are a natural fit for design classes and for type.
+**Polyester plates.** A thin plastic plate with a specially treated surface accepts drawing in ballpoint pen, permanent marker, litho crayon, or laser-printer toner. The plate is wiped with water, inked with a brayer, and printed by hand with a spoon or baren, or on an etching press. Toothpaste works as a gentle eraser on these plates. Because laser prints can be transferred straight onto the plate, polyester plates are a natural fit for design classes and for type. <cite>Devon, Lagattuta, and Hamon, ch. 9; Hughes and Vernon-Morris, ch. 12</cite>
 
-**Kitchen lithography.** Aluminum foil smoothed over a rigid board is drawn on with an oily crayon, soap, or a greasy pencil. Cola, which contains phosphoric acid, acts as the etch. The foil is rinsed, dampened, and rolled with oil-based ink, which clings only to the drawing. The French artist Émilie Aizier popularized the method.
+**Kitchen lithography.** Aluminum foil smoothed over a rigid board is drawn on with an oily crayon, soap, or a greasy pencil. Cola, which contains phosphoric acid, acts as the etch. The foil is rinsed, dampened, and rolled with oil-based ink, which clings only to the drawing. <span class="flag">The French artist Émilie Aizier popularized the method.</span>
 
-**Mokulito.** Wood lithography developed in Japan in the 1970s. A smooth sheet of plywood is drawn on with greasy materials and treated with gum arabic, and the wood holds water just as stone does. The grain of the wood shows in the print.
+**Mokulito.** Wood lithography <span class="flag">developed in Japan in the 1970s</span>. A smooth sheet of plywood is drawn on with greasy materials and treated with gum arabic, and the wood holds water just as stone does. The grain of the wood shows in the print. <cite>Dalton, ch. 5</cite>
 
-**Lithino.** Lino sanded smooth can be drawn on and printed lithographically, even partway through a reduction linocut, so carved relief and drawn tone share one block. The printmaker Mary Dalton developed the gentle sanding approach described in her book Expressive Printmaking.
+**Lithino.** Lino sanded smooth can be drawn on and printed lithographically, even partway through a reduction linocut, so carved relief and drawn tone share one block. <span class="flag">The printmaker Mary Dalton developed the gentle sanding approach</span> described in her book Expressive Printmaking. <cite>Dalton, ch. 6</cite>
 
-**Transfer paper.** Paper brushed with a thin coating of gum arabic and glycerin can be drawn on and then transferred face down onto a plate. The drawing reverses twice, once onto the plate and once onto the paper, so writing done the right way round prints the right way round.
+**Transfer paper.** Paper brushed with a thin coating of gum arabic and glycerin can be drawn on and then transferred face down onto a plate. The drawing reverses twice, once onto the plate and once onto the paper, so writing done the right way round prints the right way round. <cite>Devon, Lagattuta, and Hamon, ch. 9</cite>
 
-**Paper lithography.** A black-and-white photocopy or laser print can serve as the plate. The toner image is greasy enough to take oil-based ink, and the bare paper, wiped with a thin mix of gum arabic and water, holds water and rejects it. The copy is laid face up, sponged, inked with a brayer, and printed face down on damp paper, usually on a press. Each copy gives only a few prints before it wears out, so students make several copies of the same image. It is one of the most immediate ways to show a class how lithography works.
+**Paper lithography.** A black-and-white photocopy or laser print can serve as the plate. The toner image is greasy enough to take oil-based ink, and the bare paper, wiped with a thin mix of gum arabic and water, holds water and rejects it. The copy is laid face up, sponged, inked with a brayer, and printed face down on damp paper, usually on a press. Each copy gives only a few prints before it wears out, so students make several copies of the same image. It is one of the most immediate ways to show a class how lithography works. <cite>Fick and Grabowski, ch. 7</cite>
 
 ## History
 
@@ -52,4 +60,4 @@ Presses: a wooden spoon, a baren, or a clean brayer for foil and polyester plate
 
 Inks: oil-based relief or lithographic ink. Water-based ink won't work, since the method depends on oil and water repelling.
 
-Polyester plates need a laser printer, since inkjet ink doesn't hold up. Keep halftones coarse, around 75 lines per inch or less. A water bath with a little gum arabic and citric acid keeps the plate clean while printing.
+Polyester plates need a laser printer, since inkjet ink doesn't hold up. Keep halftones coarse, around 75 lines per inch or less. A water bath with a little gum arabic and citric acid keeps the plate clean while printing. <cite>Fick and Grabowski, ch. 7; Hughes and Vernon-Morris, ch. 12</cite>

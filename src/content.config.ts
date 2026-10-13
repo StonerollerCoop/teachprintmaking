@@ -121,6 +121,28 @@ const parts = defineCollection({
  * The four families of printmaking. One file per family, named for its id in
  * vocab.ts (relief.md, intaglio.md, and so on).
  */
+/**
+ * What a family or process page draws on, credited at the foot of the page
+ * the way the Liturgy Companion does it. A web page or video needs a title,
+ * author, and url; a book in the library needs only its id. `where` names the
+ * chapter, section, or pages used. A YouTube id embeds the video.
+ */
+const pageSource = z.object({
+  title: z.string().optional(),
+  author: z.string().optional(),
+  url: z.url().optional(),
+  library: z.string().optional(),
+  youtube: z.string().optional(),
+  where: z.string().optional(),
+  note: z.string().optional(),
+});
+
+/**
+ * Anything on the page that needs permission or checking before the site goes
+ * public. Shown in red on the page and gathered on the private Checks page.
+ */
+const checks = z.array(z.string()).default([]);
+
 const families = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/families' }),
   schema: z.object({
@@ -128,6 +150,8 @@ const families = defineCollection({
     order: z.number().int(),
     tagline: z.string(),
     timeline: z.array(z.string()).default([]),
+    sources: z.array(pageSource).default([]),
+    checks,
   }),
 });
 
@@ -152,24 +176,8 @@ const processes = defineCollection({
     timeline: z.array(z.string()).default([]),
     /** Ids of closely related processes, in any family ("intaglio/drypoint"). */
     related: z.array(z.string()).default([]),
-    /**
-     * What this page draws on, credited at the foot of the page. A web page or
-     * video needs a title, author, and url; a book in the library needs only
-     * its id. A YouTube id embeds the video with privacy-enhanced mode.
-     */
-    sources: z
-      .array(
-        z.object({
-          title: z.string().optional(),
-          author: z.string().optional(),
-          url: z.url().optional(),
-          library: z.string().optional(),
-          youtube: z.string().optional(),
-          /** What we took from it, in a few words. */
-          note: z.string().optional(),
-        }),
-      )
-      .default([]),
+    sources: z.array(pageSource).default([]),
+    checks,
   }),
 });
 

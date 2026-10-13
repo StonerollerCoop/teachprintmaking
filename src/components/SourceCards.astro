@@ -1,4 +1,9 @@
 ---
+/**
+ * The Sources section at the foot of a family or process page, following the
+ * Liturgy Companion: a full entry for each work, then the chapter or section
+ * used. Short citations in the page text (<cite>Walker, ch. 2</cite>) point here.
+ */
 import { libraryById } from '../data/library';
 
 interface Source {
@@ -7,6 +12,7 @@ interface Source {
   url?: string;
   library?: string;
   youtube?: string;
+  where?: string;
   note?: string;
 }
 interface Props {
@@ -19,23 +25,33 @@ const cards = sources.map((s) => {
   if (s.library) {
     const b = libraryById.get(s.library);
     if (!b) throw new Error(`${owner}: source points to unknown library entry "${s.library}"`);
-    return { kind: 'Book', title: b.title, author: b.authors, href: `/sources/#${b.id}`, note: s.note, youtube: undefined };
+    return {
+      kind: 'Book',
+      author: b.authors,
+      title: b.title,
+      pub: `${b.publisher}, ${b.year}`,
+      href: `/sources/#${b.id}`,
+      where: s.where,
+      note: s.note,
+      youtube: undefined,
+    };
   }
   if (!s.title || !s.author || !s.url) throw new Error(`${owner}: a web source needs a title, author, and url`);
-  return { kind: s.youtube ? 'Video' : 'Web page', title: s.title, author: s.author, href: s.url, note: s.note, youtube: s.youtube };
+  return { kind: s.youtube ? 'Video' : 'Web page', author: s.author, title: s.title, pub: undefined, href: s.url, where: s.where, note: s.note, youtube: s.youtube };
 });
 ---
 
 {cards.length > 0 && (
   <>
-    <h2>Sources for this page</h2>
+    <h2>Sources</h2>
     <p class="muted">We learned from these and wrote this page in our own words. Their wording, photos, and videos belong to their creators.</p>
     <div class="card-grid">
       {cards.map((c) => (
-        <article class="grid-card">
+        <article class="grid-card source-card">
           <p class="grid-card-meta">{c.kind}</p>
-          <h3><a href={c.href}>{c.title}</a></h3>
-          <p class="grid-card-note">{c.author}</p>
+          <p class="source-entry">
+            {c.author}, <a href={c.href}><i>{c.title}</i></a>{c.pub && <> ({c.pub})</>}{c.where && <>, {c.where}</>}.
+          </p>
           {c.youtube && (
             <div class="video-embed">
               <iframe
@@ -48,7 +64,7 @@ const cards = sources.map((s) => {
               ></iframe>
             </div>
           )}
-          {c.note && <p>{c.note}</p>}
+          {c.note && <p class="grid-card-note">{c.note}</p>}
         </article>
       ))}
     </div>

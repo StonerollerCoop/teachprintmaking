@@ -124,3 +124,12 @@ Open question: the current vocabulary has separate families for monotype, collag
 - YouTube videos listed as sources are embedded from youtube-nocookie.com, with the title and creator on the card and a link to the original.
 - None of the gel plate sources Libby sent state a license, so the gel plate page describes the method in our own words and credits all five. Recipes vary widely; the page explains the common pattern and credits named recipes (Linda Germain, Suzanne McNeill) without copying any one set of proportions.
 - The four remaining library books (Fick and Grabowski, Hughes and Vernon-Morris, Walker, Medley) have now been read in full, and their findings are folded into the process pages with credit.
+
+## 2026-10-13: Citing as on the Liturgy Companion, and red flags before launch
+
+- Pages cite their sources the way the Liturgy Companion does. A short citation in small, soft sans type follows the claim it supports, such as "Walker, ch. 1" or "Herringe." The full entry appears under Sources at the foot of the page, with the chapter or section used.
+- In page Markdown, a short citation is written as `<cite>Walker, ch. 1</cite>`. In frontmatter, each source can carry `where` (the chapter, section, or pages used) and `note` (what we took from it).
+- Libby is happy to credit people generously. Credit freely; reserve originator language ("developed," "invented") for people who actually introduced a method.
+- The site won't go public until every permission is in hand. Anything that needs permission or checking is marked in red: the claim itself is wrapped in `<span class="flag">`, and the reason is listed under `checks:` in the page's frontmatter, which shows a red "Before this goes public" box at the top of the page. A book's rights question goes in `check` on its library entry.
+- /checks/ gathers every flag on the site in one place. It isn't linked from the menu.
+- Content keeps being updated as Libby sends new sources.

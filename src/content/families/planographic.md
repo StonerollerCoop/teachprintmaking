@@ -3,6 +3,9 @@ title: Planographic
 order: 3
 tagline: Ink sits on a flat surface, as in lithography and monotype. Nothing is cut at all.
 timeline: [castiglione, senefelder, hectograph, lautrec, tamarind]
+sources:
+  - library: fick-grabowski
+    where: "ch. 1, \"Practical Matters,\" on safety"
 ---
 
 ## How it works
@@ -23,7 +26,7 @@ The gelatin hectograph of the 1870s let offices and schools copy pages from a tr
 
 Monotype is open to every age. A preschooler can finger-paint on a sheet of plexiglass and press paper onto it. Gel plates suit students from the early grades up.
 
-Lithography on stone or aluminum belongs in a college or adult studio. Its traditional chemistry includes nitric acid, solvents, and in older books phenol, gasoline, and dichromate compounds that should not be used. Newer approaches change that picture. Polyester plates drawn with a ballpoint pen or a laser printer can be printed with a wooden spoon and suit high school classes. Kitchen lithography on aluminum foil uses cola and vegetable oil. These bring the oil-and-water principle within reach of younger students. For children, look for the AP seal of the Art and Creative Materials Institute, which marks paints and inks certified nontoxic. The hazard in an ink usually comes from its pigment rather than whether it is water- or oil-based.
+Lithography on stone or aluminum belongs in a college or adult studio. Its traditional chemistry includes nitric acid, solvents, and in older books phenol, gasoline, and dichromate compounds that should not be used. Newer approaches change that picture. Polyester plates drawn with a ballpoint pen or a laser printer can be printed with a wooden spoon and suit high school classes. Kitchen lithography on aluminum foil uses cola and vegetable oil. These bring the oil-and-water principle within reach of younger students. For children, look for the AP seal of the Art and Creative Materials Institute, which marks paints and inks certified nontoxic. The hazard in an ink usually comes from its pigment rather than whether it is water- or oil-based. <cite>Fick and Grabowski, ch. 1</cite>
 
 ## Plates, presses, and inks
 

@@ -11,7 +11,9 @@ timeline: [mezzotint]
 related: [intaglio/aquatint, planographic/monotype]
 sources:
   - library: fick-grabowski
+    where: "ch. 5, on mezzotint"
   - library: hughes-vernon-morris
+    where: "the Intaglio section, on mezzotint"
 ---
 
 ## How it works
@@ -22,7 +24,7 @@ The image is made by smoothing that rough surface. A scraper removes burr, and a
 
 Preparing a plate by hand takes many hours, which is why many printmakers buy plates already rocked. Students can learn the dark-to-light approach quickly on materials that roughen easily.
 
-A plate needs to be rocked in at least eight directions to print an even black. Rockers come with anywhere from about 45 to 150 teeth to the inch; finer rockers give a smoother tone and take longer.
+A plate needs to be rocked in at least eight directions to print an even black. Rockers come with anywhere from about 45 to 150 teeth to the inch; finer rockers give a smoother tone and take longer. <cite>Fick and Grabowski, ch. 5; Hughes and Vernon-Morris, Intaglio</cite>
 
 ## History
 

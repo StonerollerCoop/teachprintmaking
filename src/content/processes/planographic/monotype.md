@@ -11,8 +11,11 @@ timeline: [castiglione, hectograph]
 related: [planographic/gel-plate-printing, intaglio/mezzotint, stencil/cut-stencils]
 sources:
   - library: fick-grabowski
+    where: "ch. 8, \"Monoprint\""
   - library: hughes-vernon-morris
+    where: "chs. 17 and 18, on monotype"
   - library: ross-romano-printmaker
+    where: "the monotype chapter"
 ---
 
 ## How it works
@@ -25,11 +28,11 @@ In a trace monotype, the plate is rolled with a thin layer of ink, paper is laid
 
 Printers use monoprint for a print that has a repeated element, such as a carved block or a stencil, combined with painted or rolled ink that changes each time. Both words are often used loosely for the same thing.
 
-A color monotype can be made from three clear acetate plates, one painted for each of three transparent colors, registered by a mark in one corner and printed one over another. In a watercolor monoprint, a plastic plate is sanded lightly so watercolor will hold on it, then printed onto paper soaked until soft; the water in the paper lifts the paint.
+A color monotype can be made from three clear acetate plates, one painted for each of three transparent colors, registered by a mark in one corner and printed one over another. In a watercolor monoprint, a plastic plate is sanded lightly so watercolor will hold on it, then printed onto paper soaked until soft; the water in the paper lifts the paint. <cite>Hughes and Vernon-Morris, ch. 17; Fick and Grabowski, ch. 8</cite>
 
 ## History
 
-Giovanni Benedetto Castiglione made the first monotypes in Genoa in the 1640s, painting and wiping ink on copper. Edgar Degas made hundreds of monotypes in the 1870s and 1880s, often working over them in pastel. Paul Gauguin developed trace monotype. In the twentieth century, monotype became one of the most popular forms of printmaking in schools because it needs no carving and no press.
+Giovanni Benedetto Castiglione made the first monotypes in Genoa in the 1640s, painting and wiping ink on copper. Edgar Degas made hundreds of monotypes in the 1870s and 1880s, often working over them in pastel. Paul Gauguin developed trace monotype. <cite>Fick and Grabowski, ch. 8</cite> In the twentieth century, monotype became one of the most popular forms of printmaking in schools because it needs no carving and no press.
 
 ## Ages, safety, and setting
 
@@ -45,4 +48,4 @@ Presses: the palm of the hand, a wooden spoon, a clean brayer, a tennis ball, or
 
 Inks: water-based block printing ink, tempera with a little glycerin to slow drying, acrylic with a retarder, watercolor and water-soluble crayon on the plate printed onto damp paper, and oil-based ink. Paper masks, leaves, and string laid on the plate before printing act as stencils.
 
-PETG plastic sheet is a good all-purpose monotype plate, and plastic and countertop scraps from sign shops and kitchen fitters work too. The back of a used metal plate also works. A smooth doorknob burnishes well by hand.
+PETG plastic sheet is a good all-purpose monotype plate, and plastic and countertop scraps from sign shops and kitchen fitters work too. The back of a used metal plate also works. A smooth doorknob burnishes well by hand. <cite>Fick and Grabowski, ch. 8; Hughes and Vernon-Morris, ch. 18</cite>

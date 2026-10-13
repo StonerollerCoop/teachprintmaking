@@ -10,10 +10,14 @@ techniques: [drypoint]
 timeline: [rembrandt, rolling-press, open-press]
 related: [intaglio/engraving, relief/collagraph, intaglio/etching]
 sources:
-  - library: fick-grabowski
-  - library: hughes-vernon-morris
   - library: dalton-expressive
+    where: "ch. 4, \"Expressive Paper Dry-Point,\" and ch. 10, \"Workshop Basics\""
+  - library: fick-grabowski
+    where: "ch. 5, \"Intaglio,\" on drypoint"
+  - library: hughes-vernon-morris
+    where: "the Intaglio section, on drypoint"
   - library: ross-romano-intaglio
+    where: "the drypoint section"
 ---
 
 ## How it works
@@ -24,9 +28,9 @@ Pressure controls the line. A light scratch prints pale and fine; a heavy one pr
 
 The burr wears down under the pressure of the press, so a drypoint on soft material gives only a small number of strong prints. That suits a classroom, where each student usually wants a few good impressions.
 
-Drypoint on a juice box or the inside of a food carton adds another possibility. The plastic coating can be scratched, and it can also be cut and peeled away to expose the cardboard underneath. The bare card holds ink like a sponge and prints as a solid dark.
+Drypoint on a juice box or the inside of a food carton adds another possibility. The plastic coating can be scratched, and it can also be cut and peeled away to expose the cardboard underneath. The bare card holds ink like a sponge and prints as a solid dark. <cite>Dalton, ch. 4</cite>
 
-On soft plates the burr wears quickly. Copper and zinc give perhaps twenty strong impressions; plastic and card give fewer. A carbide-tipped scribe stays sharp far longer than a steel needle, and a wire brush or steel wool dragged across a plastic plate scuffs in a light tone.
+On soft plates the burr wears quickly. Copper and zinc give perhaps twenty strong impressions; plastic and card give fewer. A carbide-tipped scribe stays sharp far longer than a steel needle, and a wire brush or steel wool dragged across a plastic plate scuffs in a light tone. <cite>Hughes and Vernon-Morris, Intaglio; Fick and Grabowski, ch. 5</cite>
 
 ## History
 
@@ -40,7 +44,7 @@ Drypoint needs no chemicals. Water-washable intaglio ink cleans up with soap and
 
 ## Plates, presses, and inks
 
-Plates: rigid acetate, PETG, plexiglass, flattened juice and milk cartons, plastic-lined food cartons, the lid of a foil cake tin, plastic-coated card, and copper or zinc for older students. Grey board sealed with several coats of hard wax oil makes a homemade drypoint card, a method shared by the printmaker Mary Dalton.
+Plates: rigid acetate, PETG, plexiglass, flattened juice and milk cartons, plastic-lined food cartons, the lid of a foil cake tin, plastic-coated card, and copper or zinc for older students. Grey board sealed with several coats of hard wax oil makes a homemade drypoint card, a method shared by the printmaker Mary Dalton. <cite>Dalton, ch. 10</cite>
 
 Presses: an etching press is ideal. A pasta machine with felt and a plexiglass carrier, an old clothes wringer for shallow lines, or a small 3D-printed press can work at small sizes. Hand burnishing rarely pushes damp paper far enough into the lines, though a firm spoon on thin damp paper gives a pale proof.
 

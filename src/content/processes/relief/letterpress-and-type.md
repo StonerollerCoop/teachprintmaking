@@ -10,10 +10,12 @@ techniques: []
 timeline: [phaistos, bi-sheng, jikji, gutenberg, aldus-italic, caslon, wood-type, hatch-show-print, linotype, vandercook]
 related: [relief/linocut, relief/wood-engraving, relief/stamps-and-found-objects]
 sources:
-  - library: walker-woodcut
   - library: kafka-linoleum
+    where: "ch. XIV, \"Using a Printing Press for Linoleum Block Printing,\" and ch. XVI, \"Alphabets\""
   - library: fick-grabowski
-  - library: medley-anything
+    where: "ch. 4, on type height and presses"
+  - library: walker-woodcut
+    where: "ch. 5, on presses and makeready"
 ---
 
 ## How it works
@@ -22,9 +24,9 @@ Letterpress is relief printing from type. Each letter is a separate raised piece
 
 Setting type by hand makes typography physical. Students hold the space between words in their fingers as a piece of metal. Leading, the space between lines, gets its name from the strips of lead set between rows of type. Every letter sits on the same baseline because every piece of type is the same height, 0.918 inch in the United States, called type high.
 
-Students don't need a case of type to learn this. Letters carved backward in foam, soft-cut blocks, or linoleum, or cut from craft foam and glued to a block, teach the same lessons about reversal, spacing, and the baseline. A linocut mounted type high can be printed in the same chase as type.
+Students don't need a case of type to learn this. Letters carved backward in foam, soft-cut blocks, or linoleum, or cut from craft foam and glued to a block, teach the same lessons about reversal, spacing, and the baseline. A linocut mounted type high can be printed in the same chase as type. <cite>Kafka, ch. XIV</cite>
 
-Type height is 0.918 inch in the United States and Britain, and slightly taller, 0.928 inch, in continental Europe. A carved block mounted on plywood usually needs a layer of card or board underneath to reach type height.
+Type height is 0.918 inch in the United States and Britain, and slightly taller, 0.928 inch, in continental Europe. A carved block mounted on plywood usually needs a layer of card or board underneath to reach type height. <cite>Fick and Grabowski, ch. 4; Walker, ch. 5</cite>
 
 ## History
 

@@ -11,8 +11,11 @@ timeline: [aquatint]
 related: [intaglio/etching, intaglio/mezzotint]
 sources:
   - library: fick-grabowski
+    where: "ch. 5, on aquatint, spit bite, and its history"
   - library: hughes-vernon-morris
+    where: "the Intaglio section, on aquatint and sugar lift"
   - library: ross-romano-intaglio
+    where: "the aquatint, sugar lift, and spit bite sections"
 ---
 
 ## How it works
@@ -21,15 +24,15 @@ An etching bath bites evenly into bare metal, and a large bare area simply becom
 
 The traditional resist is rosin dust, shaken over the plate in a dust box or from a cloth bag and then melted onto the metal with gentle heat. Spray paint misted lightly over the plate does the same job without heating. Tone depth comes from the length of the bite: areas stopped out early print light, and areas left longest print darkest, so a plate can step from pale gray to deep black.
 
-Related methods paint the image directly. In sugar lift, the printmaker paints with a sugar solution, covers the plate with ground, and soaks it in water; the sugar swells and lifts the ground off, leaving the brushstroke open to aquatint. In spit bite, etchant is brushed straight onto an aquatinted plate for soft watercolor-like washes.
+Related methods paint the image directly. In sugar lift, the printmaker paints with a sugar solution, covers the plate with ground, and soaks it in water; the sugar swells and lifts the ground off, leaving the brushstroke open to aquatint. In spit bite, etchant is brushed straight onto an aquatinted plate for soft watercolor-like washes. <cite>Ross and Romano 1974</cite>
 
-A good aquatint covers about half the plate with resist. Printmakers bite a test strip at a series of times, from under a minute up to half an hour, and print it to see the full range of tones before working on the real plate.
+A good aquatint covers about half the plate with resist. Printmakers bite a test strip at a series of times, from under a minute up to half an hour, and print it to see the full range of tones before working on the real plate. <cite>Fick and Grabowski, ch. 5</cite>
 
 ## History
 
 Jean-Baptiste Le Prince developed aquatint in France in the 1760s, as a way to imitate wash drawings. Francisco Goya used it for the smoky, shadowed passages of his print series. Picasso was among the twentieth-century artists who used sugar lift, painting directly with the brush.
 
-Jan van de Velde IV made tonal etchings in the Netherlands around 1650, and the English painter Paul Sandby gave the process the name aquatint in the 1770s.
+Jan van de Velde IV made tonal etchings in the Netherlands around 1650, and the English painter Paul Sandby gave the process the name aquatint in the 1770s. <cite>Fick and Grabowski, ch. 5</cite>
 
 ## Ages, safety, and setting
 

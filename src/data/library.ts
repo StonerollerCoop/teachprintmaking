@@ -22,6 +22,8 @@ export interface LibraryEntry {
   level: string;
   rights: string;
   caution?: string;
+  /** Something to confirm before launch, such as rights status. Shown on the Checks page. */
+  check?: string;
 }
 
 export const library: LibraryEntry[] = [
@@ -84,6 +86,7 @@ export const library: LibraryEntry[] = [
     families: ['relief'],
     level: 'Middle school through adult',
     rights: 'Copyright 1955; treat as in copyright, cited not reproduced',
+    check: 'Kafka may be in the public domain in the US if the 1955 copyright was not renewed in 1982 or 1983. Search the Copyright Office renewal records under Kafka before treating it as free to adapt.',
     caution: 'Some cleaning advice is out of date. It recommends carbon tetrachloride and gasoline, which should never be used. Clean water-based ink with water and oil-based ink with vegetable oil and soap.',
   },
   {

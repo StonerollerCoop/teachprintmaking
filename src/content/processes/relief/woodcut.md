@@ -11,19 +11,24 @@ timeline: [woodblock-textiles, diamond-sutra, st-christopher, durer, hokusai, po
 related: [relief/linocut, relief/wood-engraving]
 sources:
   - library: walker-woodcut
+    where: "chs. 1–5"
   - library: fick-grabowski
+    where: "ch. 4, \"Relief\""
   - library: hughes-vernon-morris
+    where: "the Relief section"
   - library: fletcher-woodblock
+    where: "the Japanese method of printing and registration"
   - library: tokuno-koehler
+    where: "tools and the kento"
 ---
 
 ## How it works
 
 A woodcut is cut into the side of a plank, along the grain, with knives and gouges. Wood resists in one direction and splits in another, so the printmaker learns to read the grain and cut with it. The grain also prints: a block rolled with a thin layer of ink shows its growth rings and texture. Some printmakers raise the grain on purpose by scrubbing the block with a wire brush.
 
-Western woodcut usually uses oil-based or water-based relief ink rolled on with a brayer. Japanese woodblock printing, called mokuhanga, uses water-based pigment brushed onto the block with a little rice paste, and the paper is sized and dampened. Each color has its own block. Registration is made with the kento, a corner and a straight notch cut into every block, so each sheet of paper drops into the same place.
+Western woodcut usually uses oil-based or water-based relief ink rolled on with a brayer. Japanese woodblock printing, called mokuhanga, uses water-based pigment brushed onto the block with a little rice paste, and the paper is sized and dampened. Each color has its own block. Registration is made with the kento, a corner and a straight notch cut into every block, so each sheet of paper drops into the same place. <cite>Fletcher; Tokuno and Koehler</cite>
 
-Japanese registration names its two marks: the kagi, the corner stop, and the hikitsuke, the straight stop along one side. A single block can also be cut apart like a jigsaw, inked in several colors, and reassembled to print them all at once, a method Edvard Munch used.
+Japanese registration names its two marks: the kagi, the corner stop, and the hikitsuke, the straight stop along one side. A single block can also be cut apart like a jigsaw, inked in several colors, and reassembled to print them all at once, a method Edvard Munch used. <cite>Fick and Grabowski, ch. 4; Hughes and Vernon-Morris, Relief</cite>
 
 ## History
 
@@ -35,7 +40,7 @@ Wood is harder to cut than linoleum and the tools must be sharp, so woodcut usua
 
 Japanese water-based printing is clean and nontoxic and suits classrooms well. Oil-based ink cleans up with vegetable oil and soap. Avoid the solvent-based transfer methods described in older manuals for moving a photocopy onto the block; trace with graphite or carbon paper instead.
 
-Splinters fly when cutting hard woods, so students should wear eye protection. A thin wash of diluted white glue or shellac on plywood helps keep the surface from splintering.
+Splinters fly when cutting hard woods, so students should wear eye protection. A thin wash of diluted white glue or shellac on plywood helps keep the surface from splintering. <cite>Hughes and Vernon-Morris, Relief; Walker, ch. 1</cite>
 
 ## Plates, presses, and inks
 
@@ -45,4 +50,4 @@ Presses: a baren, a wooden spoon, a bamboo rice paddle, a rolling pin, or any re
 
 Inks: water-based and oil-based relief ink, or for Japanese printing, watercolor or gouache brushed onto the block with a dab of rice paste. Sumi ink prints a deep black.
 
-Water-based ink and water-based cleanup can swell wood and narrow fine lines, which is why many woodcut printers prefer oil-based ink cleaned off with a dry rag and vegetable oil. Shina plywood can be carved on both faces if it is printed by hand. Let new wood rest in the classroom for a week or two so it settles to the room's humidity before carving.
+Water-based ink and water-based cleanup can swell wood and narrow fine lines, which is why many woodcut printers prefer oil-based ink cleaned off with a dry rag and vegetable oil. Shina plywood can be carved on both faces if it is printed by hand. Let new wood rest in the classroom for a week or two so it settles to the room's humidity before carving. <cite>Hughes and Vernon-Morris, Relief; Walker, ch. 1</cite>

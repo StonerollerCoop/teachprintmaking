@@ -1,0 +1,17 @@
+---
+/**
+ * Anything that needs permission or checking before the site goes public,
+ * set apart in red so it can't be missed. Shown only while there are checks.
+ */
+interface Props {
+  checks: string[];
+}
+const { checks } = Astro.props;
+---
+
+{checks.length > 0 && (
+  <section class="checks-box no-print" aria-labelledby="checks-h">
+    <h2 id="checks-h">Before this goes public</h2>
+    <ul>{checks.map((c) => <li set:html={c} />)}</ul>
+  </section>
+)}

@@ -11,9 +11,15 @@ timeline: []
 related: [relief/stamps-and-found-objects, intaglio/drypoint, intaglio/etching]
 sources:
   - library: ross-romano-intaglio
+    where: "the collagraph chapter"
   - library: ross-romano-printmaker
+    where: "ch. 3, \"Collagraphs\""
   - library: fick-grabowski
+    where: "ch. 6, \"Collagraph,\" and its troubleshooting table"
   - library: hughes-vernon-morris
+    where: "the Intaglio section, on collagraph"
+checks:
+  - "Pierre Roche: Hughes and Vernon-Morris name him as a forerunner of the collagraph. Confirm what he actually made before saying more."
 ---
 
 ## How it works
@@ -26,9 +32,9 @@ Students quickly learn which materials print dark and which print light. Rough t
 
 ## History
 
-The printmaker Glen Alps coined the word collagraph in the 1950s, from collage and graph. Its roots go back further: the Norwegian artist Rolf Nesch built printing plates from soldered and assembled pieces of metal in the 1930s. John Ross, Clare Romano, and others developed cardboard and gesso collagraphs as a teaching method in the following decades.
+The printmaker Glen Alps coined the word collagraph in the 1950s, from collage and graph. <cite>Ross and Romano 1974; Fick and Grabowski, ch. 6</cite> Its roots go back further: the Norwegian artist Rolf Nesch built printing plates from soldered and assembled pieces of metal in the 1930s. John Ross, Clare Romano, and others developed cardboard and gesso collagraphs as a teaching method in the following decades. <cite>Ross, Romano, and Ross 1990, ch. 3</cite>
 
-The French artist Pierre Roche, whose embossed relief prints of the 1890s explored the raised plate in new ways, is also named as a forerunner.
+<span class="flag">The French artist Pierre Roche is also named as a forerunner.</span> <cite>Hughes and Vernon-Morris, Intaglio</cite>
 
 ## Ages, safety, and setting
 
@@ -36,7 +42,7 @@ Relief-inked collagraphs suit young children; a K–2 class can glue cardboard s
 
 Seal plates with acrylic medium, PVA glue, or shellac thinned with alcohol. Avoid the lacquer and solvent-based sealers in older manuals. Sand and grit glued to a plate should be fully sealed so they don't shed.
 
-Clean collagraph plates with vegetable oil or a citrus cleaner. Alcohol and acetone dissolve shellac and some sealers, and a plate cleaned with them can come apart. Never warm a collagraph on a hotplate.
+Clean collagraph plates with vegetable oil or a citrus cleaner. Alcohol and acetone dissolve shellac and some sealers, and a plate cleaned with them can come apart. Never warm a collagraph on a hotplate. <cite>Fick and Grabowski, ch. 6</cite>
 
 ## Plates, presses, and inks
 
@@ -46,4 +52,4 @@ Presses: hand, spoon, or rolling pin for relief inking; an etching press, pasta 
 
 Inks: water-based relief ink for surface printing; water-washable intaglio ink for wiped plates.
 
-Seal both sides of the plate, with two or three thin coats, so it doesn't curl or soak up ink. Thick objects such as coins and keys print better set into a hollow cut in the board, so the plate stays fairly level. Carborundum grit mixed into acrylic medium or wood glue and brushed on gives a rich, dark tone when inked as intaglio. An old toothbrush or a felt dauber works ink into deep textures, and heavier, damp paper of about 250 grams or more picks up the detail.
+Seal both sides of the plate, with two or three thin coats, so it doesn't curl or soak up ink. Thick objects such as coins and keys print better set into a hollow cut in the board, so the plate stays fairly level. Carborundum grit mixed into acrylic medium or wood glue and brushed on gives a rich, dark tone when inked as intaglio. An old toothbrush or a felt dauber works ink into deep textures, and heavier, damp paper of about 250 grams or more picks up the detail. <cite>Hughes and Vernon-Morris, Intaglio; Fick and Grabowski, ch. 6</cite>

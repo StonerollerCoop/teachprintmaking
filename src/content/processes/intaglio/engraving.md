@@ -10,9 +10,12 @@ techniques: []
 timeline: [engraving, durer, rolling-press]
 related: [intaglio/drypoint, relief/wood-engraving, intaglio/etching]
 sources:
-  - library: fick-grabowski
   - library: hughes-vernon-morris
+    where: "the Intaglio section, on metal engraving"
+  - library: fick-grabowski
+    where: "ch. 5, on engraving"
   - library: ross-romano-intaglio
+    where: "the engraving section"
 ---
 
 ## How it works
@@ -39,4 +42,4 @@ Presses: an etching press. Engraved lines are shallow and crisp, so a small pres
 
 Inks: water-washable or oil-based intaglio ink, wiped with tarlatan and polished with paper or the palm, printed on damp paper.
 
-Copper for engraving is usually bought half-hard, about a millimeter thick. Ink a new plate twice before the first proof so the lines fill completely.
+Copper for engraving is usually bought half-hard, about a millimeter thick. Ink a new plate twice before the first proof so the lines fill completely. <cite>Hughes and Vernon-Morris, Intaglio</cite>

@@ -1,0 +1,33 @@
+---
+/**
+ * Every red flag on the site in one place, so permissions and doubtful claims
+ * can be worked through before launch. Not linked from the navigation.
+ */
+import Base from '../layouts/Base.astro';
+import { allTypes, familyUrl, processUrl } from '../lib/types';
+import { library } from '../data/library';
+
+const { families, processes } = await allTypes();
+const groups = [
+  ...families.filter((f) => f.data.checks.length).map((f) => ({ title: f.data.title, href: familyUrl(f.id), checks: f.data.checks })),
+  ...processes.filter((p) => p.data.checks.length).map((p) => ({ title: p.data.title, href: processUrl(p.id), checks: p.data.checks })),
+  ...library.filter((b) => b.check).map((b) => ({ title: b.title, href: `/sources/#${b.id}`, checks: [b.check!] })),
+];
+const total = groups.reduce((n, g) => n + g.checks.length, 0);
+---
+
+<Base title="Checks before launch" description="Permissions and claims to confirm before the site goes public.">
+  <h1>Checks before launch</h1>
+  <p class="lede">
+    {total === 0 ? 'Nothing is flagged right now.' : `${total} ${total === 1 ? 'item needs' : 'items need'} permission or checking before the site goes public.`}{' '}
+    Each one also appears in red on its own page. This page isn't linked from the menu.
+  </p>
+  <div class="card-grid">
+    {groups.map((g) => (
+      <article class="grid-card checks-card">
+        <h3><a href={g.href}>{g.title}</a></h3>
+        <ul>{g.checks.map((c) => <li set:html={c} />)}</ul>
+      </article>
+    ))}
+  </div>
+</Base>

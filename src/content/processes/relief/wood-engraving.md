@@ -11,8 +11,11 @@ timeline: [bewick]
 related: [relief/woodcut, intaglio/engraving]
 sources:
   - library: walker-woodcut
+    where: "introduction and chs. 1–3"
   - library: fick-grabowski
+    where: "ch. 4, \"Relief,\" on wood engraving"
   - library: hughes-vernon-morris
+    where: "the Relief section, on wood engraving"
 ---
 
 ## How it works
@@ -21,7 +24,7 @@ A wood engraving is cut into the end grain of a block, the surface you see when 
 
 Because the lines are so fine, wood engravings are often worked as white line on black: the engraver cuts light into a dark field, and the print reads as a drawing made of light. The blocks are traditionally made type high, the same height as metal type, so text and image can print together on a letterpress.
 
-Engraved lines are shallow, often only about a sixteenth of an inch deep. A line that swells in the middle and tapers at both ends is easiest cut from each end toward the center. Rubbing chalk into the cut lines, or brushing dark ink over a pale block before engraving, makes the work easier to see.
+Engraved lines are shallow, often only about a sixteenth of an inch deep. A line that swells in the middle and tapers at both ends is easiest cut from each end toward the center. Rubbing chalk into the cut lines, or brushing dark ink over a pale block before engraving, makes the work easier to see. <cite>Walker, chs. 2–3</cite>
 
 ## History
 
@@ -31,7 +34,7 @@ Thomas Bewick, working in Newcastle in the 1790s, cut detailed images of animals
 
 Wood engraving is a high school, college, and adult process. The tools are small and very sharp and are pushed toward the work, so students need instruction in holding the graver with the hand braced and the free hand clear of the line of cut. A sandbag steadies the block and lets the engraver turn it instead of turning the tool.
 
-Boxwood is expensive and scarce, and beginners do better on end-grain maple, lemonwood, or a resin block. Resingrave, a resin engraving block, was developed by Richard Woodman; some engravers also use Corian countertop offcuts.
+Boxwood is expensive and scarce, and beginners do better on end-grain maple, lemonwood, or a resin block. Resingrave, a resin engraving block, was developed by Richard Woodman; some engravers also use Corian countertop offcuts. <cite>Walker, ch. 1; Fick and Grabowski, ch. 4</cite>
 
 ## Plates, presses, and inks
 

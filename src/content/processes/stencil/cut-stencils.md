@@ -10,10 +10,12 @@ techniques: [stencil-print]
 timeline: [muna-hand-stencil, el-castillo, cueva-de-las-manos, katagami, fiji-leaf-stencils]
 related: [stencil/pochoir, stencil/screenprinting, planographic/gel-plate-printing]
 sources:
-  - library: fick-grabowski
   - library: hughes-vernon-morris
+    where: "ch. 15, on stencils and their history"
   - library: medley-anything
-  - library: ross-romano-printmaker
+    where: "chs. 2 and 3"
+  - library: fick-grabowski
+    where: "ch. 3, on paper stencils"
 ---
 
 ## How it works
@@ -30,7 +32,7 @@ The oldest prints we know are stencils. A hand stencil on a cave wall in Sulawes
 
 Japanese craftspeople cut katagami stencils from layers of mulberry paper bonded with persimmon tannin, holding loose pieces in place with fine threads, to print rice-paste resist on kimono cloth. Fijian makers cut stencils from banana and pandanus leaves to pattern masi barkcloth, a practice documented since at least the 1840s.
 
-Paper cutting goes back at least to China in the Han dynasty, and Jewish papercuts, Mexican papel picado, and Polish wycinanki carry on long traditions of the cut paper shape.
+Paper cutting goes back at least to China in the Han dynasty, and Jewish papercuts, Mexican papel picado, and Polish wycinanki carry on long traditions of the cut paper shape. <cite>Hughes and Vernon-Morris, ch. 15</cite>
 
 ## Ages, safety, and setting
 
@@ -46,4 +48,4 @@ Tools: sponges, stencil brushes, foam daubers, brayers, toothbrushes for spatter
 
 Inks: tempera, acrylic paint, watercolor, water-based block printing ink, and fabric paint for cloth.
 
-Clear self-adhesive shelf liner makes a reusable stencil that won't shift. A test print can itself be cut into a stencil for the next color.
+Clear self-adhesive shelf liner makes a reusable stencil that won't shift. A test print can itself be cut into a stencil for the next color. <cite>Medley, chs. 2–3</cite>

@@ -4,6 +4,8 @@ import FamilyDiagram from '../../../components/FamilyDiagram.astro';
 import { render } from 'astro:content';
 import { ageBands } from '../../../data/vocab';
 import TimelineCards from '../../../components/TimelineCards.astro';
+import SourceCards from '../../../components/SourceCards.astro';
+import ChecksBox from '../../../components/ChecksBox.astro';
 import {
   allTypes,
   processUrl,
@@ -44,6 +46,8 @@ const mine = processes.filter((p) => processFamily(p) === family.id);
       </div>
     </div>
 
+    <ChecksBox checks={family.data.checks} />
+
     <h2>Processes</h2>
     <div class="process-cards">
       {mine.map((p) => (
@@ -62,6 +66,8 @@ const mine = processes.filter((p) => processFamily(p) === family.id);
     <div class="lesson-body"><Content /></div>
 
     <TimelineCards ids={family.data.timeline} />
+
+    <SourceCards sources={family.data.sources} owner={family.id} />
 
     <p><a href={`/lessons/#${family.id}`}>All {family.data.title.toLowerCase()} lessons</a></p>
 

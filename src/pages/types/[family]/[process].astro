@@ -5,6 +5,7 @@ import { ageBands } from '../../../data/vocab';
 import LessonCard from '../../../components/LessonCard.astro';
 import TimelineCards from '../../../components/TimelineCards.astro';
 import SourceCards from '../../../components/SourceCards.astro';
+import ChecksBox from '../../../components/ChecksBox.astro';
 import { allLessons } from '../../../lib/lessons';
 import {
   allTypes,
@@ -51,6 +52,8 @@ const related = d.related.map((r) => processes.find((p) => p.id === r)!);
     </p>
     <h1>{d.title}</h1>
     <p class="lede">{d.tagline}</p>
+
+    <ChecksBox checks={d.checks} />
 
     <dl class="facts">
       <dt>Youngest</dt><dd>{ageBands[d.youngest].label}: {d.youngestNote}</dd>
