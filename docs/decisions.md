@@ -158,3 +158,9 @@ Open question: the current vocabulary has separate families for monotype, collag
 
 - Kafka's *Linoleum Block Printing* is in copyright. Kafka renewed the 1955 registration (A191236) on October 3, 1983, as renewal RE0000178775, found in the Copyright Office online catalog. It stays cited, not adapted.
 - Heller's *Printmaking Today* (1958, registration A336302) is probably public domain in the US. The same catalog shows no renewal for it. It shows only a 1984 transfer of the 1972 second edition from CBS College Publishing to Heller and a 2001 bulk assignment of many publisher titles, neither of which is a renewal. The Stanford Copyright Renewal Database blocked automated searches, so one manual search there is still needed before its text is adapted. The 1972 edition and the book's illustrations are protected regardless.
+
+## 2026-10-14: Pictures pulled from the family, process, and teaching pages
+
+- Libby asked for the Pictures sections to come off. The 227 pictures sat apart from the text instead of illustrating what each page says, and they had been chosen from catalog records without anyone seeing them. The image cards, src/data/images.json, and the picture flags on /checks/ are removed. The list is still in the git history (commit 8b43875) if any entry is wanted later.
+- The timeline images on the History page are untouched; each one illustrates its own entry.
+- Pictures can come back later only where an image is placed beside the specific passage it shows, and after someone has looked at it.

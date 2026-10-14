@@ -4,7 +4,6 @@ import { getCollection, render, type CollectionEntry } from 'astro:content';
 import LessonCard from '../../components/LessonCard.astro';
 import SourceCards from '../../components/SourceCards.astro';
 import ChecksBox from '../../components/ChecksBox.astro';
-import ImageCards from '../../components/ImageCards.astro';
 import { allLessons } from '../../lib/lessons';
 import { allTypes, processUrl } from '../../lib/types';
 
@@ -49,7 +48,6 @@ const pageProcesses = d.processes.map((id) => {
 
     <div class="lesson-body"><Content /></div>
 
-    <ImageCards page={`teaching/${page.id}`} />
 
     {pageProcesses.length > 0 && (
       <>
