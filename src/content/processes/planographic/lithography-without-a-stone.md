@@ -20,7 +20,14 @@ sources:
     where: "ch. 5, \"Mokulito,\" and ch. 6, \"Lithino\""
   - library: heller-1958
     where: "pp. 36 and 244–246, on other surfaces and methods"
+  - library: grabowski-fick-2009
+    where: "pp. 183–186, \"Innovations in Planographic Printing\""
+    note: "Paper lithography and polyester plate drawing materials, printing, and cleaning"
+  - library: hacking-tinsley-turner
+    where: "Nicholas Hacking, pp. 8–33, plate lithography on zinc and aluminum"
 checks:
+  - "Laser printer rather than inkjet, coarse halftones of about 75 lines per inch, and a water bath of gum arabic and citric acid are not in the 2009 first edition of Grabowski and Fick, which recommends fountain solution at about 30 parts water to one. Confirm in the 2015 edition or Hughes and Vernon-Morris."
+  - "Polyester plates printed with a spoon: the 2009 first edition of Grabowski and Fick prints them on a press. Confirm the hand-printing claim in another source."
   - "Kitchen lithography: the credit to Émilie Aizier comes from general knowledge, not from any of our books. Confirm it, and find her own write-up to cite."
   - "Mokulito: the origin in Japan in the 1970s comes from Dalton. Confirm it with a second source and name the originator if one is known."
   - "Lithino: Dalton presents the sanding method as coming out of her research without quite claiming to have invented it. Ask her how she would like it described and credited."
@@ -30,7 +37,7 @@ checks:
 
 Every lithograph rests on the same principle: grease attracts oily ink, a treated bare surface holds water, and water repels the ink. Stone and grained aluminum are the classic surfaces, but several newer methods apply the principle to cheaper and safer materials.
 
-**Polyester plates.** A thin plastic plate with a specially treated surface accepts drawing in ballpoint pen, permanent marker, litho crayon, or laser-printer toner. The plate is wiped with water, inked with a brayer, and printed by hand with a spoon or baren, or on an etching press. Toothpaste works as a gentle eraser on these plates. Because laser prints can be transferred straight onto the plate, polyester plates are a natural fit for design classes and for type. <cite>Devon, Lagattuta, and Hamon, ch. 9; Hughes and Vernon-Morris, ch. 12</cite>
+**Polyester plates.** A thin plastic plate with a specially treated surface accepts drawing in ballpoint pen, permanent marker, litho crayon, or laser-printer toner. The plate is wiped with water, inked with a brayer, and printed <span class="flag">by hand with a spoon or baren, or</span> on an etching press. Toothpaste works as a gentle eraser on these plates. Because laser prints can be transferred straight onto the plate, polyester plates are a natural fit for design classes and for type. <cite>Devon, Lagattuta, and Hamon, ch. 9; Hughes and Vernon-Morris, ch. 12</cite>
 
 **Kitchen lithography.** Aluminum foil smoothed over a rigid board is drawn on with an oily crayon, soap, or a greasy pencil. Cola, which contains phosphoric acid, acts as the etch. The foil is rinsed, dampened, and rolled with oil-based ink, which clings only to the drawing. <span class="flag">The French artist Émilie Aizier popularized the method.</span>
 
@@ -40,7 +47,7 @@ Every lithograph rests on the same principle: grease attracts oily ink, a treate
 
 **Transfer paper.** Paper brushed with a thin coating of gum arabic and glycerin can be drawn on and then transferred face down onto a plate. The drawing reverses twice, once onto the plate and once onto the paper, so writing done the right way round prints the right way round. <cite>Devon, Lagattuta, and Hamon, ch. 9</cite> Heller gives an older homemade transfer paper coated with dental plaster and flour. <cite>Heller 1958, p. 246</cite>
 
-**Paper lithography.** A black-and-white photocopy or laser print can serve as the plate. The toner image is greasy enough to take oil-based ink, and the bare paper, wiped with a thin mix of gum arabic and water, holds water and rejects it. The copy is laid face up, sponged, inked with a brayer, and printed face down on damp paper, usually on a press. Each copy gives only a few prints before it wears out, so students make several copies of the same image. It is one of the most immediate ways to show a class how lithography works. <cite>Fick and Grabowski, ch. 7</cite>
+**Paper lithography.** A black-and-white photocopy or laser print can serve as the plate. The toner image is greasy enough to take oil-based ink, and the bare paper, wiped with a thin mix of gum arabic and water, holds water and rejects it. The copy is laid face up, sponged, inked with a brayer, and printed face down on damp paper, usually on a press. Each copy gives only a few prints before it wears out, so students make several copies of the same image. It is one of the most immediate ways to show a class how lithography works. <cite>Grabowski and Fick 2009, pp. 183–184</cite>
 
 ## History
 
@@ -64,4 +71,10 @@ Presses: a wooden spoon, a baren, or a clean brayer for foil and polyester plate
 
 Inks: oil-based relief or lithographic ink. Water-based ink won't work, since the method depends on oil and water repelling.
 
-Polyester plates need a laser printer, since inkjet ink doesn't hold up. Keep halftones coarse, around 75 lines per inch or less. A water bath with a little gum arabic and citric acid keeps the plate clean while printing. <cite>Fick and Grabowski, ch. 7; Hughes and Vernon-Morris, ch. 12</cite>
+<span class="flag">Polyester plates need a laser printer, since inkjet ink doesn't hold up. Keep halftones coarse, around 75 lines per inch or less. A water bath with a little gum arabic and citric acid keeps the plate clean while printing.</span> <cite>Fick and Grabowski, ch. 7; Hughes and Vernon-Morris, ch. 12</cite>
+
+Grabowski and Fick list many more ways to draw on a polyester plate: china marker, litho crayon, India ink, carbon black acrylic, acrylic floor polish tinted with India ink, and washes of toner. Gum arabic or a water-soluble pencil drawn on first works as a mask that washes away and leaves white. The plate can be scraped or erased between prints to change the image. Because it is translucent, a second color plate can be laid face down onto the print by eye. On an etching press, take out the soft blanket and print under a stiff sheet. <cite>Grabowski and Fick 2009, pp. 185–186</cite>
+
+Paper lithographs last longer if the back of the copy is brushed with shellac. Keep the copy wet the whole time, loosen the ink so it doesn't pull the toner off, and expect a little tone in the empty areas; it can be planned for. A pinch of white in black ink makes the roll-up easier to see. <cite>Grabowski and Fick 2009, pp. 183–184</cite>
+
+Plate lithography on zinc and aluminum is the subject of Nicholas Hacking's section of Practical Printmaking. He compares the two metals and explains that ready-grained plates come in grades from coarse to very fine, and that one graining serves two or three drawings. He also shows how to make transfer paper by brushing gum arabic onto drawing paper. <cite>Hacking 1983, pp. 18, 22</cite> His etches use chemicals that don't belong in a school, so take the principle and leave the recipes.

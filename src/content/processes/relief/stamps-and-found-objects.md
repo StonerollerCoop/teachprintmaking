@@ -22,6 +22,9 @@ sources:
     where: "p. 98, Frasconi's repeat blocks"
   - library: martin-encyclopedia
     where: "p. 134, Ian Mowforth's square blocks"
+  - library: hacking-tinsley-turner
+    where: "Silvie Turner, pp. 64–71, relief printing without a press"
+    note: "Rubbings, stamp prints, glue and collage blocks, absorbent papers, and the offset roller"
 ---
 
 ## How it works
@@ -33,6 +36,8 @@ Foam takes the idea one step further. Drawing into a sheet of craft foam or a cl
 String glued around a cardboard tube or a can becomes a roller. String glued to a block, or a design trailed in white glue and left to dry, prints as raised line. Leaves, feathers, and fish print their own surface; the Japanese practice of printing fish, gyotaku, began as a way for anglers to record a catch. <cite>DeSherlia, sec. IV</cite>
 
 An inked object can also be printed by offset. Roll a clean brayer over an inked leaf, toy, or textured scrap so the image transfers to the roller, then roll the brayer across paper. Objects that can't be held, such as fabric scraps and lace, can be laid on the inked slab, covered with scrap paper, and rolled, then lifted and printed. <cite>Medley, chs. 2–3</cite>
+
+Silvie Turner starts relief printing with rubbings. Thin paper is held over a textured surface and rubbed lightly with a wax crayon in small circles, and the surface shows up on the paper. She notes that rubbings need no particular skill, only some care and patience, and that printing a leaf, a feather, or a hand makes you notice things about it you hadn't seen before. Plain glue spread on card and combed into ridges prints too, once it is dry. <cite>Turner 1983, p. 68</cite> Soft, absorbent papers such as newsprint, blotting paper, and thin Japanese paper pick up the most from an uneven object. <cite>Turner 1983, p. 65</cite>
 
 Small blocks can build larger designs. Antonio Frasconi cut small repeat blocks and printed them within a larger block. Ian Mowforth's Dancing Figures is printed from nine separately cut square blocks that can be arranged in any order, a good model for a class pattern project in which each student cuts one square. <cite>Heller 1958, p. 98; Martin, p. 134</cite>
 

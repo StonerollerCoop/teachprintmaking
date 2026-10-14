@@ -20,6 +20,8 @@ sources:
     where: "pp. 14–15, on relief presses"
   - library: heller-1958
     where: "p. 87, on the Washington hand press"
+  - library: grabowski-fick-2009
+    where: "pp. 19 and 92, type height and mounting blocks"
 ---
 
 ## How it works
@@ -30,7 +32,7 @@ Setting type by hand makes typography physical. Students hold the space between 
 
 Students don't need a case of type to learn this. Letters carved backward in foam, soft-cut blocks, or linoleum, or cut from craft foam and glued to a block, teach the same lessons about reversal, spacing, and the baseline. A linocut mounted type high can be printed in the same chase as type. <cite>Kafka, ch. XIV</cite>
 
-Type height is 0.918 inch in the United States and Britain, and slightly taller, 0.928 inch, in continental Europe. A carved block mounted on plywood usually needs a layer of card or board underneath to reach type height. <cite>Fick and Grabowski, ch. 4; Walker, ch. 5</cite>
+Type height is 0.918 inch in the United States and Britain, and slightly taller, 0.928 inch, in continental Europe. <cite>Walker, ch. 5</cite> A carved block mounted on board usually needs a layer of thin card underneath to reach type height. <cite>Grabowski and Fick 2009, pp. 19, 92</cite>
 
 ## History
 

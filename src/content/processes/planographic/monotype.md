@@ -20,6 +20,13 @@ sources:
     where: "pp. 20–25, monoprint"
   - library: logan-make-ink
     where: "on homemade inks for brush and pen"
+  - library: grabowski-fick-2009
+    where: "ch. 8, pp. 187–204, and the monoprint troubleshooting table, p. 229"
+    note: "Ink and plate choices, registering layers, the trace monotype negative, hand and press printing"
+  - library: major-george-collagraph
+    where: "p. 47, mono collagraph"
+checks:
+  - "Castiglione in Genoa in the 1640s, Degas's “hundreds” of monotypes, and PETG, sign-shop scraps, and the doorknob are not in the 2009 first edition of Grabowski and Fick, which dates Castiglione's first monotypes only to the mid-seventeenth century. Confirm in the 2015 edition or Hughes and Vernon-Morris."
 ---
 
 ## How it works
@@ -32,13 +39,17 @@ In a trace monotype, the plate is rolled with a thin layer of ink, paper is laid
 
 A sketch slipped under a glass or clear plastic plate guides the painting, and the same sketch helps place a second and third color in register. For a blotted monoprint, a sheet of paper is pressed onto wet ink and lifted away, leaving a random texture on the plate that is then printed. <cite>Martin, pp. 21–25</cite>
 
+After a trace monotype is drawn, the plate still holds ink everywhere the pencil didn't press. Print that plate onto a fresh sheet, and the drawing comes back as a negative: light lines in a dark field. <cite>Grabowski and Fick 2009, p. 193</cite> For a crisper traced line, roll the slab very thin. <cite>Grabowski and Fick 2009, p. 229</cite>
+
+For a print built in several layers, lay a clean sheet of clear plastic on the first print, ink sides together, and trace the main shapes and registration marks with a permanent marker. That plate is then ready for the next color, and the marker comes off afterward with alcohol. <cite>Grabowski and Fick 2009, p. 190</cite>
+
 Printers use monoprint for a print that has a repeated element, such as a carved block or a stencil, combined with painted or rolled ink that changes each time. Both words are often used loosely for the same thing.
 
 A color monotype can be made from three clear acetate plates, one painted for each of three transparent colors, registered by a mark in one corner and printed one over another. In a watercolor monoprint, a plastic plate is sanded lightly so watercolor will hold on it, then printed onto paper soaked until soft; the water in the paper lifts the paint. <cite>Hughes and Vernon-Morris, ch. 17; Fick and Grabowski, ch. 8</cite>
 
 ## History
 
-Giovanni Benedetto Castiglione made the first monotypes in Genoa in the 1640s, painting and wiping ink on copper. Edgar Degas made hundreds of monotypes in the 1870s and 1880s, often working over them in pastel. Paul Gauguin developed trace monotype. <cite>Fick and Grabowski, ch. 8</cite> In the twentieth century, monotype became one of the most popular forms of printmaking in schools because it needs no carving and no press.
+Giovanni Benedetto Castiglione made the first monotypes in the mid-seventeenth century, rolling ink onto copper and wiping it away to draw. Many of Edgar Degas's pastels began as monotypes. Paul Gauguin developed trace monotype. <cite>Grabowski and Fick 2009, pp. 187–188</cite> <span class="flag">Castiglione worked in Genoa in the 1640s, and Degas made hundreds of monotypes in the 1870s and 1880s.</span> <cite>Fick and Grabowski, ch. 8</cite> In the twentieth century, monotype became one of the most popular forms of printmaking in schools because it needs no carving and no press.
 
 ## Ages, safety, and setting
 
@@ -54,4 +65,12 @@ Presses: the palm of the hand, a wooden spoon, a clean brayer, a tennis ball, or
 
 Inks: water-based block printing ink, tempera with a little glycerin to slow drying, acrylic with a retarder, watercolor and water-soluble crayon on the plate printed onto damp paper, and oil-based ink. Paper masks, leaves, and string laid on the plate before printing act as stencils. Natural inks of the kind Jason Logan makes from plants and kitchen scraps can be brushed onto a smooth plate nearly as they are and printed onto damp paper; see [Ink or paint](/parts/ink/). <cite>Logan</cite>
 
-PETG plastic sheet is a good all-purpose monotype plate, and plastic and countertop scraps from sign shops and kitchen fitters work too. The back of a used metal plate also works. A smooth doorknob burnishes well by hand. <cite>Fick and Grabowski, ch. 8; Hughes and Vernon-Morris, ch. 18</cite>
+<span class="flag">PETG plastic sheet is a good all-purpose monotype plate, and plastic and countertop scraps from sign shops and kitchen fitters work too.</span> The back of a used metal plate or a partly worked etching or relief plate also works. <span class="flag">A smooth doorknob burnishes well by hand.</span> <cite>Fick and Grabowski, ch. 8; Hughes and Vernon-Morris, ch. 18</cite>
+
+Each plate has its own temper. A white plate shows color most truly. Clear plastic lets a guide drawing show through and helps with registering layers. A frosted plastic or grained surface holds washes, and smooth acrylic wipes cleanly. <cite>Grabowski and Fick 2009, p. 190</cite>
+
+Oil-based ink for wiping out should be loose and buttery rather than tacky, and a little thin oil or reducing compound makes it easier to wipe. Ink for rolling with a brayer or printing through stencils can stay stiffer, like relief ink. <cite>Grabowski and Fick 2009, p. 189</cite>
+
+A painted area of oily ink will push away a drier ink rolled over it, and the roller can lift painted shapes and set them down again further along. Students can use that rejection on purpose. <cite>Grabowski and Fick 2009, pp. 191, 196</cite>
+
+Printing by hand lets the printer press harder in one place than another and works with thicker ink. Dry, unsized paper holds its size between layers, which makes registering a layered print easier; damp paper picks up delicate washes better. Washes that won't print should be printed within half an hour, before they dry on the plate. <cite>Grabowski and Fick 2009, pp. 197, 229</cite>

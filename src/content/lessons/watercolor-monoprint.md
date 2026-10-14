@@ -26,6 +26,11 @@ sources:
     author: Bill Fick and Beth Grabowski (2015)
     license: Cited, not reproduced
     library: fick-grabowski
+  - relation: based-on
+    title: "Printmaking: A Complete Guide to Materials & Processes, first edition, \"Watercolor Monoprint,\" pp. 201–204"
+    author: Beth Grabowski and Bill Fick (2009)
+    license: Cited, not reproduced
+    library: grabowski-fick-2009
 ---
 
 ## Preparing the plate

@@ -31,6 +31,8 @@ sources:
   - title: "Technology Spotlight: Art Adaptations for Students with Physical Disabilities"
     author: "Mari Beth Coleman, Council for Exceptional Children"
     url: https://ccc.exceptionalchildren.org/sites/default/files/2021-02/ATforArtTechSpotlight.pdf
+  - library: major-george-collagraph
+    where: "p. 25, Dawn's Dobber"
 ---
 
 Printmaking is already one of the most open ways into art. A print can be made by pressing a leaf, rolling a brayer, or standing on a block. It can be read by touch, and it can be made by a whole team working together. The pages in this section are about using that openness on purpose.
@@ -48,6 +50,8 @@ The social model of disability, developed by disabled people, holds that people 
 Universal Design for Learning asks teachers to offer more than one way to take in information, more than one way to stay engaged, and more than one way to show what you know. <cite>CAST</cite> In a print room, a single demonstration can be spoken aloud, written on a step card, and handed around as a plate to touch. A finished print can be looked at, felt, and talked about.
 
 ## Lightest support first
+
+Kim Major-George tells how one of her students, Dawn, couldn't get on with the tissue squares used to wipe a collagraph because of her long nails. Dawn made her own padded dabber from half a sponge scrubber wrapped in cloth, and Major-George named it after her and teaches it in her book. <cite>Major-George, p. 25</cite> The learner often knows what tool would work, and a change made for one person can end up helping everyone.
 
 Start with the smallest change that might work, such as a pre-drawn line, a taped edge, or a softer block, and add more only if it's needed. Ability can vary from day to day. <cite>Naughton</cite> Hand-under-hand guidance, where the learner's hand rests on yours, is less intrusive than hand-over-hand, and full physical help should happen only with the learner's agreement. <cite>Coleman</cite>
 

@@ -18,6 +18,8 @@ sources:
     where: "the Relief section, on wood engraving"
   - library: martin-encyclopedia
     where: "pp. 46–53, wood engraving"
+checks:
+  - "The 2009 first edition of Grabowski and Fick has no section on wood engraving, so its citation here rests on the 2015 edition alone. Confirm it there, or drop it."
 ---
 
 ## How it works
@@ -38,7 +40,7 @@ Thomas Bewick, working in Newcastle in the 1790s, cut detailed images of animals
 
 Wood engraving is a high school, college, and adult process. The tools are small and very sharp and are pushed toward the work, so students need instruction in holding the graver with the hand braced and the free hand clear of the line of cut. A sandbag steadies the block and lets the engraver turn it instead of turning the tool. A book wrapped in a cloth can stand in for a leather sandbag. <cite>Martin, p. 51</cite>
 
-Boxwood is expensive and scarce, and beginners do better on end-grain maple, lemonwood, or a resin block. Resingrave, a resin engraving block, was developed by Richard Woodman; some engravers also use Corian countertop offcuts. <cite>Walker, ch. 1; Fick and Grabowski, ch. 4</cite>
+Boxwood is expensive and scarce, and beginners do better on end-grain maple, lemonwood, or a resin block. Resingrave, a resin engraving block, was developed by Richard Woodman; some engravers also use Corian countertop offcuts. <cite>Walker, ch. 1</cite> <span class="flag">Fick and Grabowski, ch. 4</span>
 
 ## Plates, presses, and inks
 

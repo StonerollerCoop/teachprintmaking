@@ -22,6 +22,14 @@ sources:
     where: "p. 165, on points and transfers"
   - library: martin-encyclopedia
     where: "pp. 76–79 and 105, drypoint"
+  - library: grabowski-fick-2009
+    where: "pp. 113, 142, and 144, on drypoint tools and plastic plates"
+  - library: hacking-tinsley-turner
+    where: "Francis Tinsley, pp. 51–53, drypoint"
+  - library: major-george-collagraph
+    where: "p. 44, drypoint on plastics and metals"
+checks:
+  - "About twenty impressions from copper and zinc: not in the 2009 first edition of Grabowski and Fick, and Tinsley gives ten to twelve for bare copper. Confirm Hughes and Vernon-Morris's figure or use the lower one."
 ---
 
 ## How it works
@@ -36,7 +44,11 @@ Lay an early and a late impression side by side, and students can see the burr w
 
 Drypoint on a juice box or the inside of a food carton adds another possibility. The plastic coating can be scratched, and it can also be cut and peeled away to expose the cardboard underneath. The bare card holds ink like a sponge and prints as a solid dark. <cite>Dalton, ch. 4</cite>
 
-On soft plates the burr wears quickly. Copper and zinc give perhaps twenty strong impressions; plastic and card give fewer. A carbide-tipped scribe stays sharp far longer than a steel needle, and a wire brush or steel wool dragged across a plastic plate scuffs in a light tone. <cite>Hughes and Vernon-Morris, Intaglio; Fick and Grabowski, ch. 5</cite>
+On soft plates the burr wears quickly. <span class="flag">Copper and zinc give perhaps twenty strong impressions; plastic and card give fewer.</span> <cite>Hughes and Vernon-Morris, Intaglio</cite> Francis Tinsley puts the figure for bare copper at ten to twelve prints, and Martin's demonstration plate gave about ten. <cite>Tinsley 1983, p. 53; Martin, p. 78</cite> A carbide-tipped point stays sharp far longer than a steel needle. <cite>Grabowski and Fick 2009, p. 113</cite> Sandpaper or steel wool rubbed across a plastic plate scuffs in a light tone. <cite>Grabowski and Fick 2009, p. 144</cite>
+
+Most wear comes from heavy-handed inking and wiping. Beginners tend to wipe a drypoint too clean, but the ink is meant to sit in the burr along the line, so the print should keep a soft, furry edge. A drypoint also needs less press pressure than an etching. On acrylic sheet, Tinsley thins the ink with a little thin oil so it inks and wipes more easily. <cite>Tinsley 1983, pp. 51–53</cite>
+
+Clear plastic has a practical advantage for beginners: it can be laid straight over a drawing and the lines followed through it. Kim Major-George prefers polypropylene sheet for this, finds drypoint card too thin and easily torn, and mounts acetate on board before working it. A nail pushed into a cork makes a cheap scribe for small hands. <cite>Major-George, p. 44</cite> Grabowski and Fick list high-impact polystyrene and clear acrylic as good scratching plates, and a whiteboard scratched with sandpaper and steel wool as another. <cite>Grabowski and Fick 2009, pp. 142, 144</cite>
 
 ## History
 

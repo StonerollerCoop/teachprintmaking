@@ -22,6 +22,12 @@ sources:
     where: "pp. 90–92, linoleum"
   - library: martin-encyclopedia
     where: "pp. 26–35, linocut, and pp. 133 and 150"
+  - library: grabowski-fick-2009
+    where: "pp. 76–87 and the relief troubleshooting table, p. 222"
+  - library: hacking-tinsley-turner
+    where: "Silvie Turner, p. 77, on lino"
+checks:
+  - "Cheap tool sets costing more in the end is not in the 2009 first edition of Grabowski and Fick, which calls tools with replaceable tips handy because they need no sharpening (p. 79). Confirm in the 2015 edition or rephrase."
 ---
 
 ## How it works
@@ -46,7 +52,7 @@ Soft-cut blocks, made of a rubbery material that carves like firm cheese, suit u
 
 The gouge is the hazard. Students should cut away from their bodies with the free hand behind the blade, and a bench hook should hold the block. Dull tools slip and cause more injuries than sharp ones, so keep cutters sharp or replace the blades. Water-based relief ink cleans up with water. Oil-based ink gives a richer print and cleans up with vegetable oil, then soap.
 
-Warm linoleum with a hair dryer, a radiator, or a hot-water bottle. Don't put it in an oven, which can scorch it, and leave microwave warming to adults if at all. Old linoleum dries out and crumbles; fresh stock cuts far more cleanly. Inexpensive tool sets that can't be resharpened tend to cost more in the end than one or two good gouges. <cite>Fick and Grabowski, ch. 4 and troubleshooting; Walker, ch. 1</cite>
+Warm linoleum with a hair dryer, a heating pad, or a warming tray at a low setting, or on a radiator. Don't put a whole piece in an oven: the moisture in it expands, and the lino bubbles and cracks. <cite>Grabowski and Fick 2009, pp. 77, 222; Turner 1983, p. 77</cite> Leave microwave warming to adults if at all. Old linoleum dries out and crumbles; fresh stock cuts far more cleanly. <cite>Grabowski and Fick 2009, p. 222; Walker, ch. 1</cite> <span class="flag">Inexpensive tool sets that can't be resharpened tend to cost more in the end than one or two good gouges.</span> <cite>Fick and Grabowski, ch. 4</cite>
 
 ## Plates, presses, and inks
 
@@ -56,4 +62,4 @@ Presses: a wooden spoon, a baren, a rolling pin, a clean brayer, standing on the
 
 Inks: water-based and oil-based block printing inks. A small amount of glycerin in tempera helps it hold on the block if relief ink isn't available. <cite>Kafka, ch. III</cite> Rolling stripes of two or three colors on the slab and blending them with the brayer gives a rainbow roll, a gradient in a single pass.
 
-Vinyl floor tile at least an eighth of an inch thick can stand in for linoleum if it is degreased and lightly sanded. A cut made by mistake can be filled with acrylic modeling paste and recut once dry. Unmounted lino curls; flatten it by rolling it gently the other way or by weighting it overnight. <cite>Walker, ch. 1; Fick and Grabowski, ch. 4</cite>
+Vinyl floor tile at least an eighth of an inch thick can stand in for linoleum if it is degreased and lightly sanded. <cite>Walker, ch. 1</cite> A cut made by mistake can be filled with acrylic modeling paste and recut once dry, though the paste dries much more slowly than wood putty. Unmounted lino curls. Roll it gently the other way and tie it for a few days, or leave it under weight; flattening can take a couple of weeks. <cite>Grabowski and Fick 2009, pp. 87, 222</cite> Turner keeps canvas-backed lino flat from the start, since rolling it can crack it, and she notes that the grit in lino dulls tools quickly. <cite>Turner 1983, p. 77</cite>

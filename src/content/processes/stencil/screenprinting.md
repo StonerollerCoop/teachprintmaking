@@ -22,6 +22,11 @@ sources:
     where: "pp. 60–75, screenprinting"
   - library: heller-1958
     where: "pp. 200–203, on serigraphy's history and planning separations"
+  - library: grabowski-fick-2009
+    where: "ch. 3, pp. 55–73, and the screen troubleshooting table, p. 221"
+checks:
+  - "Samuel Simon's 1907 patent is not in the 2009 first edition of Grabowski and Fick, which names an 1887 patent by Charles Nelson Jones instead (p. 56). Confirm Simon in the 2015 edition or another source."
+  - "The T-shirt cardboard and three or four pulls of opaque white were cited to Fick and Grabowski, but they are not in the 2009 first edition. Confirm in Medley or the 2015 edition."
 ---
 
 ## How it works
@@ -39,11 +44,11 @@ Each color needs its own stencil, registered with marks or tabs on the printing 
 
 Where two colors meet edge to edge, cut the stencils to overlap by a hair so no white gap opens between them. A sheet of clear acetate hinged to the printing board makes registration easy: print each new color onto the acetate, slide the paper under it until the image lines up, and fold the acetate back. <cite>Martin, pp. 62 and 67</cite> Drawing each color separation on its own sheet of clear acetate lets students stack the layers and preview the print before they make any stencils. <cite>Heller 1958, p. 203</cite> Overprinting transparent cyan, magenta, and yellow builds a wide range of color from three screens, the same principle as the process color used to print books and magazines. <cite>Martin, pp. 70–73</cite>
 
-The screen should sit slightly above the paper, held up by a scrap of card under each corner, so the mesh touches the paper only under the squeegee and lifts cleanly behind it. Flood the screen with the squeegee held at a low angle, then print with it held more upright, at about forty-five to sixty degrees. <cite>Fick and Grabowski, ch. 3; Medley, ch. 5</cite>
+The screen should sit slightly above the paper, held up by a scrap of card under each corner, so the mesh touches the paper only under the squeegee and lifts cleanly behind it. Flood the screen with a light stroke that just covers the open mesh, then print with the squeegee held more upright, at about sixty degrees. <cite>Grabowski and Fick 2009, pp. 71–72, 221; Medley, ch. 5</cite>
 
 ## History
 
-Stencils on a mesh or with fine connecting threads have deep roots, including Japanese katagami. Patents for screen stencil processes appear from the 1880s, and Samuel Simon of Manchester's 1907 patent for printing through silk stretched on a frame is the one most often cited. <cite>Fick and Grabowski, ch. 3</cite> Screen printing spread through sign shops and textile works. In the 1960s, the printer Chris Prater at Kelpra Studio in London worked with Eduardo Paolozzi and other artists to make screenprinting a fine art in Britain. <cite>Hughes and Vernon-Morris, ch. 14</cite> In the 1930s, artists in the New Deal Federal Art Project, including Anthony Velonis, adapted it for posters and fine art, and the curator Carl Zigrosser helped coin the word serigraph to set artists' screenprints apart from commercial work. Guy Maccoy held the first one-person exhibition of serigraphs. <cite>Heller 1958, pp. 200–201</cite> In the 1960s, Andy Warhol used photographic screens to repeat images from advertising and the news, and Corita Kent made joyful, text-filled serigraphs in Los Angeles.
+Stencils on a mesh or with fine connecting threads have deep roots, including Japanese katagami. Patents for screen stencil processes appear from the 1880s, <cite>Grabowski and Fick 2009, p. 56</cite> <span class="flag">Samuel Simon of Manchester's 1907 patent for printing through silk stretched on a frame is the one most often cited.</span> <cite>Fick and Grabowski, ch. 3</cite> Screen printing spread through sign shops and textile works. In the 1960s, the printer Chris Prater at Kelpra Studio in London worked with Eduardo Paolozzi and other artists to make screenprinting a fine art in Britain. <cite>Hughes and Vernon-Morris, ch. 14</cite> In the 1930s, artists in the New Deal Federal Art Project, including Anthony Velonis, adapted it for posters and fine art, and the curator Carl Zigrosser helped coin the word serigraph to set artists' screenprints apart from commercial work. Guy Maccoy held the first one-person exhibition of serigraphs. <cite>Heller 1958, pp. 200–201</cite> In the 1960s, Andy Warhol used photographic screens to repeat images from advertising and the news, and Corita Kent made joyful, text-filled serigraphs in Los Angeles.
 
 ## Ages, safety, and setting
 
@@ -63,4 +68,4 @@ Tools: a squeegee slightly wider than the image, a hinged printing board, and pa
 
 Inks: water-based screen ink for paper, textile ink for fabric (heat set with an iron), or acrylic paint mixed with screen-printing medium so it doesn't dry in the mesh.
 
-Water-based ink needs a fairly fine mesh, around 200 threads to the inch or more for paper. A little glycerin slows drying in the mesh. When printing a T-shirt, slide cardboard inside so the ink doesn't print through to the back, and expect to pull opaque white on dark fabric three or four times. <cite>Fick and Grabowski, ch. 3; Medley, ch. 5</cite>
+Water-based ink needs a fine mesh, about 230 threads to the inch or more for paper. A little glycerin slows drying in the mesh. <cite>Grabowski and Fick 2009, pp. 57, 69, 221</cite> <span class="flag">When printing a T-shirt, slide cardboard inside so the ink doesn't print through to the back, and expect to pull opaque white on dark fabric three or four times.</span> <cite>Medley, ch. 5</cite>

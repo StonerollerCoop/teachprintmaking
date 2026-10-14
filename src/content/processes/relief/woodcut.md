@@ -24,6 +24,10 @@ sources:
     where: "pp. 70, 78, and 92–98, on blocks, one-block color, and textures"
   - library: martin-encyclopedia
     where: "pp. 36–45, woodcut, and p. 133"
+  - library: grabowski-fick-2009
+    where: "p. 29, kento, and pp. 76–98, relief"
+checks:
+  - "Munch's jigsaw blocks: the 2009 first edition of Grabowski and Fick describes the jigsaw method but doesn't name Munch. Heller (pp. 92–93) does; confirm whether Hughes and Vernon-Morris or the 2015 edition also say so, and cite Heller if not."
 ---
 
 ## How it works
@@ -32,7 +36,7 @@ A woodcut is cut into the side of a plank, along the grain, with knives and goug
 
 Western woodcut usually uses oil-based or water-based relief ink rolled on with a brayer. Japanese woodblock printing, called mokuhanga, uses water-based pigment brushed onto the block with a little rice paste, and the paper is sized and dampened. Each color has its own block. Registration is made with the kento, a corner and a straight notch cut into every block, so each sheet of paper drops into the same place. <cite>Fletcher; Tokuno and Koehler</cite>
 
-Japanese registration names its two marks: the kagi, the corner stop, and the hikitsuke, the straight stop along one side. A single block can also be cut apart like a jigsaw, inked in several colors, and reassembled to print them all at once, a method Edvard Munch used. <cite>Fick and Grabowski, ch. 4; Hughes and Vernon-Morris, Relief</cite>
+Japanese registration names its two marks: the kagi, the corner stop, and the hikitsuke, the straight stop along one side. A single block can also be cut apart like a jigsaw, inked in several colors, and reassembled to print them all at once, <span class="flag">a method Edvard Munch used</span>. <cite>Grabowski and Fick 2009, pp. 29, 97–98; Hughes and Vernon-Morris, Relief</cite>
 
 Heller also described rolling color through cut paper stencils onto a block before any carving, so the first colors print from the flat block. <cite>Heller 1958, p. 93</cite> Staining a pale block with diluted ink before carving makes every cut show as bare wood, and students can watch the print emerge as they work. <cite>Martin, p. 38</cite> Antonio Frasconi let the open grain of the wood print as texture, and Carole Katchen's woodcut Old Woman of the Andes uses the grain itself as a kind of halftone. <cite>Heller 1958, p. 70; Martin, p. 133</cite>
 

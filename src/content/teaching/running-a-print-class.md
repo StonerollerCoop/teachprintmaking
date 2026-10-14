@@ -17,6 +17,10 @@ sources:
     where: "pp. 79 and 157, on progressive proofs; pp. 244–245, the group doodle"
   - library: martin-encyclopedia
     where: "p. 18, on proofing; pp. 12–13, one subject in many processes"
+  - library: hacking-tinsley-turner
+    where: "Silvie Turner, pp. 64 and 84, on a tidy bench and paper fingers"
+  - library: major-george-collagraph
+    where: "pp. 22–29, on running school workshops"
 ---
 
 ## Demonstrate up close
@@ -30,6 +34,10 @@ Keep a print from every stage on hand: the drawing, the plate, the first proof, 
 A print room runs on traffic. Give each color one inking station with a tray and two brayers, so only a few people ink at a time, and post the steps where everyone can see them. Show what correctly rolled ink looks like: a fine, even texture like orange peel, with no shine and no ridges. <cite>Crockett</cite>
 
 Many teachers split the room into inky hands and clean hands. Inking happens at one table, printing at another, and paper is handled only by clean hands. A drying rack or a line with clothespins should be set up before the first print is pulled.
+
+Silvie Turner's rule for the bench is strict and useful: if you spill ink or find it on your arms, stop, clean up, and start again. <cite>Turner 1983, p. 64</cite> Paper fingers, two small strips of folded paper or card, let an inky-handed printer lift a clean sheet without marking it. <cite>Turner 1983, p. 84</cite>
+
+Kim Major-George ran collagraph workshops for more than two hundred children over four days. Water-soluble ink, newspaper in place of tissue for wiping, and a cheaper paper that needs only a short soak made that pace possible. <cite>Major-George, pp. 22, 24, 28–29</cite>
 
 ## Leave time for clean-up
 

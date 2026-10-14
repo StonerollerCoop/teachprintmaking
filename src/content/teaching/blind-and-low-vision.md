@@ -48,6 +48,12 @@ sources:
     where: "pp. xvii and 134–135, the intaglio print as a cast; pp. 91–92, blind embossing; p. 97, collage blocks"
   - library: martin-encyclopedia
     where: "pp. 54–59, collage blocks; p. 31, the graphite rubbing proof"
+  - library: major-george-collagraph
+    where: "pp. 12–16 and 45, raised textures and blind embossing"
+  - library: grabowski-fick-2009
+    where: "p. 90, the sound of rolled ink, and pp. 212–213, Phyllis McGibbon"
+  - library: hacking-tinsley-turner
+    where: "Francis Tinsley, pp. 36 and 59, the plate mark and the burr"
 ---
 
 Printmaking may be the most tactile of the visual arts. A relief block or a collagraph plate is a landscape of high and low places, and an intaglio print lifts its lines up off the paper like a cast. <cite>Heller 1958, pp. xvii, 134–135</cite> A blind student can read a plate with their fingers before it is printed and read the print afterward.
@@ -77,7 +83,13 @@ Tactile graphics, the raised diagrams used in braille books, follow rules that w
 
 Start with real objects, then move toward flat images. Press an object into clay or playdough and feel the hollow it leaves, then trace the object, then make it into a plate. Explore a plate with both hands, get an overview before the details, and begin from the top left. <cite>Schwartz and Brooks</cite> That path from object to impression to print is the logic of printmaking itself.
 
-A graphite rubbing of a relief block gives a proof with no ink and no press, and a blind embossing, made by printing a block with no ink at all on damp paper, gives a print that is entirely raised. <cite>Martin, p. 31; Heller 1958, pp. 91–92</cite>
+A graphite rubbing of a relief block gives a proof with no ink and no press, and a blind embossing, made by printing a block with no ink at all on damp paper, gives a print that is entirely raised. <cite>Martin, p. 31; Heller 1958, pp. 91–92</cite> For a deep embossing, Kim Major-George builds a collagraph from firm materials with smooth tops, such as layered card, oats, filler, glue drops, and string, leaves out anything sharp, and lets the print dry in the air so the relief stays raised. <cite>Major-George, p. 45</cite> Keeping the raised parts of a plate at an even height, as she advises, also makes a plate easier to explore by hand. <cite>Major-George, p. 16</cite>
+
+Intaglio offers its own tactile signs. The plate mark, the dent the plate leaves in damp paper, is what Francis Tinsley calls the trademark of an etching, and a student can find it by running a finger around the margin. On an engraving or drypoint, the burr can be felt along the line before printing. <cite>Tinsley 1983, pp. 36, 59</cite>
+
+Some cues in the print room are heard rather than seen. Rolled ink is ready when it makes a slightly tacky sound, and the same sound comes back when the block is fully inked. <cite>Grabowski and Fick 2009, p. 90</cite> That is a working signal a blind student can use without help.
+
+The artist Phyllis McGibbon etched a copper tube with what she describes as a Braille-like image, which prints a trace when it is rolled along a surface. She writes about prints made from the need to touch. <cite>Grabowski and Fick 2009, pp. 212–213</cite>
 
 ## Set up the room
 
@@ -93,4 +105,4 @@ Tell a student what they are about to touch before they touch it. <cite>Macular 
 
 If a student wants to carve, a soft block, a bench hook, and a cutter that pulls toward a stop all keep the other hand out of the way. <cite>School Specialty</cite> Blind people use touch-based safety habits in woodshops, and a teacher can learn them from the student.
 
-We haven't yet found a published method for registering prints by touch. Corner stops on a jig that the plate and paper butt against, a notch cut in one corner of the plate, and raised tape lines as paper guides are our suggestions. If you have a method that works, please send it in.
+We haven't yet found a published method for registering prints by touch. Corner stops on a jig that the plate and paper butt against, a notch cut in one corner of the plate, and raised tape lines as paper guides are our suggestions. The Japanese kento, a corner stop and a side stop cut into the block itself, is a sighted method that may also work well by touch, since the paper drops into place against two edges. <cite>Grabowski and Fick 2009, p. 29</cite> If you have a method that works, please send it in.

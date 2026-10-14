@@ -18,6 +18,12 @@ sources:
     where: "pp. 152–153, mezzotint substitutes"
   - library: martin-encyclopedia
     where: "pp. 80–83 and 94"
+  - library: grabowski-fick-2009
+    where: "p. 114, mezzotint, and p. 148, manière noire collagraph"
+  - library: hacking-tinsley-turner
+    where: "Francis Tinsley, pp. 59 and 61, mezzotint"
+checks:
+  - "Rocker tooth counts of 45 to 150 to the inch are not in the 2009 first edition of Grabowski and Fick. Confirm in Hughes and Vernon-Morris or the 2015 edition."
 ---
 
 ## How it works
@@ -28,7 +34,9 @@ The image is made by smoothing that rough surface. A scraper removes burr, and a
 
 Preparing a plate by hand takes many hours, which is why many printmakers buy plates already rocked. Students can learn the dark-to-light approach quickly on materials that roughen easily.
 
-A plate needs to be rocked in at least eight directions to print an even black. Rockers come with anywhere from about 45 to 150 teeth to the inch; finer rockers give a smoother tone and take longer. <cite>Fick and Grabowski, ch. 5; Hughes and Vernon-Morris, Intaglio</cite> A rocker fixed to a weighted pole and stepped along a penciled grid makes rocking more even and less tiring. <cite>Martin, pp. 81–82</cite>
+A plate needs to be rocked in at least eight directions to print an even black. <cite>Grabowski and Fick 2009, p. 114</cite> <span class="flag">Rockers come with anywhere from about 45 to 150 teeth to the inch; finer rockers give a smoother tone and take longer.</span> <cite>Hughes and Vernon-Morris, Intaglio</cite> To see the image while scraping and burnishing, rub a little ink mixed with petroleum jelly or clove oil into the rocked plate, and wipe it off and replace it every few hours. <cite>Grabowski and Fick 2009, p. 114</cite> Tinsley suggests starting with a small plate, printing it with slightly runny ink and a soft wipe, and using cotton swabs to bring up small lights. <cite>Tinsley 1983, p. 59</cite>
+
+For a dark-to-light plate with no rocker at all, see manière noire collagraph on the collagraph page: fine fabric or sandpaper glued to board prints solid dark, and gloss medium fills in the lights. <cite>Grabowski and Fick 2009, p. 148</cite> A rocker fixed to a weighted pole and stepped along a penciled grid makes rocking more even and less tiring. <cite>Martin, pp. 81–82</cite>
 
 ## History
 

@@ -24,8 +24,15 @@ sources:
     where: "pp. 117, 129–130, 157, and 189"
   - library: martin-encyclopedia
     where: "pp. 84–101, etching"
+  - library: grabowski-fick-2009
+    where: "ch. 5, pp. 103–140, on plates, safer etches, grounds, and photopolymer"
+  - library: hacking-tinsley-turner
+    where: "Francis Tinsley, pp. 34–61, \"Etching and Engraving\""
 checks:
   - "Hayter's offset-roller color method: confirm against Heller 1958, p. 189, exactly how it worked before this description goes public."
+  - "Andrew Baldwin's BIG ground and Pogue and Klepacki's plant-based cleaners are not in the 2009 first edition of Grabowski and Fick. Confirm in the 2015 edition."
+  - "Degreasing with salt and vinegar was cited to Grabowski and Fick, but the 2009 first edition recommends a bleach-free scouring powder instead (p. 110). Confirm the salt-and-vinegar method in the 2015 edition or another source."
+  - "Steel holding color truest: the 2009 first edition of Grabowski and Fick mentions steel facing but doesn't say this. Confirm in Hughes and Vernon-Morris."
 ---
 
 ## How it works
@@ -44,9 +51,11 @@ Etching feels like drawing. The needle moves freely through the ground, with non
 
 Armorers decorated steel with acid long before anyone printed from it. Daniel Hopfer, an armor decorator in Augsburg, is widely believed to have been among the first to print from an etched plate around 1500, and the earliest dated etchings come from the 1510s. Rembrandt made etching a painter's medium. Jacques Callot developed the échoppe, a needle with an angled face for swelling lines. Francisco Goya combined etching and aquatint in his print series.
 
-Traditional etching used nitric acid and solvent-based grounds. From the 1990s, printmakers developed safer methods. Friedhard Kiekeben developed Edinburgh Etch, a ferric chloride solution with citric acid for copper. Copper sulfate and salt solutions etch zinc, aluminum, and steel without nitric acid. Keith Howard developed intaglio methods using photopolymer film, and Dan Welden developed Solarplate, a light-sensitive steel-backed plate developed in water. <cite>Adams; Fick and Grabowski, ch. 5</cite>
+Traditional etching used nitric acid and solvent-based grounds. From the 1990s, printmakers developed safer methods. Friedhard Kiekeben developed Edinburgh Etch, a ferric chloride solution with citric acid for copper. Copper sulfate and salt solutions etch zinc, aluminum, and steel without nitric acid. Keith Howard developed intaglio methods using photopolymer film, and Dan Welden developed Solarplate, a light-sensitive steel-backed plate developed in water. <cite>Adams; Grabowski and Fick 2009, pp. 107–109, 128, 130</cite>
 
-Kiekeben also developed Saline Sulfate Etch, a copper sulfate and salt solution for zinc, aluminum, and steel, alongside Cedric Green's copper sulfate etch. Andrew Baldwin developed BIG, a hard ground rolled onto the plate and baked, and Dwight Pogue and Skip Klepacki developed plant-based cleaners to replace studio solvents. <cite>Fick and Grabowski, ch. 5 and suppliers</cite>
+Kiekeben also developed Saline Sulfate Etch, a copper sulfate and salt solution for zinc, aluminum, and steel, alongside Cedric Green's copper sulfate etch. <cite>Grabowski and Fick 2009, pp. 108–109</cite> <span class="flag">Andrew Baldwin developed BIG, a hard ground rolled onto the plate and baked, and Dwight Pogue and Skip Klepacki developed plant-based cleaners to replace studio solvents.</span> <cite>Fick and Grabowski, ch. 5 and suppliers</cite>
+
+Copper sulfate breaks through a ground faster than other etches, so grounds need to be laid a little thicker. Handle the powder with the fans off so it doesn't lift into the air, wear a dust mask and gloves when mixing a new bath, and wipe up drips before they dry to a harmful residue. <cite>Grabowski and Fick 2009, p. 108</cite>
 
 ## Ages, safety, and setting
 
@@ -56,7 +65,7 @@ Martin and Heller both etch with Dutch mordant, a mix of hydrochloric acid and p
 
 With the safer methods, students still need nitrile gloves, goggles, and an apron. Ferric chloride stains and irritates skin, and copper sulfate is toxic to aquatic life, so neither goes down the drain. Follow the supplier's safety data sheet and local disposal rules.
 
-Plates can be degreased with a paste of salt and vinegar in place of the old whiting and ammonia. The hazard in many inks is the pigment, not the oil; check labels for the AP seal of the Art and Creative Materials Institute, which marks products certified nontoxic, and keep the safety data sheet for every chemical in the room. <cite>Fick and Grabowski, chs. 1 and 5</cite>
+<span class="flag">Plates can be degreased with a paste of salt and vinegar</span> in place of the old whiting and ammonia; Grabowski and Fick avoid ammonia and use a bleach-free scouring powder. <cite>Grabowski and Fick 2009, p. 110</cite> The hazard in many inks is the pigment, not the oil; check labels for the AP seal of the Art and Creative Materials Institute, which marks products certified nontoxic, and keep the safety data sheet for every chemical in the room. <cite>Grabowski and Fick 2009, pp. 22, 32–33</cite>
 
 ## Plates, presses, and inks
 
@@ -70,4 +79,6 @@ Inks: water-washable intaglio ink, wiped with tarlatan, printed on soaked and bl
 
 An etching needle is easy to improvise. Heller used a darning needle, a dulled dental tool, or an old phonograph needle held in a pin vise. Martin draws double lines with a split-nib pen and dotted lines with a dentist's drill bit used as a roulette. <cite>Heller 1958, p. 129; Martin, p. 91</cite>
 
-Copper roofing sheet is an inexpensive alternative to etcher's copper. Zinc etches fast but wears and shifts some ink colors; steel holds color truest. <cite>Fick and Grabowski, ch. 5; Hughes and Vernon-Morris, Intaglio</cite>
+Copper roofing sheet is an inexpensive alternative to etcher's copper. Zinc etches fast but wears and shifts some ink colors. <cite>Grabowski and Fick 2009, p. 106</cite> Tinsley notes that copper, and zinc even more, can react with some pigments, so white prints grey and yellow turns green, while earth colors such as browns and ochres stay stable. It is a small lesson in chemistry meeting color. <cite>Tinsley 1983, p. 41</cite> <span class="flag">Steel holds color truest.</span> <cite>Hughes and Vernon-Morris, Intaglio</cite>
+
+Photopolymer film and plates need a positive, and it doesn't have to come from a computer. A drawing in opaque ink on clear drafting film works. <cite>Grabowski and Fick 2009, p. 128</cite> Tinsley's photo-etching chapter of 1983 already follows the same order a photopolymer class uses today: positive, contact, ultraviolet exposure, development, and a test strip. <cite>Tinsley 1983, pp. 59–61</cite> Some students react to the acrylates in photopolymer, so give them nitrile gloves. <cite>Grabowski and Fick 2009, p. 131</cite>

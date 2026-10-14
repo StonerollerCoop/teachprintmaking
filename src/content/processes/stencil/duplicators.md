@@ -12,11 +12,13 @@ related: [stencil/screenprinting]
 sources:
   - library: heller-1958
     where: "pp. 230–231 and 233, mimeograph stencils in a screen"
+  - library: hacking-tinsley-turner
+    where: "Silvie Turner, p. 100, on duplicator stencils in a screen"
 ---
 
 ## How it works
 
-A stencil duplicator makes many copies from a stencil wrapped around an inked drum. The mimeograph used a waxed stencil sheet, cut by the keys of a typewriter or drawn with a stylus. Ink pressed through the cuts onto each sheet of paper as the drum turned. A mimeograph stencil cut on a typewriter can also be taped to the underside of a silk screen and printed by hand, which puts typed words into a screenprint. Albert Kosloff wrote a booklet on screenprinting with mimeograph-type stencils. <cite>Heller 1958, pp. 230–231 and 233</cite>
+A stencil duplicator makes many copies from a stencil wrapped around an inked drum. The mimeograph used a waxed stencil sheet, cut by the keys of a typewriter or drawn with a stylus. Ink pressed through the cuts onto each sheet of paper as the drum turned. A mimeograph stencil cut on a typewriter can also be taped to the underside of a silk screen and printed by hand, which puts typed words into a screenprint. Albert Kosloff wrote a booklet on screenprinting with mimeograph-type stencils. <cite>Heller 1958, pp. 230–231 and 233</cite> Silvie Turner made the same point in 1983 about Gestetner and Roneo duplicating stencils, and she found that lace doilies and punched computer tape make some of the simplest screen stencils of all. <cite>Turner 1983, p. 100</cite>
 
 The Risograph works the same way with modern tools. The machine scans or receives an image and burns tiny holes into a master stencil with heat, wraps the master around a drum of ink, and prints one color at a time. Each color is a separate drum, and each color layer is a separate black-and-white image. Students designing for Riso draw or prepare one layer for each color, as in screenprinting or pochoir, and see how overlapping translucent inks mix.
 

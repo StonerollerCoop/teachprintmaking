@@ -9,6 +9,10 @@ sources:
     where: "pp. xviii, 81, and 197"
   - library: martin-encyclopedia
     where: "pp. 31 and 33"
+  - library: grabowski-fick-2009
+    where: "pp. 27–29, registration, and pp. 92–93, the nipping press"
+  - library: major-george-collagraph
+    where: "p. 21, blankets and the registration sheet"
 ---
 
 A press is anything that moves ink from the matrix to the substrate with enough even pressure to make a clear print. Many of the world's greatest prints were made without one. A hand, a spoon, or a smooth pad does the job for relief prints on thin paper, and the first stencil prints on cave walls were probably made by blowing pigment from the mouth or through a hollow tube.
@@ -23,6 +27,8 @@ A press is anything that moves ink from the matrix to the substrate with enough 
 - **A tennis ball or a wooden spoon.** Both work well for monotype on glass.
 - **A pasta machine.** With felt and a sandwich of plexiglass, it becomes a tiny press for drypoint and collagraph.
 - **Your feet or a car.** Large relief blocks have been printed by stepping on them, and at some printmaking festivals by rolling a steamroller over them.
+- **A bookbinder's nipping press.** The small screw press used to flatten books can print a relief block. <cite>Grabowski and Fick 2009, pp. 92–93</cite>
+- **A wooden drawer knob.** A smooth knob from a hardware store makes a good burnisher for hand printing. <cite>Grabowski and Fick 2009, pp. 79, 90</cite>
 - **A squeegee.** In screen printing, the squeegee pulls ink through the mesh.
 - **No press at all.** Plaster poured over an inked intaglio plate inside a frame picks up the ink as it sets and lifts off as a print cast in plaster. Plaster warms as it sets, so mix it wearing gloves and a dust mask, and never cast a hand or any part of the body. <cite>Heller 1958, p. 197</cite>
 - **A real press.** Relief presses push straight down or roll across; etching presses squeeze plate and paper between two steel rollers with far more force.
@@ -30,6 +36,18 @@ A press is anything that moves ink from the matrix to the substrate with enough 
 ## Why it matters
 
 Relief and stencil printing need very little pressure, so they are easy to do anywhere. Intaglio needs a lot, because the damp paper has to be forced down into the lines of the plate. That's why a drypoint lesson almost always needs some kind of rolling press, even a homemade one.
+
+## Registration
+
+Registration means putting each color or each sheet in the same place every time. A few systems cover most classroom work. <cite>Grabowski and Fick 2009, pp. 27–29</cite>
+
+- **A jig.** A sheet of card with the outline of the plate and paper drawn on it, or with stops glued down for the plate and paper to butt against.
+- **Kento.** The Japanese method cuts a corner stop and a side stop into the block itself, so the paper always drops into the same place.
+- **T and bar.** A small T is marked on one edge of the paper and a bar on the other, and the same marks on the base sheet line them up.
+- **Pins.** Holes punched in the paper drop over pins taped beside the plate.
+- **A clear sheet.** Print the first color onto clear film hinged to the bed, slide each sheet of paper under it until the image lines up, then lift the film and print.
+
+Kim Major-George registers collagraphs with a sheet of polypropylene taped to the press bed and marked with the plate and paper positions. <cite>Major-George, p. 21</cite>
 
 ## Things to notice with students
 

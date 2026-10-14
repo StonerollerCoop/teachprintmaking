@@ -4,10 +4,14 @@ order: 3
 tagline: Ink sits on a flat surface, as in lithography and monotype. Nothing is cut at all.
 timeline: [castiglione, senefelder, hectograph, lautrec, tamarind]
 sources:
-  - library: fick-grabowski
-    where: "ch. 1, \"Practical Matters,\" on safety"
+  - library: grabowski-fick-2009
+    where: "p. 32, on safety, and p. 185, polyester plates"
+  - library: hacking-tinsley-turner
+    where: "Nicholas Hacking, pp. 16, 27, 30, on traditional plate chemistry"
   - library: martin-encyclopedia
     where: "p. 11 and pp. 119–123, on offset printing"
+checks:
+  - "Printing polyester plates with a spoon, and kitchen lithography with cola and vegetable oil, need a source. The 2009 first edition of Grabowski and Fick, cited here before, prints polyester plates on a press and doesn't mention kitchen lithography."
 ---
 
 ## How it works
@@ -28,7 +32,7 @@ The gelatin hectograph of the 1870s let offices and schools copy pages from a tr
 
 Monotype is open to every age. A preschooler can finger-paint on a sheet of plexiglass and press paper onto it. Gel plates suit students from the early grades up.
 
-Lithography on stone or aluminum belongs in a college or adult studio. Its traditional chemistry includes nitric acid, solvents, and in older books phenol, gasoline, and dichromate compounds that should not be used. Newer approaches change that picture. Polyester plates drawn with a ballpoint pen or a laser printer can be printed with a wooden spoon and suit high school classes. Kitchen lithography on aluminum foil uses cola and vegetable oil. These bring the oil-and-water principle within reach of younger students. For children, look for the AP seal of the Art and Creative Materials Institute, which marks paints and inks certified nontoxic. The hazard in an ink usually comes from its pigment rather than whether it is water- or oil-based. <cite>Fick and Grabowski, ch. 1</cite>
+Lithography on stone or aluminum belongs in a college or adult studio. Its traditional chemistry includes nitric acid and solvents, and older manuals add carbolic acid (phenol), dichromate, and petrol, which should not be used. <cite>Hacking 1983, pp. 16, 27, 30</cite> Newer approaches change that picture. Polyester plates drawn with a ballpoint pen or a laser printer suit high school classes. <cite>Grabowski and Fick 2009, p. 185</cite> <span class="flag">They can be printed with a wooden spoon, and kitchen lithography on aluminum foil uses cola and vegetable oil.</span> These bring the oil-and-water principle within reach of younger students. For children, look for the AP seal of the Art and Creative Materials Institute, which marks paints and inks certified nontoxic. The hazard in an ink usually comes from its pigment rather than whether it is water- or oil-based. <cite>Grabowski and Fick 2009, p. 32</cite>
 
 ## Plates, presses, and inks
 

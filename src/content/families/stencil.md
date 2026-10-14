@@ -4,8 +4,10 @@ order: 4
 tagline: Ink passes through openings in a stencil or screen. Whatever blocks it stays blank.
 timeline: [muna-hand-stencil, el-castillo, cueva-de-las-manos, katagami, fiji-leaf-stencils, mimeograph, screen-patent, wpa, pop, risograph]
 sources:
-  - library: fick-grabowski
-    where: "ch. 1, \"Practical Matters,\" on safety"
+  - library: grabowski-fick-2009
+    where: "pp. 24 and 32, on inks and safety, and pp. 57 and 73, on screen cleanup"
+  - library: hacking-tinsley-turner
+    where: "Silvie Turner, pp. 105 and 108, on screen inks"
 ---
 
 ## How it works
@@ -26,7 +28,7 @@ Thomas Edison's stencil patents led to the mimeograph, which schools and activis
 
 A stencil print can be made by a three-year-old with a sponge and a paper shape, and a professional can spend a week preparing a photographic screen. Hand stencils, sponge stencils, and leaf stencils suit preschool and up. Cutting stencils with scissors suits the early grades; cutting with a craft knife suits middle school and up, with a cutting mat and a blade-safety talk. Simple screenprinting with paper stencils works from upper elementary, with an adult helping pull the squeegee.
 
-Water-based screen inks clean up with water. Photo emulsion, its sensitizers, and screen-cleaning chemicals belong to older students with gloves and good ventilation. Spray paint should only be used outdoors or in a spray booth, with a mask rated for the job. For children, look for the AP seal of the Art and Creative Materials Institute, which marks paints and inks certified nontoxic. The hazard in an ink usually comes from its pigment rather than whether it is water- or oil-based. <cite>Fick and Grabowski, ch. 1</cite>
+Water-based screen inks clean up with water. Photo emulsion, its sensitizers, and screen-cleaning chemicals belong to older students with gloves and good ventilation. Spray paint should only be used outdoors or in a spray booth, with a mask rated for the job. For children, look for the AP seal of the Art and Creative Materials Institute, which marks paints and inks certified nontoxic. The hazard in an ink usually comes from its pigment rather than whether it is water- or oil-based. <cite>Grabowski and Fick 2009, pp. 24, 32, 57, 73</cite> Turner adds that solvent-based screen inks often smell unpleasant, while water-based inks are cheap and need no special cleaners. <cite>Turner 1983, pp. 105, 108</cite>
 
 ## Plates, presses, and inks
 

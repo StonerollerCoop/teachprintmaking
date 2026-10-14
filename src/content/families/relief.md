@@ -4,8 +4,8 @@ order: 1
 tagline: Ink sits on the raised surface. Everything cut or pressed away stays the color of the paper.
 timeline: [cylinder-seals, woodblock-textiles, diamond-sutra, st-christopher, durer, bewick, adinkra, hokusai, posada, die-brucke, grosvenor, tgp]
 sources:
-  - library: fick-grabowski
-    where: "ch. 1, \"Practical Matters,\" on safety"
+  - library: grabowski-fick-2009
+    where: "pp. 24, 32, and 34, on inks and safety, and p. 86, the bench hook"
   - library: heller-1958
     where: "p. xvii, on explaining relief"
 ---
@@ -28,7 +28,7 @@ Each century found new materials. Thomas Bewick cut fine detail into the end gra
 
 Relief reaches every age. Preschoolers can print with sponges, vegetables, and found objects. Children in the early grades can draw into foam with a pencil. Soft-cut blocks bring carving to upper elementary students, and linoleum and wood suit middle school and up.
 
-The main hazard is the cutting tool. Teach students to keep both hands behind the blade and to use a bench hook, which holds the block against the table edge so the free hand never sits in front of the gouge. Water-based relief ink cleans up with soap and water and suits any classroom. Oil-based ink gives richer prints but needs vegetable oil or a solvent for cleanup; vegetable oil followed by soapy water is the safer choice. For children, look for the AP seal of the Art and Creative Materials Institute, which marks paints and inks certified nontoxic. The hazard in an ink usually comes from its pigment rather than whether it is water- or oil-based. <cite>Fick and Grabowski, ch. 1</cite>
+The main hazard is the cutting tool. Teach students to keep both hands behind the blade and to use a bench hook, which holds the block against the table edge so the free hand never sits in front of the gouge. Water-based relief ink cleans up with soap and water and suits any classroom. Oil-based ink gives richer prints but needs vegetable oil or a solvent for cleanup; vegetable oil followed by soapy water is the safer choice. For children, look for the AP seal of the Art and Creative Materials Institute, which marks paints and inks certified nontoxic. The hazard in an ink usually comes from its pigment rather than whether it is water- or oil-based. <cite>Grabowski and Fick 2009, pp. 24, 32, 34, 86</cite>
 
 ## Plates, presses, and inks
 

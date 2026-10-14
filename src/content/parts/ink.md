@@ -7,6 +7,10 @@ lessons: [foam-relief-prints, gel-plate-leaf-monoprints, insect-monoprints, redu
 sources:
   - library: logan-make-ink
     where: "Find Ink and Make Ink, and the other sources listed in each color chapter; recipes not reproduced"
+  - library: grabowski-fick-2009
+    where: "pp. 24–25, mixing and testing ink, and p. 90, rolling up"
+  - library: hacking-tinsley-turner
+    where: "Francis Tinsley, p. 44, and Silvie Turner, p. 108, on mixing colors"
 ---
 
 Every printing ink is made of two things: a pigment, which gives the color, and a vehicle or binder, which carries the pigment and makes it stick. Cave painters most likely blew red and yellow earth pigments mixed with water or saliva. Gutenberg's printers used soot ground into a varnish of boiled linseed oil. Japanese woodblock printers brushed watercolor pigment onto the block together with a little rice paste. Asante artisans in Ghana print Adinkra symbols with a dark dye boiled from tree bark.
@@ -19,7 +23,13 @@ Water-based inks clean up with soap and water and are the usual choice in school
 
 ## Listening to the ink
 
-Experienced printers judge ink by sound and feel. Roll it out on a slab and listen: when it is the right thickness it makes a soft hiss, a little like velcro pulling apart. Too much ink sounds sticky and looks shiny and ridged; too little looks dry and patchy.
+Experienced printers judge ink by sound and feel. Roll it out on a slab and listen: when it is the right thickness it makes a soft hiss, a little like velcro pulling apart. Too much ink sounds sticky and looks shiny and ridged; too little looks dry and patchy. Grabowski and Fick roll until the ink is smooth and velvety and makes a slightly tacky sound, then keep rolling it onto the block until the same sound comes back. <cite>Grabowski and Fick 2009, p. 90</cite>
+
+## Mixing color
+
+Always add the darker color to the lighter one, a little at a time; a dab of blue changes a pile of white quickly, but it takes a great deal of white to lighten blue. Clear transparent base counts as a light color. A few transparent colors can make many more where they overlap. <cite>Grabowski and Fick 2009, p. 25</cite>
+
+For an edition, mix enough ink for every print at the start, because matching a color later is hard. Note the proportions and keep a dab of each color on paper. <cite>Tinsley 1983, p. 44</cite> Test a mixed color by dabbing it out and letting it dry, since dried ink is not always the color it looked in the pot. <cite>Turner 1983, p. 108</cite>
 
 ## Finding and making ink from the world around you
 
