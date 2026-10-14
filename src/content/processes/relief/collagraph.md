@@ -27,7 +27,7 @@ sources:
     note: "Base plates, blotter proofs, glue lines, carborundum, manière noire, and cleaning"
   - library: major-george-collagraph
     where: "pp. 10–30 (plates, sealing, inking, wiping, printing), 35–37 (rubs), 45 (embossing), 47 (mono collagraph)"
-    note: "Mount board peeled in layers, her inking and wiping order and Dawn’s Dobber"
+    note: "Mount board peeled in layers, her inking and wiping order, and Dawn’s Dobber"
   - library: hacking-tinsley-turner
     where: "Silvie Turner, p. 68, on collage blocks printed as relief"
 checks:
@@ -50,7 +50,7 @@ Printed as a relief, a collage block wants materials of about the same height, s
 
 Mount board makes a good base because it comes apart in layers. Cut the outline of a shape with a craft knife and peel away the top layer, and that area sits lower and holds more ink. Peel only one layer, or the board weakens and can split. Kim Major-George keeps raised areas at about the same height and never builds a raised frame around the image, since a high ridge stops the roller and the paper from reaching what sits beside it. <cite>Major-George, pp. 10, 13, 16</cite>
 
-Before sealing, Grabowski and Fick run the dry, uninked plate through the press under damp paper. This blind proof shows how deep each texture presses and catches anything sharp before it can cut a blanket. For drawn raised lines they use a wood glue that dries hard. PVA glue stays a little soft when dry and can stick to the paper even after the plate is sealed. <cite>Grabowski and Fick 2009, p. 146</cite>
+Before sealing, Grabowski and Fick run the dry, uninked plate through the press to take a blotter proof. The uninked embossing gives an idea of how the print will look, and the pressure also helps the layers bond. For drawn raised lines they use a wood glue that dries hard. PVA glue stays a little soft when dry and can stick to the paper even after the plate is sealed. <cite>Grabowski and Fick 2009, p. 146</cite>
 
 Grabowski and Fick describe a collagraph version of manière noire, which works from dark to light the way a mezzotint does. Fine fabric, old screen mesh, or fine wet-and-dry sandpaper is glued over the whole board so the plate prints a solid dark. Gloss medium then fills the texture wherever the lights should be, so those areas wipe clean. It needs no acid and no rocker. <cite>Grabowski and Fick 2009, p. 148</cite>
 
@@ -72,9 +72,9 @@ Seal plates with acrylic medium, PVA glue, or shellac thinned with alcohol. Avoi
 
 Beans, string, sandpaper, and raised glue lines can be felt before and after printing, which makes the collagraph plate one of the best for students who are blind or have low vision. <cite>Martin, pp. 54–59; Heller 1958, p. 97</cite>
 
-Clean collagraph plates with vegetable oil. Alcohol and acetone dissolve shellac and some sealers, and a plate cleaned with them can come apart. Never warm a collagraph on a hotplate. <cite>Grabowski and Fick 2009, p. 155</cite> <span class="flag">A citrus cleaner also works.</span>
+Clean collagraph plates with vegetable oil. Alcohol and acetone dissolve shellac and some sealers. Never warm a collagraph on a hotplate. <cite>Grabowski and Fick 2009, p. 155</cite> <span class="flag">A citrus cleaner also works.</span>
 
-Major-George seals her plates with shellac, a solvent varnish, or diluted waterproof PVA, and her own choice is two coats of shellac left overnight. With students, use a water-based acrylic medium or varnish, which needs no methylated spirit to brush on or clean up. She finds diluted PVA can make the board buckle and the paper stick. Plates heavy with seeds, leaves, or other organic matter need longer to dry before printing. <cite>Major-George, p. 17</cite>
+Major-George seals her plates with shellac, a solvent varnish, or diluted waterproof PVA, and her own choice is two coats of shellac left overnight. She finds diluted PVA can make the board buckle and the paper stick. Plates heavy with seeds, leaves, or other organic matter need longer to dry before printing. <cite>Major-George, p. 17</cite> With students, use a water-based acrylic medium or varnish, which needs no methylated spirit or white spirit.
 
 ## Plates, presses, and inks
 
@@ -84,13 +84,13 @@ Presses: hand, spoon, or rolling pin for relief inking; an etching press, pasta 
 
 Inks: water-based relief ink for surface printing; water-washable intaglio ink for wiped plates.
 
-Seal both sides of the plate, with two or three thin coats, so it doesn't curl or soak up ink. <cite>Grabowski and Fick 2009, p. 146</cite> <span class="flag">Thick objects such as coins and keys print better set into a hollow cut in the board, so the plate stays fairly level.</span> <cite>Hughes and Vernon-Morris, Intaglio</cite> Grabowski and Fick would leave them off altogether, since they find coins, buttons, and keys too sharp and thick for the press. <cite>Grabowski and Fick 2009, p. 142</cite> Carborundum grit mixed into acrylic medium or shellac and brushed on gives a rich, dark tone when inked as intaglio. An old toothbrush or a felt dauber works ink into deep textures. <cite>Grabowski and Fick 2009, pp. 146–147, 155</cite> <span class="flag">Heavier, damp paper of about 250 grams or more picks up the detail.</span> <cite>Hughes and Vernon-Morris, Intaglio</cite>
+Seal both the front and the back of the plate. <cite>Grabowski and Fick 2009, p. 146</cite> Two or three thin coats keep it from curling or soaking up ink. <span class="flag">Thick objects such as coins and keys print better set into a hollow cut in the board, so the plate stays fairly level.</span> <cite>Hughes and Vernon-Morris, Intaglio</cite> Grabowski and Fick would leave them off altogether, since they find coins, buttons, and keys too sharp and thick for the press. <cite>Grabowski and Fick 2009, p. 142</cite> Carborundum grit mixed into acrylic medium or shellac and brushed on gives a rich, dark tone when inked as intaglio. An old toothbrush or a felt dauber works ink into deep textures. <cite>Grabowski and Fick 2009, pp. 146–147, 155</cite> <span class="flag">Heavier, damp paper of about 250 grams or more picks up the detail.</span> <cite>Hughes and Vernon-Morris, Intaglio</cite>
 
 Grabowski and Fick also dust carborundum onto an image while its ink is still wet, such as a fresh screenprint or a paper lithograph printed onto board, and fix it with shellac once dry. The grit sticks only where the ink is, which is one way to bring lettering or a photograph into a collagraph. <cite>Grabowski and Fick 2009, p. 147</cite> Loose carborundum is a fine dust, so with students mix it into the medium rather than sprinkling it.
 
 ## Inking and wiping a collagraph as intaglio
 
-Major-George's order of work makes a good demonstration. Lay the plate on newspaper and put a little ink on a scrap of board. Work the ink in with a cloth dolly in light, circling strokes, starting in the top left corner if you are right-handed and the top right if you are left-handed, so your hand never drags through wet ink. Don't try to fill every crevice, because a plate packed with ink prints flat. Use a fresh dolly for each color. <cite>Major-George, pp. 27–28</cite>
+Major-George's order of work makes a good demonstration. Lay the plate on newspaper and put a little ink on a scrap of board. Work the ink in with a cloth dolly in light, circling strokes, starting in the top left corner if you are right-handed and the top right if you are left-handed. Don't try to fill every crevice, because a plate packed with ink prints flat. Use a fresh dolly for each color. <cite>Major-George, pp. 27–28</cite>
 
 She wipes with squares of tissue, changing them often and letting each one skim the surface without pressing in. Newspaper does the same job more cheaply in a school. Tarlatan snags on raised textures, so she keeps it for other work. Faces and soft edges are finished with a small padded dabber wrapped in tissue, and the plate edges are wiped clean while the plate is held by its sides. A large plate can take half an hour to wipe. <cite>Major-George, pp. 28–29</cite>
 
@@ -100,11 +100,11 @@ The paper is soaked, then blotted until no shine is left, and laid onto the inke
 
 ## More than one color
 
-Major-George teaches a method of rubs she learned from the collagraph printmaker Brenda Hartill, which puts several colors on one plate so it goes through the press only once. The plate is built for it, with smooth raised shapes of filler mixed with PVA; seeds, moss, and other rough textures don't take a rub well. The background is inked and wiped first and then covered with a mask cut from plastic sheet. Small balls of tarlatan, twisted as they move, push pure ink onto the raised shapes, starting with the lightest color and ending with the darkest, such as yellow, then red, then blue. <cite>Major-George, pp. 35–37</cite> This is different from à la poupée, where separate colors are dabbed into separate areas of one plate before wiping, although the book treats the two together.
+Major-George teaches a method of rubs used by the collagraph printmaker Brenda Hartill, which puts several colors on one plate so it goes through the press only once. The plate is built for it, with smooth raised shapes of filler mixed with PVA; seeds, moss, and other rough textures don't take a rub well. The background is inked and wiped first and then covered with a mask cut from plastic sheet. Small balls of tarlatan carry pure ink onto the raised shapes in figure-of-eight strokes, starting with the lightest color and ending with the darkest, such as yellow, then red, then blue. <cite>Major-George, pp. 35–37</cite> This is different from à la poupée, where separate colors are dabbed into separate areas of one plate before wiping, although the book treats the two together.
 
 ## Collagraph as a monotype
 
-Major-George's mono collagraph starts with a sealed board rolled with an even layer of ink. Leaves, lace, tape, or torn paper laid on top work as masks, and cotton swabs, combs, or a scrap of tarlatan lift marks out of the ink. The print is a one-off, and a second, paler pull from the same plate gives a ghost. <cite>Major-George, p. 47</cite>
+Major-George's mono collagraph starts with a sealed board rolled with an even layer of ink. Leaves, wallpaper, string, tape, or crumpled paper laid on top work as masks, and cotton swabs, combs, or a scrap of tarlatan lift marks out of the ink. The print is a one-off, and a second, paler pull from the same plate gives a ghost. <cite>Major-George, p. 47</cite>
 
 ## Blind embossing
 

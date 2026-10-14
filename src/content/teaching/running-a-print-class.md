@@ -37,7 +37,7 @@ Many teachers split the room into inky hands and clean hands. Inking happens at 
 
 Silvie Turner's rule for the bench is strict and useful: if you spill ink or find it on your arms, stop, clean up, and start again. <cite>Turner 1983, p. 64</cite> Paper fingers, two small strips of folded paper or card, let an inky-handed printer lift a clean sheet without marking it. <cite>Turner 1983, p. 84</cite>
 
-Kim Major-George ran collagraph workshops for more than two hundred children over four days. Water-soluble ink, newspaper in place of tissue for wiping, and a cheaper paper that needs only a short soak made that pace possible. <cite>Major-George, pp. 22, 24, 28–29</cite>
+Kim Major-George has run collagraph workshops for more than two hundred children over four days, and she found water-soluble ink essential at that pace because it saves time. She also wipes with newspaper in place of tissue and uses a lighter, cheaper paper with a short soak to keep costs down. <cite>Major-George, pp. 22, 24, 28–29</cite>
 
 ## Leave time for clean-up
 

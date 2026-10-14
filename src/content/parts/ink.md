@@ -27,7 +27,7 @@ Experienced printers judge ink by sound and feel. Roll it out on a slab and list
 
 ## Mixing color
 
-Always add the darker color to the lighter one, a little at a time; a dab of blue changes a pile of white quickly, but it takes a great deal of white to lighten blue. Clear transparent base counts as a light color. A few transparent colors can make many more where they overlap. <cite>Grabowski and Fick 2009, p. 25</cite>
+Always add the darker color to the lighter one, a little at a time. Clear transparent base counts as a light color. A few transparent colors can make many more where they overlap. <cite>Grabowski and Fick 2009, p. 25</cite>
 
 For an edition, mix enough ink for every print at the start, because matching a color later is hard. Note the proportions and keep a dab of each color on paper. <cite>Tinsley 1983, p. 44</cite> Test a mixed color by dabbing it out and letting it dry, since dried ink is not always the color it looked in the pot. <cite>Turner 1983, p. 108</cite>
 

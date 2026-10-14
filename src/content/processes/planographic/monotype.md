@@ -73,4 +73,4 @@ Oil-based ink for wiping out should be loose and buttery rather than tacky, and 
 
 A painted area of oily ink will push away a drier ink rolled over it, and the roller can lift painted shapes and set them down again further along. Students can use that rejection on purpose. <cite>Grabowski and Fick 2009, pp. 191, 196</cite>
 
-Printing by hand lets the printer press harder in one place than another and works with thicker ink. Dry, unsized paper holds its size between layers, which makes registering a layered print easier; damp paper picks up delicate washes better. Washes that won't print should be printed within half an hour, before they dry on the plate. <cite>Grabowski and Fick 2009, pp. 197, 229</cite>
+Printing by hand lets the printer press harder in one place than another and works with thicker ink. Dry, unsized paper holds its size between layers, which makes registering a layered print easier; damp paper picks up delicate washes better. Print wash layers within half an hour of putting them on. <cite>Grabowski and Fick 2009, pp. 197, 229</cite>

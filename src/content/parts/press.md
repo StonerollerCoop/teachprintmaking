@@ -45,7 +45,7 @@ Registration means putting each color or each sheet in the same place every time
 - **Kento.** The Japanese method cuts a corner stop and a side stop into the block itself, so the paper always drops into the same place.
 - **T and bar.** A small T is marked on one edge of the paper and a bar on the other, and the same marks on the base sheet line them up.
 - **Pins.** Holes punched in the paper drop over pins taped beside the plate.
-- **A clear sheet.** Print the first color onto clear film hinged to the bed, slide each sheet of paper under it until the image lines up, then lift the film and print.
+- **A clear sheet.** Print the first color onto a sheet of clear film, then use it to position the paper or the next plate by eye. Silvie Turner hinges an acetate flap to the screen bed for the same purpose. <cite>Turner 1983, p. 108</cite>
 
 Kim Major-George registers collagraphs with a sheet of polypropylene taped to the press bed and marked with the plate and paper positions. <cite>Major-George, p. 21</cite>
 
