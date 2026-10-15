@@ -11,6 +11,8 @@ sources:
     where: "pp. 22, 39–41, and 45, papers and fabrics"
   - library: hacking-tinsley-turner
     where: "Silvie Turner, p. 65, papers for found objects"
+  - library: thompson-exploring
+    where: "p. 90, printing on fabric by hand"
 ---
 
 The substrate is whatever receives the ink. Most of the time it's paper, but the first prints we know of landed on cave walls, and some of the oldest printing traditions in the world are printed on cloth. Tongan and Fijian makers print on barkcloth they beat out of mulberry bark themselves. Students can print on fabric, cardboard, wood, a page of an old book, or the back of last week's worksheet.
@@ -23,7 +25,7 @@ Paper also changes with the weather. On a humid day it relaxes and curls; on a d
 
 Paper weight is given in grams per square meter. Papers of about 200 to 300 grams suit most printmaking. Thin Asian papers are traditional for woodcut and wood engraving, and embossing and collagraph want much heavier sheets. Paper is made on one of two kinds of screen. A wove screen leaves an even texture, while a laid screen leaves a pattern of lines you can see against the light. A watermark reads the right way round from the front of the sheet, which helps tell the front of a smooth paper from its back. <cite>Grabowski and Fick 2009, p. 25</cite>
 
-Kim Major-George prints collagraphs on fabric as well as paper. Cotton, nylon, sheer fabrics, burlap, calico, and scrim print well, while wool and heavily textured fabrics print poorly. For fabric the order is turned over: the ironed fabric is taped to the press bed and the inked plate goes face down on top. <cite>Major-George, pp. 39–41</cite> She doesn't say whether the prints survive washing. Etching ink isn't made for cloth, so anything meant to be worn and washed is better printed with fabric ink. For heavy embossing she soaks very thick paper for at least half an hour. <cite>Major-George, p. 45</cite>
+Kim Major-George prints collagraphs on fabric as well as paper. Cotton, nylon, sheer fabrics, burlap, calico, and scrim print well, while wool and heavily textured fabrics print poorly. For fabric the order is turned over: the ironed fabric is taped to the press bed and the inked plate goes face down on top. <cite>Major-George, pp. 39–41</cite> She doesn't say whether the prints survive washing. Etching ink isn't made for cloth, so anything meant to be worn and washed is better printed with fabric ink. Thompson prints linocuts and stamps on fabric by hand. She chooses smooth fabric, puts card or acrylic sheet inside a T-shirt or tote so the ink doesn't go through to the back, and presses down hard or weights the block rather than rubbing, since fabric stretches and blurs under a spoon. Her safe-wash relief ink needs about a week to dry before the fabric is washed. <cite>Thompson, p. 90</cite> For heavy embossing Major-George soaks very thick paper for at least half an hour. <cite>Major-George, p. 45</cite>
 
 ## Things to notice with students
 

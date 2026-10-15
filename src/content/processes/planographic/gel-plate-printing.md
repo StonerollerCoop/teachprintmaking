@@ -33,6 +33,8 @@ sources:
   - library: medley-anything
     where: "ch. 3, on gel plate monoprinting"
     note: "Gel plate techniques, magazine transfers, and cleaning and storing plates."
+  - library: thompson-exploring
+    where: "pp. 13 and 32–50, gel plate printing"
 ---
 
 ## How it works
@@ -42,6 +44,10 @@ A gel plate is a soft, flexible slab, either a commercial plate made of a durabl
 The magic of the gel plate is layering. Each print can be printed again with a new color, and paint dries quickly on paper, so students can build up translucent layers, positive and negative shapes, and ghost prints from leaves that have already been printed once. A leaf pulled away from the plate leaves a negative print; the leaf itself, now covered in paint, can be printed face down for a positive.
 
 A few things are worth knowing. Rolling the brayer slowly lays ink down, and rolling it fast lifts ink back up. Because the plate is transparent, it can be lifted and pressed again over any spot that didn't print, and a sketch or registration marks can sit underneath it. A glossy magazine page pressed onto a freshly inked plate and peeled away lifts some of its printed image into the paint, which then transfers to the next print. <cite>Medley, ch. 3</cite>
+
+For a print built in layers, Gill Thompson fixes the top edge of the paper with a strip of masking tape. The tape works as a hinge, so the paper can be folded back while a new layer is rolled and laid down again in exactly the same place. <cite>Thompson, pp. 37, 41</cite> Her leaf sequences show a useful habit: after the leaves are lifted, their imprint is left in the paint on the plate, and it can be left to dry for five to ten minutes and then lifted with a pale layer as a second, detailed print. <cite>Thompson, pp. 34–36</cite> Roll spare paint off the brayer onto scrap paper between layers, which keeps it from caking and makes good collage paper, but don't use newspaper for this, because its print transfers to the plate. <cite>Thompson, p. 34</cite>
+
+Store a commercial plate between its acetate sheets with every air bubble smoothed out, since trapped bubbles can leave permanent dents, and keep stored plates on edge or with nothing stacked on top. <cite>Thompson, p. 13</cite>
 
 ## Making a plate
 

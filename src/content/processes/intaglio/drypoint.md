@@ -28,6 +28,8 @@ sources:
     where: "Francis Tinsley, pp. 51–53, drypoint"
   - library: major-george-collagraph
     where: "p. 44, drypoint on plastics and metals"
+  - library: thompson-exploring
+    where: "pp. 106–111, drypoint on carton packaging printed by hand"
 checks:
   - "About twenty impressions from copper and zinc: not in the 2009 first edition of Grabowski and Fick, and Tinsley gives ten to twelve for bare copper. Confirm Hughes and Vernon-Morris's figure or use the lower one."
 ---
@@ -64,6 +66,6 @@ Drypoint needs no chemicals. Water-washable intaglio ink cleans up with soap and
 
 Plates: rigid acetate, PETG, plexiglass, flattened juice and milk cartons, plastic-lined food cartons, the lid of a foil cake tin, plastic-coated card, and copper or zinc for older students. Grey board sealed with several coats of hard wax oil makes a homemade drypoint card, a method shared by the printmaker Mary Dalton. <cite>Dalton, ch. 10</cite>
 
-Presses: an etching press is ideal. A pasta machine with felt and a plexiglass carrier, an old clothes wringer for shallow lines, or a small 3D-printed press can work at small sizes. Hand burnishing rarely pushes damp paper far enough into the lines, though a firm spoon on thin damp paper gives a pale proof.
+Presses: an etching press is ideal. A pasta machine with felt and a plexiglass carrier, an old clothes wringer for shallow lines, or a small 3D-printed press can work at small sizes. Hand burnishing rarely pushes damp paper as far into the lines as a press does, but a carton plate can still be printed by hand. Gill Thompson works ink into the scored lines and peeled areas with small offcuts of card, wipes the surface with scrim, and polishes it lightly with newspaper under flat fingers, lifting small highlights with a cotton swab. She prints onto heavy, smooth paper soaked for a few minutes and blotted, laid over the plate under a sheet of copy paper and rubbed hard with a spoon without letting it shift. If the lines come out faint, scratch them deeper and ink again. She is honest that the print won't be crisp, and suggests drawing into it once it's dry. Her ink is an oil-based safe-wash ink; she notes that the method doesn't work with water-based printing ink. <cite>Thompson, pp. 107–110</cite> Sandpaper, a thick needle for dotted lines, or a dressmaker's tracing wheel adds more marks. <cite>Thompson, p. 110</cite>
 
 Inks: water-washable intaglio ink, wiped with tarlatan and then with paper or the palm. Paper should be soaked or misted and blotted before printing. Zinc is easier to scratch than copper but wears faster. Martin wipes metal drypoint plates with paper instead of the hand, because the burr is abrasive. <cite>Martin, pp. 77 and 105</cite>

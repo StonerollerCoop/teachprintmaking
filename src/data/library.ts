@@ -332,10 +332,12 @@ export const library: LibraryEntry[] = [
     publisher: 'Herbert Press (Bloomsbury)',
     year: '2025',
     isbn: '978-1-7899-4302-3',
-    note: 'Listed here and not drawn on. Its contents cover monoprinting, relief printing, linocut, collagraphy, printing with packaging, eco printing, cyanotypes, and hybrid printing, with creative projects and a guide to sourcing tools and materials.',
-    families: ['all'],
-    level: 'Not reviewed',
-    rights: 'In copyright. The publisher reserves the book from any use in the training, development, or operation of AI tools and from text and data mining, so nothing from inside it is used on this site.',
+    note: 'A friendly, current guide to printing without a press: found objects, gel plates, eraser stamps, linocut, collagraph, printing with cartons, eco printing, and cyanotype, then projects that turn prints into books, cards, and collage. Uses safe-wash inks and no solvents.',
+    families: ['relief', 'intaglio', 'planographic'],
+    level: 'Beginners of any age, with adult help for younger children',
+    rights: 'In copyright; cited, not reproduced. Cited by the printed page numbers of the paperback.',
+    check: 'The copyright page reserves the book from use in the training, development, or operation of AI tools and from text and data mining. Libby chose to have it reviewed anyway and to cite and paraphrase only, as with every other book, and to ask Bloomsbury for permission if anything from it is to be adapted more closely.',
+    caution: 'A few of its projects are for adults only: the anthotype uses vodka, eco printing cooks leaves on a stove, and liquid cyanotype chemicals should not be handled by children. Use pre-coated cyanotype paper with students.',
   },
 ];
 

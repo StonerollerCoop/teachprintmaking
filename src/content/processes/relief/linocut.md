@@ -26,6 +26,8 @@ sources:
     where: "pp. 76–87 and the relief troubleshooting table, p. 222"
   - library: hacking-tinsley-turner
     where: "Silvie Turner, p. 77, on lino"
+  - library: thompson-exploring
+    where: "pp. 64–91, linocut, including the four ways to carve, jigsaw prints, and printing on fabric"
 checks:
   - "Cheap tool sets costing more in the end is not in the 2009 first edition of Grabowski and Fick, which calls tools with replaceable tips handy because they need no sharpening (p. 79). Confirm in the 2015 edition or rephrase."
 ---
@@ -36,9 +38,15 @@ The printmaker draws on the block, then carves away everything that should stay 
 
 Before carving, many teachers have students fill in the areas that will print with marker or ink. The carved areas then show as bare block, and students can see the print take shape as they work.
 
+Gill Thompson's exercise for learning what to carve is to transfer one simple drawing onto four small blocks and carve it four ways. In positive carving the drawing stays raised and prints dark; in negative carving the drawing is cut away and the background prints. White-line carving cuts only the lines of the drawing, and black-line carving leaves only the lines standing. Printed side by side, the four blocks show the whole logic of relief in one session. <cite>Thompson, pp. 72–76</cite>
+
 A reduction linocut uses one block for several colors. The printmaker carves, prints the lightest color on every sheet, carves away more, and prints the next color over the first, working toward the darkest. The block is destroyed by the end, so the edition size is fixed at the first color.
 
 First, sand off any shiny coating so drawing materials and ink hold. Rubbing a stick of graphite over thin paper laid on the block shows what it will print without any ink. Many printmakers keep a scrap of lino with a line from each of their gouges, as a reference for which tool makes which mark. <cite>Walker, chs. 1–3; Hughes and Vernon-Morris, Relief</cite>
+
+A block can also be cut apart for color. Thompson cuts deep along the joining line with a large V-tool, then separates the pieces with a craft knife, inks each in its own color, and fits them back together with clean hands before printing. A careless cut leaves a white line where the pieces meet, and rubbing too hard can push the pieces apart. <cite>Thompson, pp. 82–84</cite>
+
+The first print is a diagnosis. Patchy ink means too little; a blotchy, indistinct print means too much; and stray marks usually mean crumbs or whiskers of lino left on the block. Ink rolled too thick makes a squelchy sound on the slab and fills the cuts. <cite>Thompson, pp. 68, 70</cite>
 
 A carved block can print over a monotype. Rebecca Owens prints a loose field of color from a plate first and then overprints a cut block, sometimes inking parts of the block in different colors with small rollers and brushes. <cite>Martin, pp. 133 and 150</cite> A carved block printed with no ink presses a raised design into damp paper. This is called blind embossing, and students can read the result by touch. <cite>Heller 1958, pp. 91–92</cite>
 

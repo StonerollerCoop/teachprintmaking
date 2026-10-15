@@ -25,6 +25,8 @@ sources:
     note: "Ink and plate choices, registering layers, the trace monotype negative, hand and press printing"
   - library: major-george-collagraph
     where: "p. 47, mono collagraph"
+  - library: thompson-exploring
+    where: "pp. 29–31 and 104–105, trace monoprint and carton monoprint"
 checks:
   - "Castiglione in Genoa in the 1640s, Degas's “hundreds” of monotypes, and PETG, sign-shop scraps, and the doorknob are not in the 2009 first edition of Grabowski and Fick, which dates Castiglione's first monotypes only to the mid-seventeenth century. Confirm in the 2015 edition or Hughes and Vernon-Morris."
 ---
@@ -40,6 +42,8 @@ In a trace monotype, the plate is rolled with a thin layer of ink, paper is laid
 A sketch slipped under a glass or clear plastic plate guides the painting, and the same sketch helps place a second and third color in register. For a blotted monoprint, a sheet of paper is pressed onto wet ink and lifted away, leaving a random texture on the plate that is then printed. <cite>Martin, pp. 21–25</cite>
 
 After a trace monotype is drawn, the plate still holds ink everywhere the pencil didn't press. Print that plate onto a fresh sheet, and the drawing comes back as a negative: light lines in a dark field. <cite>Grabowski and Fick 2009, p. 193</cite> For a crisper traced line, roll the slab very thin. <cite>Grabowski and Fick 2009, p. 229</cite>
+
+Thompson suggests trace monotype as a use for the ink left on the slab after a linocut session. <cite>Thompson, p. 29</cite> Her quickest monoprint needs only a carton: fold and crease a piece of juice carton, dab it all over with an ink pad, and press it face down onto paper under a spoon. The creases print as a texture of lines, and students look for mountains, water, or buildings in it and finish them with a fine pen. <cite>Thompson, pp. 104–105</cite>
 
 For a print built in several layers, lay a clean sheet of clear plastic on the first print, ink sides together, and trace the main shapes and registration marks with a permanent marker. That plate is then ready for the next color, and the marker comes off afterward with alcohol. <cite>Grabowski and Fick 2009, p. 190</cite>
 

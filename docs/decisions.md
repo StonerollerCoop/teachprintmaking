@@ -174,7 +174,9 @@ Open question: the current vocabulary has separate families for monotype, collag
 - Major-George's book adds most to the collagraph page: peeling mount board, her inking and wiping order, Brenda Hartill's rubs as she teaches them, mono collagraph, blind embossing, and the story of Dawn's Dobber, which also appears on "Starting from the learner."
 - New sections: registration systems on the press page, mixing color on the ink page, the BAT and artist's proof conventions on the edition page, and paper weight, laid and wove paper, and printing on fabric on the substrate page.
 
-## 2026-10-15: A book listed but not used
+## 2026-10-15: Thompson's Exploring Printmaking, reviewed despite the publisher's AI reservation
 
-- Gill Thompson's Exploring Printmaking (Herbert Press, 2025) is in the library as a recommended book only. Its copyright page reserves it from use in the training, development, or operation of AI tools and from text and data mining, so Libby chose to cite it without drawing on its contents. Only the title page, copyright page, and table of contents were looked at, and the library note is written from those.
-- Any later use of the book should come from Libby's own notes in her own words, or from permission from Bloomsbury.
+- Gill Thompson's Exploring Printmaking (Herbert Press, 2025) reserves the book from use in the training, development, or operation of AI tools and from text and data mining. Libby decided to have it reviewed anyway, since the site cites and paraphrases and takes nothing wholesale, and to ask Bloomsbury for permission if anything from it is to be adapted more closely. The library entry carries a red check recording this.
+- It is cited by the printed page numbers of the paperback, which the ebook marks.
+- Its findings went to linocut (four ways to carve one drawing, jigsaw blocks, reading a first print), drypoint (carton drypoint printed by hand), gel plate (the masking-tape hinge, leaf imprints, plate storage), monotype (carton monoprint), and the ink and substrate pages.
+- Its cyanotype, anthotype, and eco printing chapters aren't on the site yet, because none of them prints from an inked plate and the site has no place for them. Whether to add a category for light and plant prints is Libby's call.

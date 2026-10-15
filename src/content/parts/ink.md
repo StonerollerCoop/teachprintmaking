@@ -11,6 +11,8 @@ sources:
     where: "pp. 24–25, mixing and testing ink, and p. 90, rolling up"
   - library: hacking-tinsley-turner
     where: "Francis Tinsley, p. 44, and Silvie Turner, p. 108, on mixing colors"
+  - library: thompson-exploring
+    where: "p. 68, the sound of over-thick ink"
 ---
 
 Every printing ink is made of two things: a pigment, which gives the color, and a vehicle or binder, which carries the pigment and makes it stick. Cave painters most likely blew red and yellow earth pigments mixed with water or saliva. Gutenberg's printers used soot ground into a varnish of boiled linseed oil. Japanese woodblock printers brushed watercolor pigment onto the block together with a little rice paste. Asante artisans in Ghana print Adinkra symbols with a dark dye boiled from tree bark.
@@ -23,7 +25,7 @@ Water-based inks clean up with soap and water and are the usual choice in school
 
 ## Listening to the ink
 
-Experienced printers judge ink by sound and feel. Roll it out on a slab and listen: when it is the right thickness it makes a soft hiss, a little like velcro pulling apart. Too much ink sounds sticky and looks shiny and ridged; too little looks dry and patchy. Grabowski and Fick roll until the ink is smooth and velvety and makes a slightly tacky sound, then keep rolling it onto the block until the same sound comes back. <cite>Grabowski and Fick 2009, p. 90</cite>
+Experienced printers judge ink by sound and feel. Roll it out on a slab and listen: when it is the right thickness it makes a soft hiss, a little like velcro pulling apart. Too much ink sounds sticky and looks shiny and ridged; too little looks dry and patchy. Gill Thompson describes ink rolled too thick as making a squelchy sound. <cite>Thompson, p. 68</cite> Grabowski and Fick roll until the ink is smooth and velvety and makes a slightly tacky sound, then keep rolling it onto the block until the same sound comes back. <cite>Grabowski and Fick 2009, p. 90</cite>
 
 ## Mixing color
 
