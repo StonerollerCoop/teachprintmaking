@@ -325,6 +325,18 @@ export const library: LibraryEntry[] = [
     rights: 'In copyright; cited, not reproduced. The pages by Rita Kearton, Peter Wray, and Mandy Walden and the student work are theirs.',
     caution: 'Seals plates with shellac dissolved in methylated spirit and cleans up with white spirit. Use water-based acrylic medium as a sealer with students. It also calls Caligo Safe Wash ink water-soluble; it is an oil-based ink that washes up with soap and water.',
   },
+  {
+    id: 'thompson-exploring',
+    authors: 'Gill Thompson',
+    title: 'Exploring Printmaking: A Practical Guide to Printmaking Techniques',
+    publisher: 'Herbert Press (Bloomsbury)',
+    year: '2025',
+    isbn: '978-1-7899-4302-3',
+    note: 'Listed here and not drawn on. Its contents cover monoprinting, relief printing, linocut, collagraphy, printing with packaging, eco printing, cyanotypes, and hybrid printing, with creative projects and a guide to sourcing tools and materials.',
+    families: ['all'],
+    level: 'Not reviewed',
+    rights: 'In copyright. The publisher reserves the book from any use in the training, development, or operation of AI tools and from text and data mining, so nothing from inside it is used on this site.',
+  },
 ];
 
 export const libraryById = new Map(library.map((e) => [e.id, e]));

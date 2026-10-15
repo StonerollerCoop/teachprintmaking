@@ -173,3 +173,8 @@ Open question: the current vocabulary has separate families for monotype, collag
 - Practical Printmaking's section authors are cited by name and year (Hacking 1983, Tinsley 1983, Turner 1983), since each wrote their own section.
 - Major-George's book adds most to the collagraph page: peeling mount board, her inking and wiping order, Brenda Hartill's rubs as she teaches them, mono collagraph, blind embossing, and the story of Dawn's Dobber, which also appears on "Starting from the learner."
 - New sections: registration systems on the press page, mixing color on the ink page, the BAT and artist's proof conventions on the edition page, and paper weight, laid and wove paper, and printing on fabric on the substrate page.
+
+## 2026-10-15: A book listed but not used
+
+- Gill Thompson's Exploring Printmaking (Herbert Press, 2025) is in the library as a recommended book only. Its copyright page reserves it from use in the training, development, or operation of AI tools and from text and data mining, so Libby chose to cite it without drawing on its contents. Only the title page, copyright page, and table of contents were looked at, and the library note is written from those.
+- Any later use of the book should come from Libby's own notes in her own words, or from permission from Bloomsbury.
